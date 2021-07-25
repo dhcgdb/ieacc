@@ -6,47 +6,42 @@
 #include "ns3/ns3-ai-module.h"
 #include "ns3/traced-value.h"
 #include "ns3/watchdog.h"
-#include "simpleq.h"
 
 namespace ns3 {
     namespace ndn {
-        class ConsumerRL;
-    }
-    typedef struct {
-        double cWnd;
-        uint32_t DataNum;
-        uint32_t InflightNum;
-        double avgDelay;
-        uint32_t NackNum;
-        uint32_t TimeoutNum;
-    }Packed DDPGParam;
+        class ConsumerCCs;
 
-    typedef struct {
-        //bool doAction;
-        double new_cWnd;
-    }Packed DDPGAct;
+        typedef struct {
+            double cWnd;
+            double avgDelay;
+            uint32_t DataNum;
+            uint32_t InflightNum;
+            uint32_t NackNum;
+            uint32_t TimeoutNum;
+        }Packed DDPGParam;
 
-    class TransParam2Py : Ns3AIRL<DDPGParam, DDPGAct> {
-    public:
-        TransParam2Py(uint16_t id);
-        void GetActFromRLModule(DDPGAct*);
-        void SendParam2RLModule(DDPGParam*);
-        friend ndn::ConsumerRL;
-    };
-}
-namespace ns3 {
-    namespace ndn {
-        enum CcAlgorithm {
-            AIMD,
-            RL,
-            ECP,
-            none
+        typedef struct {
+            //bool doAction;
+            double new_cWnd;
+        }Packed DDPGAct;
+
+        enum CCType {
+            AIMD, RL, 
+            ECP, none
         };
 
-        class ConsumerRL : public ConsumerWindow {
+        class TransParam2Py : Ns3AIRL<DDPGParam, DDPGAct> {
+        public:
+            TransParam2Py(uint16_t id);
+            void GetActFromRLModule(DDPGAct*);
+            void SendParam2RLModule(DDPGParam*);
+            friend ConsumerCCs;
+        };
+
+        class ConsumerCCs : public ConsumerWindow {
         public:
             static TypeId GetTypeId();
-            ConsumerRL();
+            ConsumerCCs();
 
         protected:
             virtual void OnData(shared_ptr<const Data> data) override;
@@ -60,7 +55,7 @@ namespace ns3 {
             bool random_prefix;
 
         private:
-            CcAlgorithm m_ccAlgorithm;
+            CCType m_ccAlgorithm;
             double m_beta;
             double m_ssthresh;
             //double m_addRttSuppress;
@@ -70,7 +65,7 @@ namespace ns3 {
             double m_recPoint;
 
         private:
-            static void cwndChangeWDCallback(ConsumerRL* ptr);
+            static void cwndChangeWDCallback(ConsumerCCs* ptr);
 
             bool adjust;
             std::set<uint32_t> nackDeSeq;

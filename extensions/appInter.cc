@@ -3,7 +3,7 @@
 #include "ns3/ndnSIM/model/null-transport.hpp"
 #include "ns3/ndnSIM/helper/ndn-fib-helper.hpp"
 #include "ns3/string.h"
-#include "app-inter.h"
+#include "appInter.h"
 
 NS_LOG_COMPONENT_DEFINE("ndn.AppInter");
 

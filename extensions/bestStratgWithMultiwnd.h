@@ -35,42 +35,6 @@
 namespace nfd {
     namespace fw {
 
-        class BestRouteStrategy2WithConges
-            : public Strategy
-            , public ProcessNackTraits<BestRouteStrategy2WithConges> {
-        public:
-            explicit
-                BestRouteStrategy2WithConges(Forwarder& forwarder, const Name& name = getStrategyName());
-
-            static const Name&
-                getStrategyName();
-
-            void afterReceiveInterest(const FaceEndpoint& ingress, const Interest& interest,
-                                      const shared_ptr<pit::Entry>& pitEntry) override;
-
-            void afterReceiveNack(const FaceEndpoint& ingress, const lp::Nack& nack,
-                                  const shared_ptr<pit::Entry>& pitEntry) override;
-
-
-        private:
-            double pitMaxSize;
-            double curPitSize;
-
-            bool firstrun;
-            Forwarder& forwarderAcc;
-            scheduler::EventId catchTimer;
-            static const time::milliseconds RETX_SUPPRESSION_INITIAL;
-            static const time::milliseconds RETX_SUPPRESSION_MAX;
-            RetxSuppressionExponential m_retxSuppression;
-
-            friend ProcessNackTraits<BestRouteStrategy2WithConges>;
-        };
-    } // namespace fw
-} // namespace nfd
-
-namespace nfd {
-    namespace fw {
-
         class BestRouteStrategy2WithOutFaceWnd;
 
         typedef struct {
@@ -145,7 +109,6 @@ namespace nfd {
             friend ProcessNackTraits<BestRouteStrategy2WithOutFaceWnd>;
         };
 
-    } // namespace fw
-} // namespace nfd
-
-#endif // NFD_DAEMON_FW_BEST_ROUTE_STRATEGY2_HPP
+    } 
+} 
+#endif 

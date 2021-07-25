@@ -23,8 +23,8 @@
 #include "ns3/network-module.h"
 #include "ns3/point-to-point-module.h"
 #include "ns3/ndnSIM-module.h"
-#include "rl.h"
-#include "strategywithconges.h"
+#include "consumerCCs.h"
+#include "bestStratgWithMultiwnd.h"
 
 namespace ns3 {
 
@@ -87,11 +87,11 @@ namespace ns3 {
     // Installing applications
 
     // Consumer
-    ndn::AppHelper consumerHelper("ns3::ndn::ConsumerRL");
+    ndn::AppHelper consumerHelper("ns3::ndn::ConsumerCCs");
     consumerHelper.SetPrefix("/prefix");
     consumerHelper.SetAttribute("RetxTimer", StringValue("10ms"));
     consumerHelper.SetAttribute("Window", StringValue("100"));
-    consumerHelper.SetAttribute("CcAlgorithm", EnumValue(ndn::CcAlgorithm::AIMD));
+    consumerHelper.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::AIMD));
     consumerHelper.SetAttribute("InitialWindowOnTimeout", BooleanValue(true));
     consumerHelper.SetAttribute("Frequency", DoubleValue(10000));
     consumerHelper.SetAttribute("Randomize", StringValue("none"));

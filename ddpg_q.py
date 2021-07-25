@@ -17,9 +17,9 @@ class NdnParam(Structure):
     _pack_ = 1
     _fields_ = [
         ('cWnd', c_double),
+        ('avgDelay', c_double),
         ('Data', c_uint32),
         ('InFlight', c_uint32),
-        ('avgDelay', c_double),
         ('Nloss', c_uint32),
         ('Rloss', c_uint32),
     ]

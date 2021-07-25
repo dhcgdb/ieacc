@@ -1,4 +1,4 @@
-#include "rl.h"
+#include "consumerCCs.h"
 #include "ns3/core-module.h"
 #include "ns3/network-module.h"
 #include "ns3/point-to-point-module.h"
@@ -10,20 +10,6 @@
 namespace ns3 {
     int main(int argc, char* argv[])
     {
-        /*
-        // setting default parameters for PointToPoint links and channels
-        Config::SetDefault("ns3::PointToPointNetDevice::DataRate", StringValue("2Mbps"));
-        Config::SetDefault("ns3::PointToPointChannel::Delay", StringValue("10ms"));
-        Config::SetDefault("ns3::QueueBase::MaxSize", StringValue("20p"));
-        // Creating nodes
-        NodeContainer nodes;
-        nodes.Create(3);
-        // Connecting nodes using two links
-        PointToPointHelper p2p;
-        p2p.Install(nodes.Get(0), nodes.Get(1));
-        p2p.Install(nodes.Get(1), nodes.Get(2));
-        */
-        // Read optional command-line parameters (e.g., enable visualizer with ./waf --run=<> --visualize
         std::random_device rdev;
         std::mt19937 reng(rdev());
         std::uniform_int_distribution<> u(1, 10);
@@ -75,10 +61,10 @@ namespace ns3 {
         ndn::StrategyChoiceHelper::Install(p2, "/ustc", "/localhost/nfd/strategy/best-route");
 
         // Installing Consumer
-        ndn::AppHelper consumerHelper0("ns3::ndn::ConsumerRL");
+        ndn::AppHelper consumerHelper0("ns3::ndn::ConsumerCCs");
         consumerHelper0.SetAttribute("RetxTimer", StringValue("10ms"));
         consumerHelper0.SetAttribute("Window", StringValue("4"));
-        consumerHelper0.SetAttribute("CcAlgorithm", EnumValue(ndn::CcAlgorithm::AIMD));
+        consumerHelper0.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::AIMD));
         consumerHelper0.SetAttribute("InitialWindowOnTimeout", BooleanValue(true));
         consumerHelper0.SetAttribute("Frequency", DoubleValue(65536));
         consumerHelper0.SetAttribute("Randomize", StringValue("exponential"));
@@ -87,10 +73,10 @@ namespace ns3 {
         consumerHelper0.SetPrefix("/ustc/0");
         consumerHelper0.Install(c0);
 
-        ndn::AppHelper consumerHelper1("ns3::ndn::ConsumerRL");
+        ndn::AppHelper consumerHelper1("ns3::ndn::ConsumerCCs");
         consumerHelper1.SetAttribute("RetxTimer", StringValue("10ms"));
         consumerHelper1.SetAttribute("Window", StringValue("4"));
-        consumerHelper1.SetAttribute("CcAlgorithm", EnumValue(ndn::CcAlgorithm::AIMD));
+        consumerHelper1.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::AIMD));
         consumerHelper1.SetAttribute("InitialWindowOnTimeout", BooleanValue(true));
         consumerHelper1.SetAttribute("Frequency", DoubleValue(65536));
         consumerHelper1.SetAttribute("Randomize", StringValue("exponential"));
@@ -98,10 +84,10 @@ namespace ns3 {
         consumerHelper1.SetPrefix("/ustc/1");
         consumerHelper1.Install(c0);
 
-        ndn::AppHelper consumerHelper2("ns3::ndn::ConsumerRL");
+        ndn::AppHelper consumerHelper2("ns3::ndn::ConsumerCCs");
         consumerHelper2.SetAttribute("RetxTimer", StringValue("10ms"));
         consumerHelper2.SetAttribute("Window", StringValue("4"));
-        consumerHelper2.SetAttribute("CcAlgorithm", EnumValue(ndn::CcAlgorithm::AIMD));
+        consumerHelper2.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::AIMD));
         consumerHelper2.SetAttribute("InitialWindowOnTimeout", BooleanValue(true));
         consumerHelper2.SetAttribute("Frequency", DoubleValue(65536));
         consumerHelper2.SetAttribute("Randomize", StringValue("exponential"));
