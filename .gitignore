@@ -1,0 +1,6 @@
+.vscode/
+.waf-*/
+.lock*
+*.txt
+build/
+results/
