@@ -12,12 +12,14 @@ namespace ns3 {
         class ConsumerCCs;
 
         typedef struct {
-            double cWnd;
+            double cWndSum;
             double avgDelay;
             uint32_t DataNum;
             uint32_t InflightNum;
             uint32_t NackNum;
             uint32_t TimeoutNum;
+            uint32_t congesLevelSum;
+            uint32_t dataSizeSum;
         }Packed DDPGParam;
 
         typedef struct {
@@ -26,7 +28,7 @@ namespace ns3 {
         }Packed DDPGAct;
 
         enum CCType {
-            AIMD, RL, 
+            AIMD, RL,
             ECP, none
         };
 
@@ -42,6 +44,7 @@ namespace ns3 {
         public:
             static TypeId GetTypeId();
             ConsumerCCs();
+            void printCollectInfo(int no);
 
         protected:
             virtual void OnData(shared_ptr<const Data> data) override;
@@ -65,8 +68,6 @@ namespace ns3 {
             double m_recPoint;
 
         private:
-            static void cwndChangeWDCallback(ConsumerCCs* ptr);
-
             bool adjust;
             std::set<uint32_t> nackDeSeq;
 
@@ -91,6 +92,8 @@ namespace ns3 {
             DDPGAct action;
             TransParam2Py transclass;
             double alpha;
+
+            friend void cwndChangeWDCallback(ConsumerCCs*);
         };
     }
 }

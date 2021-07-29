@@ -19,7 +19,7 @@ class NdnParam(Structure):
     _fields_ = [('cWndSum', c_double), ('avgDelay', c_double),
                 ('Data', c_uint32), ('InFlight', c_uint32),
                 ('Nloss', c_uint32), ('Rloss', c_uint32),
-                ('CLvelSum', c_uint32), ('DataSizeSum', c_uint32)]
+                ('CLvelSum', c_double), ('DataSizeSum', c_uint32)]
 
 
 class RetScale(Structure):
@@ -181,13 +181,12 @@ def ndngetstate(var):
     DataSizeSum = data.env.DataSizeSum
     var.ReleaseAndRollback()
 
-    avgQLength = CLvel / (acks + 0.01) / 32
-    TP_Mbps = 1 + DataSizeSum * 8 / 0.2 / 1000000
-    Rloss /= 100
+    avgQLength = CLvel
+    TP_Mbps = DataSizeSum * 8 / 0.2 / 1000000
 
-    print([TP_Mbps, avgQLength, Rloss])
-
-    return [np.log10(TP_Mbps), avgQLength, Rloss]
+    s=[TP_Mbps, avgQLength, Rloss, delay]
+    print(s)
+    return s
 
 
 def ndnstep(a, var):
@@ -196,8 +195,12 @@ def ndnstep(a, var):
     data.act.newCwnd = a
     var.Release()
     s = ndngetstate(var)
-
-    r = s[0] - s[1] - s[2]
+ 
+    r = s[0] / 50 - s[1] / 32 - s[2] / 100
+    s[0] = s[0] / 100
+    s[1] = s[1] / 32
+    s[2] = s[2] / 100
+    s[3] = s[3] * 20
     return s, r
 
 
@@ -209,8 +212,8 @@ def ndnreset(exp, var):
 
 epsilon = 0.1
 variance = 1
-ddpg = DDPG(1, 3)
-exp = Experiment(1234, 1040, "1c1p", "./")
+ddpg = DDPG(1, 4)
+exp = Experiment(1234, 1120, "1c1p", "./")
 var = Ns3AIRL(1024, NdnParam, RetScale)
 actiontype = "random"
 
@@ -223,6 +226,7 @@ criticloss = open(log_path + "/criticloss.txt", "w")
 print('\n\033[33mstart ddpg learning \033[0m')
 
 for i in range(MAX_EPISODES):
+    epsilon += 0.01
     print("episode ", i)
     s = ndnreset(exp, var)
     print(s)
@@ -252,6 +256,5 @@ for i in range(MAX_EPISODES):
         ep_reward += r
     print("\033[32mepisode: {}, eprwd: {}\033[0m\n".format(i, ep_reward))
     if ddpg.pointer > MEMORY_CAPACITY:
-        epsilon += 0.01
         ddpg.save_model(i)
 FreeMemory()

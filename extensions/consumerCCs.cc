@@ -12,14 +12,35 @@
 #include <iomanip>
 #include <random>
 #include <memory>
-//#define LOG_TIMEOUT
-//#define LOG_NACK
-#define LOG_DATA
 
 NS_LOG_COMPONENT_DEFINE("ndn.ConsumerCCs");
 
 namespace ns3 {
     namespace ndn {
+        void cwndChangeWDCallback(ConsumerCCs* ptr)
+        {
+            static int x = 0;
+            ptr->collectInfo.avgDelay = ptr->m_rtt->GetCurrentEstimate().GetSeconds();
+            ptr->collectInfo.InflightNum = ptr->m_inFlight;
+
+            ptr->printCollectInfo(x);
+
+            if (ptr->m_ccAlgorithm == CCType::RL) {
+                ptr->transclass.SendParam2RLModule(&ptr->collectInfo);
+                ptr->transclass.GetActFromRLModule(&ptr->action);
+                ptr->m_window = ptr->m_window * ptr->action.new_cWnd;
+                if (ptr->m_window < 1.0)
+                    ptr->m_window = 1.0;
+                else if (ptr->m_window > 700)
+                    ptr->m_window = 700;
+                std::cout << std::setiosflags(std::ios::left) << "No." << std::setw(8) << x << " new_cwnd:" << ptr->m_window << std::endl;
+            }
+
+            memset(&ptr->collectInfo, 0, sizeof(ptr->collectInfo));
+            ptr->cwndChangeWD.Ping(Seconds(ptr->watchdogt));
+            x++;
+        }
+
         TransParam2Py::TransParam2Py(uint16_t id)
             : Ns3AIRL<DDPGParam, DDPGAct>(id)
         {
@@ -40,35 +61,6 @@ namespace ns3 {
             GetCompleted();
         }
 
-        void ConsumerCCs::cwndChangeWDCallback(ConsumerCCs* ptr)
-        {
-            static int x = -1;
-            std::cout << "No." << x
-                << " Window:" << ptr->m_window
-                << " Rtt:" << ptr->m_rtt->GetCurrentEstimate().GetSeconds()
-                << " Inflight:" << ptr->m_inFlight
-                << " Data:" << ptr->collectInfo.DataNum
-                << " Timeout:" << ptr->collectInfo.TimeoutNum
-                << " Nack:" << ptr->collectInfo.NackNum << std::endl;
-
-            if (ptr->m_ccAlgorithm == CCType::RL && x >= 0) {
-                ptr->collectInfo.cWnd = ptr->m_window;
-                ptr->collectInfo.avgDelay = ptr->m_rtt->GetCurrentEstimate().GetSeconds();
-                ptr->collectInfo.InflightNum = ptr->m_inFlight;
-                ptr->transclass.SendParam2RLModule(&ptr->collectInfo);
-                ptr->transclass.GetActFromRLModule(&ptr->action);
-                ptr->m_window = ptr->m_window * ptr->action.new_cWnd;
-                if (ptr->m_window < 1.0)
-                    ptr->m_window = 1.0;
-                else if (ptr->m_window > 300)
-                    ptr->m_window = 300.0;
-                std::cout << "new_cwnd:" << ptr->m_window << std::endl;
-            }
-            memset(&ptr->collectInfo, 0, sizeof(ptr->collectInfo));
-            ptr->cwndChangeWD.Ping(Seconds(ptr->watchdogt));
-            x++;
-        }
-
         void ConsumerCCs::localLastDelayRecordCb(Ptr<App> optr, uint32_t seqno, Time delay, int32_t hopcount)
         {
             Ptr<ConsumerCCs> ptr = DynamicCast<ConsumerCCs>(optr);
@@ -84,7 +76,7 @@ namespace ns3 {
         NS_OBJECT_ENSURE_REGISTERED(ConsumerCCs);
 
         ConsumerCCs::ConsumerCCs()
-            : m_ssthresh(256)//std::numeric_limits<double>::max())
+            : m_ssthresh(std::numeric_limits<double>::max())
             , transclass(1024), m_highData(0), m_recPoint(0.0)
             , adjust(true)
         {
@@ -139,10 +131,14 @@ namespace ns3 {
             if (m_inFlight > static_cast<uint32_t>(0)) {
                 m_inFlight--;
             }
-            collectInfo.DataNum++;
-
             uint64_t sequenceNum = data->getName().get(-1).toSequenceNumber();
             uint64_t congesLevel = data->getCongestionMark();
+            uint64_t dataSize = data->getContent().size();
+
+            collectInfo.cWndSum += m_window;
+            collectInfo.DataNum++;
+            collectInfo.congesLevelSum += congesLevel;
+            collectInfo.dataSizeSum += dataSize;
 
             if (m_highData < sequenceNum) {
                 m_highData = sequenceNum;
@@ -266,6 +262,20 @@ namespace ns3 {
                 else
                     m_sendEvent = Simulator::ScheduleNow(&ConsumerCCs::SendPacket, this);
             }
+        }
+
+        void ConsumerCCs::printCollectInfo(int no)
+        {
+            std::cout << "No." << no
+                << " Window:" << collectInfo.cWndSum
+                << " Rtt:" << collectInfo.avgDelay
+                << " Inflight:" << collectInfo.InflightNum
+                << " Data:" << collectInfo.DataNum
+                << " Timeout:" << collectInfo.TimeoutNum
+                << " Nack:" << collectInfo.NackNum
+                << " CongesLevelSum:" << collectInfo.congesLevelSum/collectInfo.DataNum
+                << " DataSizeSum:" << collectInfo.dataSizeSum
+                << std::endl;
         }
 
         void ConsumerCCs::WindowIncrease()

@@ -1,9 +1,12 @@
+//#define LOG_TIMEOUT
+//#define LOG_NACK
 #include "consumerCCs.h"
 #include "ns3/core-module.h"
 #include "ns3/network-module.h"
 #include "ns3/point-to-point-module.h"
 #include "ns3/ndnSIM-module.h"
 #include "ns3/ndnSIM/helper/ndn-link-control-helper.hpp"
+#include "ns3/ptr.h"
 #include "string"
 #include "random"
 
@@ -28,18 +31,22 @@ namespace ns3 {
 
         //Set ID and PoolSize of shared memory(shm) of ns3-ai
         Config::SetGlobalFailSafe("SharedMemoryKey", UintegerValue(1234));
-        Config::SetGlobalFailSafe("SharedMemoryPoolSize", UintegerValue(4096));
+        Config::SetGlobalFailSafe("SharedMemoryPoolSize", UintegerValue(1040));
 
         //Use system entropy source and mersenne twister engine
         std::random_device rdev;
-        std::mt19937 reng(rdev());
         //Randomize initial window
+        std::mt19937 reng(rdev());
         std::uniform_int_distribution<> u0(1, 10);
-        const string str = std::to_string(u0(reng));
+        string str = std::to_string(u0(reng));
         //Randomize seed
+        reng.seed(rdev());
         std::uniform_int_distribution<> u1(0);
         ns3::SeedManager smgr;
         smgr.SetSeed(u1(reng));
+        //Ransomize BW
+        reng.seed(rdev());
+        std::uniform_int_distribution<> u2(10, 100);
 
         CommandLine cmd;
         cmd.Parse(argc, argv);
@@ -50,6 +57,17 @@ namespace ns3 {
         NodeContainer allNodes = topologyReader.GetNodes();
         Ptr<Node> c0 = allNodes[0];
         Ptr<Node> p0 = allNodes[3];
+        //ns3::ChannelList allLinks;
+        //for (int i = 0;i < allLinks.GetNChannels();i++) {
+        //    Ptr<ns3::PointToPointChannel> p2plink = StaticCast<ns3::PointToPointChannel>(allLinks.GetChannel(i));
+        //    string randBW = to_string(u2(reng)) + "Mbps";
+        //    for (int i = 0;i < p2plink->GetNDevices();i++) {
+        //        auto device = p2plink->GetDevice(i);
+        //        if (device->SetAttributeFailSafe("DataRate", StringValue(randBW)))
+        //            std::cout << "set link-" << p2plink->GetId() << " device-" << device << " BW-" << randBW << std::endl;
+        //    }
+        //}
+
 
         // Install NDN stack on all nodes
         ndn::StackHelper ndnHelper;
@@ -74,12 +92,12 @@ namespace ns3 {
         ndn::AppHelper consumerHelper("ns3::ndn::ConsumerCCs");
         consumerHelper.SetPrefix("/ustc");
         consumerHelper.SetAttribute("RetxTimer", StringValue("10ms"));
-        consumerHelper.SetAttribute("Window", StringValue("4"));
+        consumerHelper.SetAttribute("Window", StringValue("2"));
         consumerHelper.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::RL));
         consumerHelper.SetAttribute("InitialWindowOnTimeout", BooleanValue(true));
-        consumerHelper.SetAttribute("Frequency", DoubleValue(2500));
+        consumerHelper.SetAttribute("Frequency", DoubleValue(0));
         consumerHelper.SetAttribute("Randomize", StringValue("none"));
-        consumerHelper.SetAttribute("WatchDog", DoubleValue(0));
+        consumerHelper.SetAttribute("WatchDog", DoubleValue(0.2));
         consumerHelper.Install(c0);
 
         // Installing Producer

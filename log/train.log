@@ -1,0 +1,2969 @@
+episode  498
+No.0 Window:48 Rtt:0.061164 Inflight:4 Data:12 Timeout:0 Nack:0 CongesLevelSum:2 DataSizeSum:12336
+[0.49344, 0.16666666666666666, 0, 4.0]
+step 0, a=-0.9992916060121816
+No.0        new_cwnd:2.00098
+No.1 Window:16.0079 Rtt:0.0610931 Inflight:2 Data:8 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:8224
+state:[0.49344, 0.16666666666666666, 0, 4.0], type:0.002004008016032064, action:-0.9992916060121816, reward:-0.4632348139975814, next_sate:[0.32896, 0.0, 0, 2.0009822837321427]
+pool num: 149401
+step 1, a=-0.9978144060150803
+No.1        new_cwnd:1.00201
+No.2 Window:4.00803 Rtt:0.0610777 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.32896, 0.0, 0, 2.0009822837321427], type:0.002004008016032064, action:-0.9978144060150803, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.0020079728868068]
+pool num: 149402
+step 2, a=0.9988848893216846
+No.2        new_cwnd:2.00247
+No.3 Window:10.0123 Rtt:0.0611106 Inflight:2 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.16448, 0.0, 0, 1.0020079728868068], type:0.002004008016032064, action:0.9988848893216846, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 2.0024675685350943]
+pool num: 149403
+step 3, a=0.9985050409169762
+No.3        new_cwnd:4.00079
+No.4 Window:56.011 Rtt:0.0611681 Inflight:4 Data:14 Timeout:0 Nack:0 CongesLevelSum:2 DataSizeSum:14392
+state:[0.2056, 0.0, 0, 2.0024675685350943], type:0.002004008016032064, action:0.9985050409169762, reward:-0.22466105102557257, next_sate:[0.57568, 0.14285714285714285, 0, 4.000787265894246]
+pool num: 149404
+step 4, a=0.997052392794445
+No.4        new_cwnd:7.98524
+No.5 Window:143.734 Rtt:0.0614296 Inflight:7 Data:18 Timeout:0 Nack:0 CongesLevelSum:7 DataSizeSum:18504
+state:[0.57568, 0.14285714285714285, 0, 4.000787265894246], type:0.002004008016032064, action:0.997052392794445, reward:-0.12320507366399655, next_sate:[0.74016, 0.3888888888888889, 0, 7.985242999198322]
+pool num: 149405
+step 5, a=0.999984543125626
+No.5        new_cwnd:15.9703
+No.6 Window:590.902 Rtt:0.0615286 Inflight:15 Data:37 Timeout:0 Nack:0 CongesLevelSum:44 DataSizeSum:38036
+state:[0.74016, 0.3888888888888889, 0, 7.985242999198322], type:0.002004008016032064, action:0.999984543125626, reward:0.16471476091530793, next_sate:[1.52144, 1.1891891891891893, 0, 15.970314893300712]
+pool num: 149406
+step 6, a=-0.9988389361022056
+No.6        new_cwnd:7.99159
+No.7 Window:231.756 Rtt:0.0610658 Inflight:7 Data:29 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:29812
+state:[1.52144, 1.1891891891891893, 0, 15.970314893300712], type:0.002004008016032064, action:-0.9988389361022056, reward:0.09607319690943122, next_sate:[1.19248, 0.0, 0, 7.991586393499866]
+pool num: 149407
+step 7, a=-0.9990301121166546
+No.7        new_cwnd:3.99848
+No.8 Window:63.9757 Rtt:0.0610572 Inflight:3 Data:16 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:16448
+state:[1.19248, 0.0, 0, 7.991586393499866], type:0.002004008016032064, action:-0.9990301121166546, reward:-0.16220481833360012, next_sate:[0.65792, 0.0, 0, 3.998480371987492]
+pool num: 149408
+step 8, a=0.9998634991416266
+No.8        new_cwnd:7.9962
+No.9 Window:135.935 Rtt:0.0614209 Inflight:7 Data:17 Timeout:0 Nack:0 CongesLevelSum:7 DataSizeSum:17476
+state:[0.65792, 0.0, 0, 3.998480371987492], type:0.002004008016032064, action:0.9998634991416266, reward:-0.14874352667007448, next_sate:[0.69904, 0.4117647058823529, 0, 7.996204145847156]
+pool num: 149409
+step 9, a=-0.9990856174548443
+No.9        new_cwnd:4.00064
+No.10 Window:60.0096 Rtt:0.0611052 Inflight:4 Data:15 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:15420
+state:[0.69904, 0.4117647058823529, 0, 7.996204145847156], type:0.002004008016032064, action:-0.9990856174548443, reward:-0.1902335419338436, next_sate:[0.6168, 0.0, 0, 4.000636879944338]
+pool num: 149410
+step 10, a=-0.9998605125449773
+No.10       new_cwnd:2.00051
+No.11 Window:16.0041 Rtt:0.0610729 Inflight:2 Data:8 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:8224
+state:[0.6168, 0.0, 0, 4.000636879944338], type:0.002004008016032064, action:-0.9998605125449773, reward:-0.4632348139975814, next_sate:[0.32896, 0.0, 0, 2.000511850782834]
+pool num: 149411
+step 11, a=-0.9986190581025864
+No.11       new_cwnd:1.00121
+No.12 Window:5.00607 Rtt:0.0610647 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.32896, 0.0, 0, 2.000511850782834], type:0.002004008016032064, action:-0.9986190581025864, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.00121382472044]
+pool num: 149412
+step 12, a=0.996866680793203
+No.12       new_cwnd:1.99808
+No.13 Window:5.99425 Rtt:0.0610618 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.2056, 0.0, 0, 1.00121382472044], type:0.002004008016032064, action:0.996866680793203, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.998083393445943]
+pool num: 149413
+step 13, a=0.9987297971740163
+No.13       new_cwnd:3.99265
+No.14 Window:27.9485 Rtt:0.0611678 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.12336, 0.0, 0, 1.998083393445943], type:0.002004008016032064, action:0.9987297971740163, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.9926499601664576]
+pool num: 149414
+step 14, a=0.9980901562326503
+No.14       new_cwnd:7.97474
+No.15 Window:135.571 Rtt:0.0614338 Inflight:7 Data:17 Timeout:0 Nack:0 CongesLevelSum:8 DataSizeSum:17476
+state:[0.28784, 0.14285714285714285, 0, 3.9926499601664576], type:0.002004008016032064, action:0.9980901562326503, reward:-0.15058176196419212, next_sate:[0.69904, 0.47058823529411764, 0, 7.97473595160723]
+pool num: 149415
+step 15, a=0.9999881801395809
+No.15       new_cwnd:15.9493
+No.16 Window:637.974 Rtt:0.0613726 Inflight:14 Data:40 Timeout:0 Nack:0 CongesLevelSum:44 DataSizeSum:41120
+state:[0.69904, 0.47058823529411764, 0, 7.97473595160723], type:0.002004008016032064, action:0.9999881801395809, reward:0.20136019033843752, next_sate:[1.6448, 1.1, 0, 15.949341231274763]
+pool num: 149416
+step 16, a=-0.998263764267706
+No.16       new_cwnd:7.98427
+No.17 Window:263.481 Rtt:0.0610618 Inflight:7 Data:33 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:33924
+state:[1.6448, 1.1, 0, 15.949341231274763], type:0.002004008016032064, action:-0.998263764267706, reward:0.15218913888836258, next_sate:[1.35696, 0.0, 0, 7.984273645087681]
+pool num: 149417
+step 17, a=-0.9983856488447888
+No.17       new_cwnd:3.99661
+No.18 Window:51.9559 Rtt:0.0610586 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[1.35696, 0.0, 0, 7.984273645087681], type:0.002004008016032064, action:-0.9983856488447888, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.9966064558443457]
+pool num: 149418
+step 18, a=0.9986078089262198
+No.18       new_cwnd:7.9855
+No.19 Window:135.754 Rtt:0.0614234 Inflight:7 Data:17 Timeout:0 Nack:0 CongesLevelSum:7 DataSizeSum:17476
+state:[0.53456, 0.0, 0, 3.9966064558443457], type:0.002004008016032064, action:0.9986078089262198, reward:-0.14874352667007448, next_sate:[0.69904, 0.4117647058823529, 0, 7.985503235134284]
+pool num: 149419
+step 19, a=-0.9981767039989141
+No.19       new_cwnd:3.9978
+No.20 Window:51.9714 Rtt:0.0611223 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[0.69904, 0.4117647058823529, 0, 7.985503235134284], type:0.002004008016032064, action:-0.9981767039989141, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.9978008968999172]
+pool num: 149420
+step 20, a=-0.9968910947749233
+No.20       new_cwnd:2.00321
+No.21 Window:18.0289 Rtt:0.0610773 Inflight:2 Data:9 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:9252
+state:[0.53456, 0.0, 0, 3.9978008968999172], type:0.002004008016032064, action:-0.9968910947749233, reward:-0.4120822915502, next_sate:[0.37008, 0.0, 0, 2.0032125812784494]
+pool num: 149421
+step 21, a=-0.997644288127107
+No.21       new_cwnd:1.00324
+No.22 Window:4.01297 Rtt:0.0610693 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.37008, 0.0, 0, 2.0032125812784494], type:0.002004008016032064, action:-0.997644288127107, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.0032431044981096]
+pool num: 149422
+step 22, a=-0.9973455375578306
+No.22       new_cwnd:1
+No.23 Window:3 Rtt:0.0610655 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.0032431044981096], type:0.002004008016032064, action:-0.9973455375578306, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149423
+step 23, a=-0.9999402841102727
+No.23       new_cwnd:1
+No.24 Window:3 Rtt:0.061063 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002004008016032064, action:-0.9999402841102727, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149424
+step 24, a=0.996397661209083
+No.24       new_cwnd:1.99501
+No.25 Window:7.98005 Rtt:0.0610609 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.12336, 0.0, 0, 1.0], type:0.002004008016032064, action:0.996397661209083, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.9950123276254241]
+pool num: 149425
+step 25, a=0.9964601504946646
+No.25       new_cwnd:3.98025
+No.26 Window:27.8617 Rtt:0.0611689 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.16448, 0.0, 0, 1.9950123276254241], type:0.002004008016032064, action:0.9964601504946646, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.9802465851274214]
+pool num: 149426
+step 26, a=0.9975236105175025
+No.26       new_cwnd:7.94684
+No.27 Window:135.096 Rtt:0.0614361 Inflight:7 Data:17 Timeout:0 Nack:0 CongesLevelSum:8 DataSizeSum:17476
+state:[0.28784, 0.14285714285714285, 0, 3.9802465851274214], type:0.002004008016032064, action:0.9975236105175025, reward:-0.15058176196419212, next_sate:[0.69904, 0.47058823529411764, 0, 7.946840685333941]
+pool num: 149427
+step 27, a=-0.9986965560520453
+No.27       new_cwnd:3.97701
+No.28 Window:51.7012 Rtt:0.0611246 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[0.69904, 0.47058823529411764, 0, 7.946840685333941], type:0.002004008016032064, action:-0.9986965560520453, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.9770118646954273]
+pool num: 149428
+step 28, a=0.9997909013266715
+No.28       new_cwnd:7.95287
+No.29 Window:159.057 Rtt:0.0613072 Inflight:6 Data:20 Timeout:0 Nack:0 CongesLevelSum:7 DataSizeSum:20560
+state:[0.53456, 0.0, 0, 3.9770118646954273], type:0.002004008016032064, action:0.9997909013266715, reward:-0.07623230532554368, next_sate:[0.8224, 0.35, 0, 7.952870987306786]
+pool num: 149429
+step 29, a=0.9994734395438036
+No.29       new_cwnd:15.8999
+No.30 Window:779.097 Rtt:0.0611089 Inflight:15 Data:49 Timeout:0 Nack:0 CongesLevelSum:32 DataSizeSum:50372
+state:[0.8224, 0.35, 0, 7.952870987306786], type:0.002004008016032064, action:0.9994734395438036, reward:0.30346311577368257, next_sate:[2.01488, 0.6530612244897959, 0, 15.899937694244038]
+pool num: 149430
+step 30, a=0.9979876034157242
+No.30       new_cwnd:31.7555
+No.31 Window:2445.18 Rtt:0.0612166 Inflight:31 Data:77 Timeout:0 Nack:0 CongesLevelSum:225 DataSizeSum:79156
+state:[2.01488, 0.6530612244897959, 0, 15.899937694244038], type:0.002004008016032064, action:0.9979876034157242, reward:0.428850989118022, next_sate:[3.16624, 2.9220779220779223, 0, 31.755549077402023]
+pool num: 149431
+step 31, a=0.9998849692125438
+No.31       new_cwnd:63.506
+No.32 Window:9589.41 Rtt:0.0610696 Inflight:63 Data:151 Timeout:0 Nack:0 CongesLevelSum:932 DataSizeSum:155228
+state:[3.16624, 2.9220779220779223, 0, 31.755549077402023], type:0.002004008016032064, action:0.9998849692125438, reward:0.6197713516016579, next_sate:[6.20912, 6.172185430463577, 0, 63.50603440939797]
+pool num: 149432
+step 32, a=-0.9992291214181813
+No.32       new_cwnd:31.77
+No.33 Window:3971.25 Rtt:0.0610579 Inflight:31 Data:125 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:128500
+state:[6.20912, 6.172185430463577, 0, 63.50603440939797], type:0.002004008016032064, action:-0.9992291214181813, reward:0.7305852120185314, next_sate:[5.14, 0.0, 0, 31.76998840163297]
+pool num: 149433
+step 33, a=0.9980214251949451
+No.33       new_cwnd:63.4529
+No.34 Window:9962.1 Rtt:0.0610632 Inflight:63 Data:157 Timeout:0 Nack:0 CongesLevelSum:931 DataSizeSum:161396
+state:[5.14, 0.0, 0, 31.76998840163297], type:0.002004008016032064, action:0.9980214251949451, reward:0.6442643418655687, next_sate:[6.45584, 5.929936305732484, 0, 63.452895039571864]
+pool num: 149434
+step 34, a=-0.9985720423134969
+No.34       new_cwnd:31.7579
+No.35 Window:3969.73 Rtt:0.0610579 Inflight:31 Data:125 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:128500
+state:[6.45584, 5.929936305732484, 0, 63.452895039571864], type:0.002004008016032064, action:-0.9985720423134969, reward:0.7305852120185314, next_sate:[5.14, 0.0, 0, 31.757865422623485]
+pool num: 149435
+step 35, a=0.9982220516750824
+No.35       new_cwnd:63.4375
+No.36 Window:9959.69 Rtt:0.0610632 Inflight:63 Data:157 Timeout:0 Nack:0 CongesLevelSum:931 DataSizeSum:161396
+state:[5.14, 0.0, 0, 31.757865422623485], type:0.002004008016032064, action:0.9982220516750824, reward:0.6442643418655687, next_sate:[6.45584, 5.929936305732484, 0, 63.437503549986445]
+pool num: 149436
+step 36, a=0.9956557640263517
+No.36       new_cwnd:126.494
+No.37 Window:28461 Rtt:0.0811489 Inflight:125 Data:225 Timeout:0 Nack:0 CongesLevelSum:3465 DataSizeSum:231300
+state:[6.45584, 5.929936305732484, 0, 63.437503549986445], type:0.002004008016032064, action:0.9956557640263517, reward:0.5046077171218377, next_sate:[9.252, 15.4, 0, 126.49353635315127]
+pool num: 149437
+step 37, a=0.9994150976184673
+No.37       new_cwnd:252.885
+No.38 Window:58922.1 Rtt:0.0884736 Inflight:251 Data:233 Timeout:31 Nack:0 CongesLevelSum:6399 DataSizeSum:239524
+state:[9.252, 15.4, 0, 126.49353635315127], type:0.002004008016032064, action:0.9994150976184673, reward:-11.586761517607709, next_sate:[9.58096, 27.463519313304722, 31, 252.88452660655466]
+pool num: 149438
+step 38, a=-0.9967686707736416
+No.38       new_cwnd:126.726
+No.39 Window:24458.1 Rtt:0.0880152 Inflight:126 Data:193 Timeout:93 Nack:0 CongesLevelSum:4065 DataSizeSum:198404
+state:[9.58096, 27.463519313304722, 31, 252.88452660655466], type:0.002004008016032064, action:-0.9967686707736416, reward:-11971063.888886146, next_sate:[7.93616, 21.06217616580311, 93, 126.72578440321641]
+pool num: 149439
+step 39, a=0.9989878260838985
+No.39       new_cwnd:253.274
+No.40 Window:58759.5 Rtt:0.0884735 Inflight:252 Data:232 Timeout:56 Nack:0 CongesLevelSum:3978 DataSizeSum:238496
+state:[7.93616, 21.06217616580311, 93, 126.72578440321641], type:0.002004008016032064, action:0.9989878260838985, reward:-3107.390980618171, next_sate:[9.53984, 17.146551724137932, 56, 253.27381322443387]
+pool num: 149440
+step 40, a=-0.998774264225329
+No.40       new_cwnd:126.745
+No.41 Window:20152.4 Rtt:0.0880158 Inflight:125 Data:159 Timeout:71 Nack:0 CongesLevelSum:3524 DataSizeSum:163452
+state:[9.53984, 17.146551724137932, 56, 253.27381322443387], type:0.002004008016032064, action:-0.998774264225329, reward:-88330.70866108652, next_sate:[6.53808, 22.163522012578618, 71, 126.74454498428204]
+pool num: 149441
+step 41, a=-0.9978075019056298
+No.41       new_cwnd:63.4687
+No.42 Window:10980.1 Rtt:0.0610586 Inflight:63 Data:173 Timeout:79 Nack:0 CongesLevelSum:808 DataSizeSum:177844
+state:[6.53808, 22.163522012578618, 71, 126.74454498428204], type:0.002004008016032064, action:-0.9978075019056298, reward:-526492.2323037756, next_sate:[7.11376, 4.670520231213873, 79, 63.46865406564093]
+pool num: 149442
+step 42, a=-0.9974902414627868
+No.42       new_cwnd:31.7896
+No.43 Window:3973.7 Rtt:0.0610579 Inflight:31 Data:125 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:128500
+state:[7.11376, 4.670520231213873, 79, 63.46865406564093], type:0.002004008016032064, action:-0.9974902414627868, reward:0.7305852120185314, next_sate:[5.14, 0.0, 0, 31.789581132304104]
+pool num: 149443
+step 43, a=0.9987691071918827
+No.43       new_cwnd:63.5249
+No.44 Window:9973.42 Rtt:0.0610632 Inflight:63 Data:157 Timeout:0 Nack:0 CongesLevelSum:931 DataSizeSum:161396
+state:[5.14, 0.0, 0, 31.789581132304104], type:0.002004008016032064, action:0.9987691071918827, reward:0.6442643418655687, next_sate:[6.45584, 5.929936305732484, 0, 63.52494030092022]
+pool num: 149444
+step 44, a=0.9997842599633742
+No.44       new_cwnd:127.031
+No.45 Window:28454.9 Rtt:0.0811491 Inflight:127 Data:224 Timeout:0 Nack:0 CongesLevelSum:3442 DataSizeSum:230272
+state:[6.45584, 5.929936305732484, 0, 63.52494030092022], type:0.002004008016032064, action:0.9997842599633742, reward:0.5037334852017807, next_sate:[9.21088, 15.366071428571429, 0, 127.03088303423309]
+pool num: 149445
+step 45, a=0.9990684447626943
+No.45       new_cwnd:253.898
+No.46 Window:59158.2 Rtt:0.0884736 Inflight:253 Data:233 Timeout:32 Nack:0 CongesLevelSum:6391 DataSizeSum:239524
+state:[9.21088, 15.366071428571429, 0, 127.03088303423309], type:0.002004008016032064, action:0.9990684447626943, reward:-14.520984947754364, next_sate:[9.58096, 27.429184549356222, 32, 253.89777009689877]
+pool num: 149446
+step 46, a=0.9989259553552012
+No.46       new_cwnd:300
+No.47 Window:69900 Rtt:0.0884736 Inflight:300 Data:233 Timeout:150 Nack:0 CongesLevelSum:7223 DataSizeSum:239524
+state:[9.58096, 27.429184549356222, 32, 253.89777009689877], type:0.002004008016032064, action:0.9989259553552012, reward:-3999479729156.1763, next_sate:[9.58096, 31.0, 150, 300.0]
+pool num: 149447
+step 47, a=0.9988482858226835
+No.47       new_cwnd:300
+No.48 Window:69900 Rtt:0.0884734 Inflight:300 Data:233 Timeout:197 Nack:0 CongesLevelSum:7223 DataSizeSum:239524
+state:[9.58096, 31.0, 150, 300.0], type:0.002004008016032064, action:0.9988482858226835, reward:-1.4347429894566006e+17, next_sate:[9.58096, 31.0, 197, 300.0]
+pool num: 149448
+step 48, a=0.9989969797182301
+No.48       new_cwnd:300
+No.49 Window:69900 Rtt:0.0884731 Inflight:300 Data:233 Timeout:193 Nack:0 CongesLevelSum:7223 DataSizeSum:239524
+state:[9.58096, 31.0, 197, 300.0], type:0.002004008016032064, action:0.9989969797182301, reward:-5.876707284814237e+16, next_sate:[9.58096, 31.0, 193, 300.0]
+pool num: 149449
+step 49, a=-0.9991819045345414
+No.49       new_cwnd:150.085
+No.50 Window:20111.4 Rtt:0.0884736 Inflight:150 Data:134 Timeout:78 Nack:0 CongesLevelSum:3391 DataSizeSum:137752
+state:[9.58096, 31.0, 193, 300.0], type:0.002004008016032064, action:-0.9991819045345414, reward:-421194.3941630448, next_sate:[5.51008, 25.30597014925373, 78, 150.08508320618205]
+pool num: 149450
+step 50, a=0.9993625559727879
+No.50       new_cwnd:300
+No.51 Window:56700 Rtt:0.0884633 Inflight:300 Data:189 Timeout:119 Nack:0 CongesLevelSum:3878 DataSizeSum:194292
+state:[5.51008, 25.30597014925373, 78, 150.08508320618205], type:0.002004008016032064, action:0.9993625559727879, reward:-3960892874.1456256, next_sate:[7.77168, 20.51851851851852, 119, 300.0]
+pool num: 149451
+step 51, a=0.9970973759520703
+No.51       new_cwnd:300
+No.52 Window:69900 Rtt:0.0884699 Inflight:283 Data:233 Timeout:190 Nack:0 CongesLevelSum:7223 DataSizeSum:239524
+state:[7.77168, 20.51851851851852, 119, 300.0], type:0.002004008016032064, action:0.9970973759520703, reward:-3.0088741298248896e+16, next_sate:[9.58096, 31.0, 190, 300.0]
+pool num: 149452
+step 52, a=0.9993866429942369
+No.52       new_cwnd:300
+No.53 Window:69900 Rtt:0.0884699 Inflight:299 Data:233 Timeout:169 Nack:0 CongesLevelSum:7223 DataSizeSum:239524
+state:[9.58096, 31.0, 190, 300.0], type:0.002004008016032064, action:0.9993866429942369, reward:-277519655114426.25, next_sate:[9.58096, 31.0, 169, 300.0]
+pool num: 149453
+step 53, a=0.9991734121036284
+No.53       new_cwnd:300
+No.54 Window:69900 Rtt:0.0884642 Inflight:299 Data:233 Timeout:185 Nack:0 CongesLevelSum:7222 DataSizeSum:239524
+state:[9.58096, 31.0, 169, 300.0], type:0.002004008016032064, action:0.9991734121036284, reward:-9859478748610196.0, next_sate:[9.58096, 30.99570815450644, 185, 300.0]
+pool num: 149454
+step 54, a=-0.9997884297269329
+No.54       new_cwnd:150.022
+No.55 Window:20403 Rtt:0.0884736 Inflight:150 Data:136 Timeout:78 Nack:0 CongesLevelSum:3451 DataSizeSum:139808
+state:[9.58096, 30.99570815450644, 185, 300.0], type:0.002004008016032064, action:-0.9997884297269329, reward:-421194.3898861176, next_sate:[5.59232, 25.375, 78, 150.0219990137706]
+pool num: 149455
+step 55, a=-0.9992070518468471
+No.55       new_cwnd:75.0522
+No.56 Window:2401.67 Rtt:0.0884736 Inflight:118 Data:32 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:32896
+state:[5.59232, 25.375, 78, 150.0219990137706], type:0.002004008016032064, action:-0.9992070518468471, reward:0.13882517733038108, next_sate:[1.31584, 0.0, 0, 75.05223911801458]
+pool num: 149456
+step 56, a=-0.9988376340973028
+No.56       new_cwnd:37.5564
+No.57 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[1.31584, 0.0, 0, 75.05223911801458], type:0.002004008016032064, action:-0.9988376340973028, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149457
+step 57, a=0.9974349387865518
+No.57       new_cwnd:74.9793
+No.58 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9974349387865518, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149458
+step 58, a=-0.9980669097677592
+No.58       new_cwnd:37.5399
+No.59 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9980669097677592, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149459
+step 59, a=-0.9975980609007221
+No.59       new_cwnd:18.8012
+No.60 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9975980609007221, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149460
+step 60, a=-0.9980830685744838
+No.60       new_cwnd:9.41312
+No.61 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9980830685744838, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149461
+step 61, a=0.9980413183621757
+No.61       new_cwnd:18.8007
+No.62 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9980413183621757, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149462
+step 62, a=0.9961840816736689
+No.62       new_cwnd:37.5021
+No.63 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9961840816736689, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149463
+step 63, a=0.9988286036861915
+No.63       new_cwnd:74.9432
+No.64 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9988286036861915, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149464
+step 64, a=0.9995370073638838
+No.64       new_cwnd:149.838
+No.65 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9995370073638838, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149465
+step 65, a=-0.9995033722863439
+No.65       new_cwnd:74.945
+No.66 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9995033722863439, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149466
+step 66, a=0.9980709488753112
+No.66       new_cwnd:149.69
+No.67 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9980709488753112, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149467
+step 67, a=-0.9968540817785203
+No.67       new_cwnd:75.0082
+No.68 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9968540817785203, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149468
+step 68, a=0.9993432786653982
+No.68       new_cwnd:149.948
+No.69 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9993432786653982, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149469
+step 69, a=0.9980703789758905
+No.69       new_cwnd:299.496
+No.70 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9980703789758905, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149470
+step 70, a=0.9978621070793752
+No.70       new_cwnd:300
+No.71 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9978621070793752, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149471
+step 71, a=0.9986275566394207
+No.71       new_cwnd:300
+No.72 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9986275566394207, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149472
+step 72, a=0.999719304477958
+No.72       new_cwnd:300
+No.73 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.999719304477958, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149473
+step 73, a=0.999695221849068
+No.73       new_cwnd:300
+No.74 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.999695221849068, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149474
+step 74, a=0.9996981054658658
+No.74       new_cwnd:300
+No.75 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9996981054658658, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149475
+step 75, a=-0.9997943297222907
+No.75       new_cwnd:150.021
+No.76 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9997943297222907, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149476
+step 76, a=0.9977740620576163
+No.76       new_cwnd:299.58
+No.77 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9977740620576163, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149477
+step 77, a=-0.9977994844074349
+No.77       new_cwnd:150.019
+No.78 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9977994844074349, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149478
+step 78, a=-0.9992277320807686
+No.78       new_cwnd:75.0495
+No.79 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9992277320807686, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149479
+step 79, a=0.9989208865105081
+No.79       new_cwnd:149.987
+No.80 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9989208865105081, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149480
+step 80, a=0.9973256829533503
+No.80       new_cwnd:299.418
+No.81 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9973256829533503, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149481
+step 81, a=-0.9982746145197505
+No.81       new_cwnd:149.888
+No.82 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9982746145197505, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149482
+step 82, a=-0.9994747788773972
+No.82       new_cwnd:74.9714
+No.83 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9994747788773972, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149483
+step 83, a=0.998698417591354
+No.83       new_cwnd:149.808
+No.84 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.998698417591354, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149484
+step 84, a=-0.9998033974957822
+No.84       new_cwnd:74.914
+No.85 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9998033974957822, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149485
+step 85, a=0.9994995696281452
+No.85       new_cwnd:149.776
+No.86 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9994995696281452, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149486
+step 86, a=0.9989423673570466
+No.86       new_cwnd:299.333
+No.87 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9989423673570466, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149487
+step 87, a=0.9982093076932474
+No.87       new_cwnd:300
+No.88 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9982093076932474, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149488
+step 88, a=0.9980842555874807
+No.88       new_cwnd:300
+No.89 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9980842555874807, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149489
+step 89, a=-0.9988736137165213
+No.89       new_cwnd:150.117
+No.90 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9988736137165213, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149490
+step 90, a=0.9997960883528556
+No.90       new_cwnd:300
+No.91 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9997960883528556, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149491
+step 91, a=-0.998944435492491
+No.91       new_cwnd:150.11
+No.92 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.998944435492491, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149492
+step 92, a=-0.9991530413139512
+No.92       new_cwnd:75.099
+No.93 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9991530413139512, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149493
+step 93, a=-0.9977588957450133
+No.93       new_cwnd:37.6079
+No.94 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9977588957450133, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149494
+step 94, a=0.9987779888821655
+No.94       new_cwnd:75.152
+No.95 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9987779888821655, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149495
+step 95, a=0.9986149280840599
+No.95       new_cwnd:150.16
+No.96 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9986149280840599, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149496
+step 96, a=0.9987599354389123
+No.96       new_cwnd:300
+No.97 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9987599354389123, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149497
+step 97, a=0.9994815194952982
+No.97       new_cwnd:300
+No.98 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9994815194952982, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149498
+step 98, a=-0.9987902266647615
+No.98       new_cwnd:150.126
+No.99 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9987902266647615, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149499
+step 99, a=0.9990603711082771
+No.99       new_cwnd:300
+No.100 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9990603711082771, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149500
+step 100, a=0.9980695169091276
+No.100      new_cwnd:300
+No.101 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9980695169091276, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149501
+step 101, a=0.998089736731198
+No.101      new_cwnd:300
+No.102 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.998089736731198, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149502
+step 102, a=-0.9970947538216323
+No.102      new_cwnd:150.302
+No.103 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9970947538216323, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149503
+step 103, a=0.9997175782439776
+No.103      new_cwnd:300
+No.104 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9997175782439776, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149504
+step 104, a=0.9983288752856367
+No.104      new_cwnd:300
+No.105 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9983288752856367, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149505
+step 105, a=0.9998633022057397
+No.105      new_cwnd:300
+No.106 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9998633022057397, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149506
+step 106, a=-0.9965151056254452
+No.106      new_cwnd:150.363
+No.107 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9965151056254452, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149507
+step 107, a=0.9992748825166511
+No.107      new_cwnd:300
+No.108 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9992748825166511, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149508
+step 108, a=0.9994932624144977
+No.108      new_cwnd:300
+No.109 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9994932624144977, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149509
+step 109, a=0.9989782767676068
+No.109      new_cwnd:300
+No.110 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9989782767676068, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149510
+step 110, a=-0.9987704364325639
+No.110      new_cwnd:150.128
+No.111 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9987704364325639, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149511
+step 111, a=0.9959221857627307
+No.111      new_cwnd:299.408
+No.112 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9959221857627307, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149512
+step 112, a=-0.999531363672045
+No.112      new_cwnd:149.753
+No.113 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.999531363672045, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149513
+step 113, a=0.997587408985297
+No.113      new_cwnd:299.005
+No.114 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.997587408985297, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149514
+step 114, a=0.9992251040969506
+No.114      new_cwnd:300
+No.115 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9992251040969506, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149515
+step 115, a=0.9978774816646354
+No.115      new_cwnd:300
+No.116 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9978774816646354, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149516
+step 116, a=-0.9998187780885273
+No.116      new_cwnd:150.019
+No.117 Window:0 Rtt:0.0884736 Inflight:118 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9998187780885273, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149517
+step 117, a=-0.9982608248943118
+No.117      new_cwnd:75.0999
+No.118 Window:0 Rtt:0.0884736 Inflight:75 Data:0 Timeout:107 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9982608248943118, reward:0, next_sate:[0, 0, 107, 0]
+pool num: 149518
+step 118, a=0.9989435354270162
+No.118      new_cwnd:150.09
+No.119 Window:33920.3 Rtt:0.0880157 Inflight:149 Data:226 Timeout:11 Nack:0 CongesLevelSum:4143 DataSizeSum:232328
+state:[0, 0, 107, 0], type:0.002004008016032064, action:0.9989435354270162, reward:0.2911743166262478, next_sate:[9.29312, 18.331858407079647, 11, 150.08985175106412]
+pool num: 149519
+step 119, a=0.9995110623052428
+No.119      new_cwnd:300
+No.120 Window:69900 Rtt:0.0884736 Inflight:299 Data:233 Timeout:47 Nack:0 CongesLevelSum:7223 DataSizeSum:239524
+state:[9.29312, 18.331858407079647, 11, 150.08985175106412], type:0.002004008016032064, action:0.9995110623052428, reward:-417.0867966324672, next_sate:[9.58096, 31.0, 47, 300.0]
+pool num: 149520
+step 120, a=-0.9996192203795914
+No.120      new_cwnd:150.04
+No.121 Window:24906.6 Rtt:0.0880208 Inflight:149 Data:166 Timeout:101 Nack:0 CongesLevelSum:3820 DataSizeSum:170648
+state:[9.58096, 31.0, 47, 300.0], type:0.002004008016032064, action:-0.9996192203795914, reward:-71353102.54699622, next_sate:[6.82592, 23.012048192771083, 101, 150.0395956731836]
+pool num: 149521
+step 121, a=0.9974708546093312
+No.121      new_cwnd:299.554
+No.122 Window:64404 Rtt:0.0884697 Inflight:299 Data:215 Timeout:96 Nack:0 CongesLevelSum:3999 DataSizeSum:221020
+state:[6.82592, 23.012048192771083, 101, 150.0395956731836], type:0.002004008016032064, action:0.9974708546093312, reward:-23380984.294042725, next_sate:[8.8408, 18.6, 96, 299.5535923598786]
+pool num: 149522
+step 122, a=0.9995864577109055
+No.122      new_cwnd:300
+No.123 Window:69900 Rtt:0.0884706 Inflight:286 Data:233 Timeout:191 Nack:0 CongesLevelSum:7223 DataSizeSum:239524
+state:[8.8408, 18.6, 96, 299.5535923598786], type:0.002004008016032064, action:0.9995864577109055, reward:-3.761092662281112e+16, next_sate:[9.58096, 31.0, 191, 300.0]
+pool num: 149523
+step 123, a=-0.9960489132006503
+No.123      new_cwnd:150.411
+No.124 Window:20004.7 Rtt:0.0884736 Inflight:150 Data:133 Timeout:62 Nack:0 CongesLevelSum:3389 DataSizeSum:136724
+state:[9.58096, 31.0, 191, 300.0], type:0.002004008016032064, action:-0.9960489132006503, reward:-11855.594843600164, next_sate:[5.46896, 25.481203007518797, 62, 150.41136574468084]
+pool num: 149524
+step 124, a=0.9972434790612261
+No.124      new_cwnd:300
+No.125 Window:56100 Rtt:0.0883927 Inflight:300 Data:187 Timeout:121 Nack:0 CongesLevelSum:3880 DataSizeSum:192236
+state:[5.46896, 25.481203007518797, 62, 150.41136574468084], type:0.002004008016032064, action:0.9972434790612261, reward:-6188895116.022168, next_sate:[7.68944, 20.74866310160428, 121, 300.0]
+pool num: 149525
+step 125, a=-0.999765774789441
+No.125      new_cwnd:150.024
+No.126 Window:19503.2 Rtt:0.0882503 Inflight:150 Data:130 Timeout:74 Nack:0 CongesLevelSum:3299 DataSizeSum:133640
+state:[7.68944, 20.74866310160428, 121, 300.0], type:0.002004008016032064, action:-0.999765774789441, reward:-172521.2500934307, next_sate:[5.3456, 25.376923076923077, 74, 150.02435485862992]
+pool num: 149526
+step 126, a=0.9997042777029919
+No.126      new_cwnd:299.987
+No.127 Window:55497.6 Rtt:0.0883621 Inflight:299 Data:185 Timeout:123 Nack:0 CongesLevelSum:3882 DataSizeSum:190180
+state:[5.3456, 25.376923076923077, 74, 150.02435485862992], type:0.002004008016032064, action:0.9997042777029919, reward:-9670148618.947826, next_sate:[7.6072, 20.983783783783785, 123, 299.98721231292427]
+pool num: 149527
+step 127, a=-0.996645271005022
+No.127      new_cwnd:150.343
+No.128 Window:19544.6 Rtt:0.0882839 Inflight:150 Data:130 Timeout:73 Nack:0 CongesLevelSum:3322 DataSizeSum:133640
+state:[7.6072, 20.983783783783785, 123, 299.98721231292427], type:0.002004008016032064, action:-0.996645271005022, reward:-138017.0123600683, next_sate:[5.3456, 25.553846153846155, 73, 150.3427952614126]
+pool num: 149528
+step 128, a=-0.9991529486564337
+No.128      new_cwnd:75.2155
+No.129 Window:2030.82 Rtt:0.0882839 Inflight:123 Data:27 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:27756
+state:[5.3456, 25.553846153846155, 73, 150.3427952614126], type:0.002004008016032064, action:-0.9991529486564337, reward:0.0650389631694624, next_sate:[1.11024, 0.0, 0, 75.21554606660037]
+pool num: 149529
+step 129, a=0.9987395764937455
+No.129      new_cwnd:150.3
+No.130 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[1.11024, 0.0, 0, 75.21554606660037], type:0.002004008016032064, action:0.9987395764937455, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149530
+step 130, a=-0.9991266827946625
+No.130      new_cwnd:75.1954
+No.131 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9991266827946625, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149531
+step 131, a=0.9992232270309747
+No.131      new_cwnd:150.31
+No.132 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9992232270309747, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149532
+step 132, a=0.9985707054532549
+No.132      new_cwnd:300
+No.133 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9985707054532549, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149533
+step 133, a=0.9955802903283131
+No.133      new_cwnd:300
+No.134 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9955802903283131, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149534
+step 134, a=-0.9971662400767444
+No.134      new_cwnd:150.295
+No.135 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9971662400767444, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149535
+step 135, a=0.9996613027435117
+No.135      new_cwnd:300
+No.136 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9996613027435117, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149536
+step 136, a=0.9965898191486962
+No.136      new_cwnd:300
+No.137 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9965898191486962, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149537
+step 137, a=0.9980654729362701
+No.137      new_cwnd:300
+No.138 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9980654729362701, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149538
+step 138, a=-0.9986882974440291
+No.138      new_cwnd:150.136
+No.139 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9986882974440291, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149539
+step 139, a=0.9991314810320928
+No.139      new_cwnd:300
+No.140 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9991314810320928, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149540
+step 140, a=0.9984994275793835
+No.140      new_cwnd:300
+No.141 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9984994275793835, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149541
+step 141, a=-0.9998255428140337
+No.141      new_cwnd:150.018
+No.142 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9998255428140337, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149542
+step 142, a=-0.9994941317479161
+No.142      new_cwnd:75.0354
+No.143 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9994941317479161, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149543
+step 143, a=-0.9982986107312783
+No.143      new_cwnd:37.562
+No.144 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9982986107312783, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149544
+step 144, a=-0.9968099847723175
+No.144      new_cwnd:18.8226
+No.145 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9968099847723175, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149545
+step 145, a=0.9996130019469045
+No.145      new_cwnd:37.635
+No.146 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9996130019469045, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149546
+step 146, a=-0.9988643119869023
+No.146      new_cwnd:18.8323
+No.147 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9988643119869023, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149547
+step 147, a=-0.9983265414201403
+No.147      new_cwnd:9.42709
+No.148 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9983265414201403, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149548
+step 148, a=-0.997625058645039
+No.148      new_cwnd:4.72131
+No.149 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.997625058645039, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149549
+step 149, a=0.9990106901268141
+No.149      new_cwnd:9.43615
+No.150 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9990106901268141, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149550
+step 150, a=-0.9999295377721376
+No.150      new_cwnd:4.7183
+No.151 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9999295377721376, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149551
+step 151, a=-0.9981082613686931
+No.151      new_cwnd:2.36225
+No.152 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9981082613686931, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149552
+step 152, a=0.999654429438124
+No.152      new_cwnd:4.72336
+No.153 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.999654429438124, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149553
+step 153, a=0.9989845081935191
+No.153      new_cwnd:9.44008
+No.154 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9989845081935191, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149554
+step 154, a=0.9979257744352303
+No.154      new_cwnd:18.853
+No.155 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9979257744352303, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149555
+step 155, a=-0.9980993972803547
+No.155      new_cwnd:9.43895
+No.156 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9980993972803547, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149556
+step 156, a=-0.9979320769992963
+No.156      new_cwnd:4.72624
+No.157 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9979320769992963, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149557
+step 157, a=0.9997898134535415
+No.157      new_cwnd:9.45111
+No.158 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9997898134535415, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149558
+step 158, a=0.996411329355956
+No.158      new_cwnd:18.8553
+No.159 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.996411329355956, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149559
+step 159, a=-0.9996593689027211
+No.159      new_cwnd:9.42985
+No.160 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9996593689027211, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149560
+step 160, a=-0.9942124198828327
+No.160      new_cwnd:4.73388
+No.161 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9942124198828327, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149561
+step 161, a=0.9991890637902792
+No.161      new_cwnd:9.46244
+No.162 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9991890637902792, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149562
+step 162, a=-0.9979900667061838
+No.162      new_cwnd:4.73782
+No.163 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9979900667061838, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149563
+step 163, a=0.9990888153162583
+No.163      new_cwnd:9.46965
+No.164 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9990888153162583, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149564
+step 164, a=0.9999075797692112
+No.164      new_cwnd:18.9381
+No.165 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9999075797692112, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149565
+step 165, a=-0.9990689763393505
+No.165      new_cwnd:9.47515
+No.166 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9990689763393505, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149566
+step 166, a=-0.997753845593817
+No.166      new_cwnd:4.74496
+No.167 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.997753845593817, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149567
+step 167, a=-0.9954901765431843
+No.167      new_cwnd:2.37991
+No.168 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9954901765431843, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149568
+step 168, a=0.9995736825980956
+No.168      new_cwnd:4.75841
+No.169 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9995736825980956, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149569
+step 169, a=0.9971736860238201
+No.169      new_cwnd:9.49819
+No.170 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9971736860238201, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149570
+step 170, a=-0.9982482610704205
+No.170      new_cwnd:4.75487
+No.171 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9982482610704205, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149571
+step 171, a=-0.9989258796567977
+No.171      new_cwnd:2.3792
+No.172 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9989258796567977, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149572
+step 172, a=0.9985169701917789
+No.172      new_cwnd:4.75352
+No.173 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9985169701917789, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149573
+step 173, a=0.9996876957620391
+No.173      new_cwnd:9.50498
+No.174 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9996876957620391, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149574
+step 174, a=0.9968937140315064
+No.174      new_cwnd:18.9691
+No.175 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9968937140315064, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149575
+step 175, a=0.9972766523824812
+No.175      new_cwnd:37.8666
+No.176 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9972766523824812, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149576
+step 176, a=-0.9987470126736705
+No.176      new_cwnd:18.9497
+No.177 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9987470126736705, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149577
+step 177, a=-0.9994944099158312
+No.177      new_cwnd:9.47819
+No.178 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9994944099158312, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149578
+step 178, a=-0.996040138687022
+No.178      new_cwnd:4.75212
+No.179 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.996040138687022, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149579
+step 179, a=0.9976199637538403
+No.179      new_cwnd:9.48858
+No.180 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9976199637538403, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149580
+step 180, a=0.9995902000650894
+No.180      new_cwnd:18.9718
+No.181 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9995902000650894, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149581
+step 181, a=0.9977533398418683
+No.181      new_cwnd:37.8845
+No.182 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9977533398418683, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149582
+step 182, a=-0.9983725762852448
+No.182      new_cwnd:18.9636
+No.183 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9983725762852448, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149583
+step 183, a=-0.9998321312443721
+No.183      new_cwnd:9.48292
+No.184 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9998321312443721, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149584
+step 184, a=0.9988750709883651
+No.184      new_cwnd:18.9511
+No.185 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9988750709883651, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149585
+step 185, a=0.9990802616715007
+No.185      new_cwnd:37.8779
+No.186 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9990802616715007, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149586
+step 186, a=0.9993103901039051
+No.186      new_cwnd:75.7197
+No.187 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9993103901039051, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149587
+step 187, a=-0.999362897428847
+No.187      new_cwnd:37.8766
+No.188 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.999362897428847, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149588
+step 188, a=0.9999269603763798
+No.188      new_cwnd:75.7493
+No.189 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9999269603763798, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149589
+step 189, a=0.9976671115893172
+No.189      new_cwnd:151.254
+No.190 Window:0 Rtt:0.0882839 Inflight:123 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9976671115893172, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149590
+step 190, a=-0.998282344826044
+No.190      new_cwnd:75.717
+No.191 Window:0 Rtt:0.0882839 Inflight:75 Data:0 Timeout:115 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.998282344826044, reward:0, next_sate:[0, 0, 115, 0]
+pool num: 149591
+step 191, a=-0.9960399102741314
+No.191      new_cwnd:37.9626
+No.192 Window:5352.72 Rtt:0.0882839 Inflight:37 Data:141 Timeout:8 Nack:0 CongesLevelSum:169 DataSizeSum:144948
+state:[0, 0, 115, 0], type:0.002004008016032064, action:-0.9960399102741314, reward:0.6877588184007217, next_sate:[5.79792, 1.198581560283688, 8, 37.96256383297959]
+pool num: 149592
+step 192, a=-0.9991882918934978
+No.192      new_cwnd:18.992
+No.193 Window:1386.41 Rtt:0.0610597 Inflight:18 Data:73 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:75044
+state:[5.79792, 1.198581560283688, 8, 37.96256383297959], type:0.002004008016032064, action:-0.9991882918934978, reward:0.496998059130931, next_sate:[3.00176, 0.0, 0, 18.991964420482404]
+pool num: 149593
+step 193, a=-0.998593087167598
+No.193      new_cwnd:9.50525
+No.194 Window:342.189 Rtt:0.0610579 Inflight:9 Data:36 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:37008
+state:[3.00176, 0.0, 0, 18.991964420482404], type:0.002004008016032064, action:-0.998593087167598, reward:0.18997769977776244, next_sate:[1.48032, 0.0, 0, 9.505247186758668]
+pool num: 149594
+step 194, a=-0.9975334996590319
+No.194      new_cwnd:4.76076
+No.195 Window:99.9759 Rtt:0.0610579 Inflight:4 Data:21 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:21588
+state:[1.48032, 0.0, 0, 9.505247186758668], type:0.002004008016032064, action:-0.9975334996590319, reward:-0.044105506255605616, next_sate:[0.86352, 0.0, 0, 4.760755855317412]
+pool num: 149595
+step 195, a=0.9974850635279249
+No.195      new_cwnd:9.50493
+No.196 Window:209.108 Rtt:0.0615008 Inflight:9 Data:22 Timeout:0 Nack:0 CongesLevelSum:13 DataSizeSum:22616
+state:[0.86352, 0.0, 0, 4.760755855317412], type:0.002004008016032064, action:0.9974850635279249, reward:-0.04236802925822772, next_sate:[0.90464, 0.5909090909090909, 0, 9.504928068956614]
+pool num: 149596
+step 196, a=-0.9991473745431747
+No.196      new_cwnd:4.75527
+No.197 Window:80.8397 Rtt:0.0611037 Inflight:4 Data:17 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:17476
+state:[0.90464, 0.5909090909090909, 0, 9.504928068956614], type:0.002004008016032064, action:-0.9991473745431747, reward:-0.13587587961125094, next_sate:[0.69904, 0.0, 0, 4.75527354675667]
+pool num: 149597
+step 197, a=-0.9976274943476614
+No.197      new_cwnd:2.38155
+No.198 Window:19.0524 Rtt:0.0610736 Inflight:2 Data:8 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:8224
+state:[0.69904, 0.0, 0, 4.75527354675667], type:0.002004008016032064, action:-0.9976274943476614, reward:-0.4632348139975814, next_sate:[0.32896, 0.0, 0, 2.381550003362396]
+pool num: 149598
+step 198, a=-0.9969236777478506
+No.198      new_cwnd:1.19332
+No.199 Window:4.77327 Rtt:0.0610671 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.32896, 0.0, 0, 2.381550003362396], type:0.002004008016032064, action:-0.9969236777478506, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.1933168528126858]
+pool num: 149599
+step 199, a=0.9994515803804507
+No.199      new_cwnd:2.38573
+No.200 Window:16.7001 Rtt:0.0610948 Inflight:2 Data:7 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:7196
+state:[0.16448, 0.0, 0, 1.1933168528126858], type:0.002004008016032064, action:0.9994515803804507, reward:-0.5212267609752681, next_sate:[0.28784, 0.0, 0, 2.385726633813238]
+pool num: 149600
+step 200, a=-0.9969110193367303
+No.200      new_cwnd:1.19542
+No.201 Window:4.78168 Rtt:0.0610796 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.28784, 0.0, 0, 2.385726633813238], type:0.002004008016032064, action:-0.9969110193367303, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.195420114535589]
+pool num: 149601
+step 201, a=-0.998387510079786
+No.201      new_cwnd:1
+No.202 Window:3 Rtt:0.0610724 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.195420114535589], type:0.002004008016032064, action:-0.998387510079786, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149602
+step 202, a=-0.9998925074452726
+No.202      new_cwnd:1
+No.203 Window:3 Rtt:0.0610676 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002004008016032064, action:-0.9998925074452726, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149603
+step 203, a=0.999673977897886
+No.203      new_cwnd:1.99955
+No.204 Window:7.99819 Rtt:0.0610636 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.12336, 0.0, 0, 1.0], type:0.002004008016032064, action:0.999673977897886, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.9995480884619408]
+pool num: 149604
+step 204, a=-0.9969552823156339
+No.204      new_cwnd:1.00189
+No.205 Window:3.00566 Rtt:0.0610617 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.9995480884619408], type:0.002004008016032064, action:-0.9969552823156339, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.001886232881046]
+pool num: 149605
+step 205, a=0.996694628662711
+No.205      new_cwnd:1.99919
+No.206 Window:5.99756 Rtt:0.0610605 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.001886232881046], type:0.002004008016032064, action:0.996694628662711, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.9991868600529472]
+pool num: 149606
+step 206, a=0.9996103033120818
+No.206      new_cwnd:3.99729
+No.207 Window:27.9811 Rtt:0.0611687 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.12336, 0.0, 0, 1.9991868600529472], type:0.002004008016032064, action:0.9996103033120818, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.9972938366040833]
+pool num: 149607
+step 207, a=-0.9973891863272807
+No.207      new_cwnd:2.00227
+No.208 Window:18.0204 Rtt:0.0610912 Inflight:2 Data:9 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:9252
+state:[0.28784, 0.14285714285714285, 0, 3.9972938366040833], type:0.002004008016032064, action:-0.9973891863272807, reward:-0.4120822915502, next_sate:[0.37008, 0.0, 0, 2.0022671006265145]
+pool num: 149608
+step 208, a=-0.9999804147303595
+No.208      new_cwnd:1.00115
+No.209 Window:4.00459 Rtt:0.0610774 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.37008, 0.0, 0, 2.0022671006265145], type:0.002004008016032064, action:-0.9999804147303595, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.001147141268424]
+pool num: 149609
+step 209, a=-0.9974268364095903
+No.209      new_cwnd:1
+No.210 Window:3 Rtt:0.061071 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.001147141268424], type:0.002004008016032064, action:-0.9974268364095903, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149610
+step 210, a=-0.9987524179990862
+No.210      new_cwnd:1
+No.211 Window:3 Rtt:0.0610667 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002004008016032064, action:-0.9987524179990862, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149611
+step 211, a=-0.9977491873755812
+No.211      new_cwnd:1
+No.212 Window:4 Rtt:0.061063 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.12336, 0.0, 0, 1.0], type:0.002004008016032064, action:-0.9977491873755812, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.0]
+pool num: 149612
+step 212, a=-0.9999717698794117
+No.212      new_cwnd:1
+No.213 Window:3 Rtt:0.0610614 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.0], type:0.002004008016032064, action:-0.9999717698794117, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149613
+step 213, a=0.9992374013927914
+No.213      new_cwnd:1.99894
+No.214 Window:5.99683 Rtt:0.0610602 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002004008016032064, action:0.9992374013927914, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.9989430932124421]
+pool num: 149614
+step 214, a=0.9945118820364218
+No.214      new_cwnd:3.98271
+No.215 Window:31.8617 Rtt:0.0611548 Inflight:2 Data:8 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:8224
+state:[0.12336, 0.0, 0, 1.9989430932124421], type:0.002004008016032064, action:0.9945118820364218, reward:-0.4671410639975814, next_sate:[0.32896, 0.125, 0, 3.9827068235658922]
+pool num: 149615
+step 215, a=-0.9988870016816411
+No.215      new_cwnd:1.99289
+No.216 Window:9.96445 Rtt:0.0611076 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.32896, 0.125, 0, 3.9827068235658922], type:0.002004008016032064, action:-0.9988870016816411, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.9928902772258084]
+pool num: 149616
+step 216, a=0.9995547629932378
+No.216      new_cwnd:3.98455
+No.217 Window:27.8919 Rtt:0.0611872 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.2056, 0.0, 0, 1.9928902772258084], type:0.002004008016032064, action:0.9995547629932378, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.9845506734684295]
+pool num: 149617
+step 217, a=-0.9957776742376421
+No.217      new_cwnd:1.99811
+No.218 Window:9.99057 Rtt:0.0611242 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.28784, 0.14285714285714285, 0, 3.9845506734684295], type:0.002004008016032064, action:-0.9957776742376421, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.998114656190141]
+pool num: 149618
+step 218, a=0.9993786707896803
+No.218      new_cwnd:3.99451
+No.219 Window:27.9616 Rtt:0.0611937 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.2056, 0.0, 0, 1.998114656190141], type:0.002004008016032064, action:0.9993786707896803, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.994508616505627]
+pool num: 149619
+step 219, a=-0.9994620775290151
+No.219      new_cwnd:1.998
+No.220 Window:11.988 Rtt:0.0611189 Inflight:1 Data:6 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:6168
+state:[0.28784, 0.14285714285714285, 0, 3.994508616505627], type:0.002004008016032064, action:-0.9994620775290151, reward:-0.5881735506058813, next_sate:[0.24672, 0.0, 0, 1.997999142234524]
+pool num: 149620
+step 220, a=-0.9999945840979865
+No.220      new_cwnd:1
+No.221 Window:3 Rtt:0.0610987 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.24672, 0.0, 0, 1.997999142234524], type:0.002004008016032064, action:-0.9999945840979865, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149621
+step 221, a=0.9985021452517591
+No.221      new_cwnd:1.99792
+No.222 Window:5.99377 Rtt:0.0610853 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002004008016032064, action:0.9985021452517591, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.9979246099652006]
+pool num: 149622
+step 222, a=0.9985277715247185
+No.222      new_cwnd:3.99177
+No.223 Window:27.9424 Rtt:0.0611784 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.12336, 0.0, 0, 1.9979246099652006], type:0.002004008016032064, action:0.9985277715247185, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.9917736514674584]
+pool num: 149623
+step 223, a=0.9967559104051749
+No.223      new_cwnd:7.96562
+No.224 Window:191.175 Rtt:0.0612068 Inflight:7 Data:24 Timeout:0 Nack:0 CongesLevelSum:8 DataSizeSum:24672
+state:[0.28784, 0.14285714285714285, 0, 3.9917736514674584], type:0.002004008016032064, action:0.9967559104051749, reward:0.003469774055414482, next_sate:[0.98688, 0.3333333333333333, 0, 7.965615415199751]
+pool num: 149624
+step 224, a=-0.9996062497109904
+No.224      new_cwnd:3.98389
+No.225 Window:51.7906 Rtt:0.0610842 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[0.98688, 0.3333333333333333, 0, 7.965615415199751], type:0.002004008016032064, action:-0.9996062497109904, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.983894871322813]
+pool num: 149625
+step 225, a=0.9995768774374763
+No.225      new_cwnd:7.96545
+No.226 Window:135.413 Rtt:0.0614258 Inflight:7 Data:17 Timeout:0 Nack:0 CongesLevelSum:7 DataSizeSum:17476
+state:[0.53456, 0.0, 0, 3.983894871322813], type:0.002004008016032064, action:0.9995768774374763, reward:-0.14874352667007448, next_sate:[0.69904, 0.4117647058823529, 0, 7.965453242428409]
+pool num: 149626
+step 226, a=-0.9980102494638589
+No.226      new_cwnd:3.98822
+No.227 Window:51.8469 Rtt:0.0611228 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[0.69904, 0.4117647058823529, 0, 7.965453242428409], type:0.002004008016032064, action:-0.9980102494638589, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.9882233474835123]
+pool num: 149627
+step 227, a=0.9963457366904671
+No.227      new_cwnd:7.95627
+No.228 Window:190.95 Rtt:0.061204 Inflight:7 Data:24 Timeout:0 Nack:0 CongesLevelSum:7 DataSizeSum:24672
+state:[0.53456, 0.0, 0, 3.9882233474835123], type:0.002004008016032064, action:0.9963457366904671, reward:0.004771857388747809, next_sate:[0.98688, 0.2916666666666667, 0, 7.956268381689729]
+pool num: 149628
+step 228, a=-0.9984882585465625
+No.228      new_cwnd:3.9823
+No.229 Window:51.77 Rtt:0.0610837 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[0.98688, 0.2916666666666667, 0, 7.956268381689729], type:0.002004008016032064, action:-0.9984882585465625, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.9823049006345106]
+pool num: 149629
+step 229, a=0.9996140406372545
+No.229      new_cwnd:7.96248
+No.230 Window:135.362 Rtt:0.0614258 Inflight:7 Data:17 Timeout:0 Nack:0 CongesLevelSum:7 DataSizeSum:17476
+state:[0.53456, 0.0, 0, 3.9823049006345106], type:0.002004008016032064, action:0.9996140406372545, reward:-0.14874352667007448, next_sate:[0.69904, 0.4117647058823529, 0, 7.9624793409275]
+pool num: 149630
+step 230, a=0.99912146064876
+No.230      new_cwnd:15.9153
+No.231 Window:588.865 Rtt:0.0615314 Inflight:15 Data:37 Timeout:0 Nack:0 CongesLevelSum:45 DataSizeSum:38036
+state:[0.69904, 0.4117647058823529, 0, 7.9624793409275], type:0.002004008016032064, action:0.99912146064876, reward:0.16387016632071336, next_sate:[1.52144, 1.2162162162162162, 0, 15.91526401772411]
+pool num: 149631
+step 231, a=0.9957517606825828
+No.231      new_cwnd:31.7369
+No.232 Window:2697.64 Rtt:0.0611124 Inflight:30 Data:85 Timeout:0 Nack:0 CongesLevelSum:212 DataSizeSum:87380
+state:[1.52144, 1.2162162162162162, 0, 15.91526401772411], type:0.002004008016032064, action:0.9957517606825828, reward:0.4851529482541796, next_sate:[3.4952, 2.4941176470588236, 0, 31.736935974365267]
+pool num: 149632
+step 232, a=0.9985225326738718
+No.232      new_cwnd:63.4089
+No.233 Window:11096.6 Rtt:0.0610581 Inflight:63 Data:175 Timeout:0 Nack:0 CongesLevelSum:733 DataSizeSum:179900
+state:[3.4952, 2.4941176470588236, 0, 31.736935974365267], type:0.002004008016032064, action:0.9985225326738718, reward:0.7458203905539125, next_sate:[7.196, 4.188571428571429, 0, 63.40890148362992]
+pool num: 149633
+step 233, a=-0.9990505543304202
+No.233      new_cwnd:31.7253
+No.234 Window:3965.67 Rtt:0.0610579 Inflight:31 Data:125 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:128500
+state:[7.196, 4.188571428571429, 0, 63.40890148362992], type:0.002004008016032064, action:-0.9990505543304202, reward:0.7305852120185314, next_sate:[5.14, 0.0, 0, 31.725322485195218]
+pool num: 149634
+step 234, a=0.9972158285988522
+No.234      new_cwnd:63.3283
+No.235 Window:10259.2 Rtt:0.0610602 Inflight:62 Data:162 Timeout:0 Nack:0 CongesLevelSum:895 DataSizeSum:166536
+state:[5.14, 0.0, 0, 31.725322485195218], type:0.002004008016032064, action:0.9972158285988522, reward:0.6705436086148344, next_sate:[6.66144, 5.5246913580246915, 0, 63.32831342052485]
+pool num: 149635
+step 235, a=-0.9998830000636865
+No.235      new_cwnd:31.6667
+No.236 Window:3958.34 Rtt:0.0610579 Inflight:31 Data:125 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:128500
+state:[6.66144, 5.5246913580246915, 0, 63.32831342052485], type:0.002004008016032064, action:-0.9998830000636865, reward:0.7305852120185314, next_sate:[5.14, 0.0, 0, 31.66672471974468]
+pool num: 149636
+step 236, a=-0.9995130776741573
+No.236      new_cwnd:15.8387
+No.237 Window:966.161 Rtt:0.0610579 Inflight:15 Data:61 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:62708
+state:[5.14, 0.0, 0, 31.66672471974468], type:0.002004008016032064, action:-0.9995130776741573, reward:0.4190050340212421, next_sate:[2.50832, 0.0, 0, 15.838707161501246]
+pool num: 149637
+step 237, a=-0.9959395865472006
+No.237      new_cwnd:7.94167
+No.238 Window:230.309 Rtt:0.0610579 Inflight:7 Data:29 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:29812
+state:[2.50832, 0.0, 0, 15.838707161501246], type:0.002004008016032064, action:-0.9959395865472006, reward:0.09607319690943122, next_sate:[1.19248, 0.0, 0, 7.941673712260916]
+pool num: 149638
+step 238, a=0.9974178292913556
+No.238      new_cwnd:15.8549
+No.239 Window:824.457 Rtt:0.0610751 Inflight:15 Data:52 Timeout:0 Nack:0 CongesLevelSum:19 DataSizeSum:53456
+state:[1.19248, 0.0, 0, 7.941673712260916], type:0.002004008016032064, action:0.9974178292913556, reward:0.3382602734145051, next_sate:[2.13824, 0.36538461538461536, 0, 15.854944448350231]
+pool num: 149639
+step 239, a=-0.9986930599058718
+No.239      new_cwnd:7.93466
+No.240 Window:230.105 Rtt:0.0610583 Inflight:7 Data:29 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:29812
+state:[2.13824, 0.36538461538461536, 0, 15.854944448350231], type:0.002004008016032064, action:-0.9986930599058718, reward:0.09607319690943122, next_sate:[1.19248, 0.0, 0, 7.9346569897155]
+pool num: 149640
+step 240, a=0.9996104259232881
+No.240      new_cwnd:15.865
+No.241 Window:587.006 Rtt:0.0615179 Inflight:15 Data:37 Timeout:0 Nack:0 CongesLevelSum:43 DataSizeSum:38036
+state:[1.19248, 0.0, 0, 7.9346569897155], type:0.002004008016032064, action:0.9996104259232881, reward:0.16555935550990253, next_sate:[1.52144, 1.162162162162162, 0, 15.865029332617105]
+pool num: 149641
+step 241, a=-0.9997116647446483
+No.241      new_cwnd:7.9341
+No.242 Window:230.089 Rtt:0.0610675 Inflight:7 Data:29 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:29812
+state:[1.52144, 1.162162162162162, 0, 15.865029332617105], type:0.002004008016032064, action:-0.9997116647446483, reward:0.09607319690943122, next_sate:[1.19248, 0.0, 0, 7.9341002073641045]
+pool num: 149642
+step 242, a=0.9941985058682026
+No.242      new_cwnd:15.8045
+No.243 Window:616.376 Rtt:0.0614175 Inflight:14 Data:39 Timeout:0 Nack:0 CongesLevelSum:43 DataSizeSum:40092
+state:[1.19248, 0.0, 0, 7.9341002073641045], type:0.002004008016032064, action:0.9941985058682026, reward:0.19028467783184613, next_sate:[1.60368, 1.1025641025641026, 0, 15.80451791886825]
+pool num: 149643
+step 243, a=-0.9986689709511976
+No.243      new_cwnd:7.90955
+No.244 Window:268.925 Rtt:0.0610618 Inflight:7 Data:34 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:34952
+state:[1.60368, 1.1025641025641026, 0, 15.80451791886825], type:0.002004008016032064, action:-0.9986689709511976, reward:0.16515411605273025, next_sate:[1.39808, 0.0, 0, 7.909552940096406]
+pool num: 149644
+step 244, a=-0.9981814340320501
+No.244      new_cwnd:3.95976
+No.245 Window:51.4769 Rtt:0.0610586 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[1.39808, 0.0, 0, 7.909552940096406], type:0.002004008016032064, action:-0.9981814340320501, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.95976474303324]
+pool num: 149645
+step 245, a=-0.9979594862703329
+No.245      new_cwnd:1.98268
+No.246 Window:9.91342 Rtt:0.0610583 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.53456, 0.0, 0, 3.95976474303324], type:0.002004008016032064, action:-0.9979594862703329, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.9826846515682746]
+pool num: 149646
+step 246, a=0.9998036763932847
+No.246      new_cwnd:3.96483
+No.247 Window:27.7538 Rtt:0.0611678 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.2056, 0.0, 0, 1.9826846515682746], type:0.002004008016032064, action:0.9998036763932847, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.9648297278177194]
+pool num: 149647
+step 247, a=0.9965392439212479
+No.247      new_cwnd:7.91066
+No.248 Window:189.856 Rtt:0.0612064 Inflight:7 Data:24 Timeout:0 Nack:0 CongesLevelSum:8 DataSizeSum:24672
+state:[0.28784, 0.14285714285714285, 0, 3.9648297278177194], type:0.002004008016032064, action:0.9965392439212479, reward:0.003469774055414482, next_sate:[0.98688, 0.3333333333333333, 0, 7.9106604795303115]
+pool num: 149648
+step 248, a=-0.9979190384614279
+No.248      new_cwnd:3.96104
+No.249 Window:51.4935 Rtt:0.0610841 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[0.98688, 0.3333333333333333, 0, 7.9106604795303115], type:0.002004008016032064, action:-0.9979190384614279, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.9610395746508424]
+pool num: 149649
+step 249, a=0.9986839638934926
+No.249      new_cwnd:7.91486
+No.250 Window:134.553 Rtt:0.0614258 Inflight:7 Data:17 Timeout:0 Nack:0 CongesLevelSum:7 DataSizeSum:17476
+state:[0.53456, 0.0, 0, 3.9610395746508424], type:0.002004008016032064, action:0.9986839638934926, reward:-0.14874352667007448, next_sate:[0.69904, 0.4117647058823529, 0, 7.9148558705537235]
+pool num: 149650
+step 250, a=0.9970353314279934
+No.250      new_cwnd:15.7972
+No.251 Window:584.497 Rtt:0.0615314 Inflight:15 Data:37 Timeout:0 Nack:0 CongesLevelSum:45 DataSizeSum:38036
+state:[0.69904, 0.4117647058823529, 0, 7.9148558705537235], type:0.002004008016032064, action:0.9970353314279934, reward:0.16387016632071336, next_sate:[1.52144, 1.2162162162162162, 0, 15.797215848835666]
+pool num: 149651
+step 251, a=0.9987071939396401
+No.251      new_cwnd:31.5661
+No.252 Window:2556.86 Rtt:0.0611508 Inflight:31 Data:81 Timeout:0 Nack:0 CongesLevelSum:212 DataSizeSum:83268
+state:[1.52144, 1.2162162162162162, 0, 15.797215848835666], type:0.002004008016032064, action:0.9987071939396401, reward:0.4603700944323347, next_sate:[3.33072, 2.617283950617284, 0, 31.56613245481898]
+pool num: 149652
+step 252, a=0.9995545595704822
+No.252      new_cwnd:63.1128
+No.253 Window:11044.7 Rtt:0.0610582 Inflight:63 Data:175 Timeout:0 Nack:0 CongesLevelSum:815 DataSizeSum:179900
+state:[3.33072, 2.617283950617284, 0, 31.56613245481898], type:0.002004008016032064, action:0.9995545595704822, reward:0.7311775334110553, next_sate:[7.196, 4.6571428571428575, 0, 63.11277546697366]
+pool num: 149653
+step 253, a=0.9973335546093784
+No.253      new_cwnd:125.992
+No.254 Window:28348.3 Rtt:0.0880152 Inflight:124 Data:225 Timeout:0 Nack:0 CongesLevelSum:3999 DataSizeSum:231300
+state:[7.196, 4.6571428571428575, 0, 63.11277546697366], type:0.002004008016032064, action:0.9973335546093784, reward:0.430441050455171, next_sate:[9.252, 17.773333333333333, 0, 125.99247139441731]
+pool num: 149654
+step 254, a=0.9992491106761592
+No.254      new_cwnd:251.854
+No.255 Window:58681.9 Rtt:0.0884736 Inflight:250 Data:233 Timeout:22 Nack:0 CongesLevelSum:7223 DataSizeSum:239524
+state:[9.252, 17.773333333333333, 0, 125.99247139441731], type:0.002004008016032064, action:0.9992491106761592, reward:-1.5319662236924367, next_sate:[9.58096, 31.0, 22, 251.85382459264653]
+pool num: 149655
+step 255, a=0.9989209602924398
+No.255      new_cwnd:300
+No.256 Window:69900 Rtt:0.0884735 Inflight:299 Data:233 Timeout:148 Nack:0 CongesLevelSum:7223 DataSizeSum:239524
+state:[9.58096, 31.0, 22, 251.85382459264653], type:0.002004008016032064, action:0.9989209602924398, reward:-2559667026659.937, next_sate:[9.58096, 31.0, 148, 300.0]
+pool num: 149656
+step 256, a=0.9991584175130748
+No.256      new_cwnd:300
+No.257 Window:69900 Rtt:0.0884734 Inflight:299 Data:233 Timeout:197 Nack:0 CongesLevelSum:7223 DataSizeSum:239524
+state:[9.58096, 31.0, 148, 300.0], type:0.002004008016032064, action:0.9991584175130748, reward:-1.4347429894566006e+17, next_sate:[9.58096, 31.0, 197, 300.0]
+pool num: 149657
+step 257, a=-0.9995565877805015
+No.257      new_cwnd:150.046
+No.258 Window:22056.8 Rtt:0.0881358 Inflight:149 Data:147 Timeout:86 Nack:0 CongesLevelSum:3400 DataSizeSum:151116
+state:[9.58096, 31.0, 197, 300.0], type:0.002004008016032064, action:-0.9995565877805015, reward:-2510514.025021711, next_sate:[6.04464, 23.12925170068027, 86, 150.04610957498988]
+pool num: 149658
+step 258, a=0.9986265568229824
+No.258      new_cwnd:299.807
+No.259 Window:59961.3 Rtt:0.088448 Inflight:299 Data:200 Timeout:111 Nack:0 CongesLevelSum:3999 DataSizeSum:205600
+state:[6.04464, 23.12925170068027, 86, 150.04610957498988], type:0.002004008016032064, action:0.9986265568229824, reward:-664527552.7496008, next_sate:[8.224, 19.995, 111, 299.80666782151803]
+pool num: 149659
+step 259, a=0.9987390814611565
+No.259      new_cwnd:300
+No.260 Window:69900 Rtt:0.08847 Inflight:283 Data:233 Timeout:193 Nack:0 CongesLevelSum:7223 DataSizeSum:239524
+state:[8.224, 19.995, 111, 299.80666782151803], type:0.002004008016032064, action:0.9987390814611565, reward:-5.876707284814237e+16, next_sate:[9.58096, 31.0, 193, 300.0]
+pool num: 149660
+step 260, a=0.9999128135046287
+No.260      new_cwnd:300
+No.261 Window:69900 Rtt:0.0884698 Inflight:299 Data:233 Timeout:169 Nack:0 CongesLevelSum:7222 DataSizeSum:239524
+state:[9.58096, 31.0, 193, 300.0], type:0.002004008016032064, action:0.9999128135046287, reward:-277519655114426.25, next_sate:[9.58096, 30.99570815450644, 169, 300.0]
+pool num: 149661
+step 261, a=-0.999031022201932
+No.261      new_cwnd:150.101
+No.262 Window:19963.4 Rtt:0.0884736 Inflight:150 Data:133 Timeout:75 Nack:0 CongesLevelSum:3389 DataSizeSum:136724
+state:[9.58096, 30.99570815450644, 169, 300.0], type:0.002004008016032064, action:-0.999031022201932, reward:-215651.5475216506, next_sate:[5.46896, 25.481203007518797, 75, 150.10078047483697]
+pool num: 149662
+step 262, a=-0.9955626390623633
+No.262      new_cwnd:75.2816
+No.263 Window:2183.17 Rtt:0.0884736 Inflight:121 Data:29 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:29812
+state:[5.46896, 25.481203007518797, 75, 150.10078047483697], type:0.002004008016032064, action:-0.9955626390623633, reward:0.09607319690943122, next_sate:[1.19248, 0.0, 0, 75.28158140181341]
+pool num: 149663
+step 263, a=0.9986186331869134
+No.263      new_cwnd:150.419
+No.264 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[1.19248, 0.0, 0, 75.28158140181341], type:0.002004008016032064, action:0.9986186331869134, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149664
+step 264, a=0.999521406258777
+No.264      new_cwnd:300
+No.265 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.999521406258777, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149665
+step 265, a=0.9980013291221512
+No.265      new_cwnd:300
+No.266 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9980013291221512, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149666
+step 266, a=0.9997928927198079
+No.266      new_cwnd:300
+No.267 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9997928927198079, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149667
+step 267, a=-0.9999349428866825
+No.267      new_cwnd:150.007
+No.268 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9999349428866825, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149668
+step 268, a=0.9987279214961235
+No.268      new_cwnd:299.749
+No.269 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9987279214961235, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149669
+step 269, a=0.9981444267161359
+No.269      new_cwnd:300
+No.270 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9981444267161359, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149670
+step 270, a=0.9975829406097014
+No.270      new_cwnd:300
+No.271 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9975829406097014, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149671
+step 271, a=0.9971994537381477
+No.271      new_cwnd:300
+No.272 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9971994537381477, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149672
+step 272, a=-0.998845809087634
+No.272      new_cwnd:150.12
+No.273 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.998845809087634, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149673
+step 273, a=-0.9979637118804098
+No.273      new_cwnd:75.166
+No.274 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9979637118804098, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149674
+step 274, a=-0.9992640908381011
+No.274      new_cwnd:37.6022
+No.275 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9992640908381011, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149675
+step 275, a=-0.9983818581562637
+No.275      new_cwnd:18.8222
+No.276 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9983818581562637, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149676
+step 276, a=-0.9995039213263679
+No.276      new_cwnd:9.41434
+No.277 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9995039213263679, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149677
+step 277, a=-0.9982893933072362
+No.277      new_cwnd:4.71275
+No.278 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9982893933072362, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149678
+step 278, a=0.9977421072683752
+No.278      new_cwnd:9.41077
+No.279 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9977421072683752, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149679
+step 279, a=-0.9990343530967327
+No.279      new_cwnd:4.70853
+No.280 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9990343530967327, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149680
+step 280, a=-0.9979142810013816
+No.280      new_cwnd:2.35767
+No.281 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9979142810013816, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149681
+step 281, a=0.998897460767612
+No.281      new_cwnd:4.71174
+No.282 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.998897460767612, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149682
+step 282, a=0.9974721678874452
+No.282      new_cwnd:9.40699
+No.283 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9974721678874452, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149683
+step 283, a=-0.9996617092832185
+No.283      new_cwnd:4.7046
+No.284 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9996617092832185, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149684
+step 284, a=-0.9983059890586029
+No.284      new_cwnd:2.35506
+No.285 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9983059890586029, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149685
+step 285, a=0.9983039826356879
+No.285      new_cwnd:4.70459
+No.286 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9983039826356879, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149686
+step 286, a=0.999295428604678
+No.286      new_cwnd:9.40459
+No.287 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.999295428604678, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149687
+step 287, a=-0.9998673480988587
+No.287      new_cwnd:4.70273
+No.288 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9998673480988587, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149688
+step 288, a=-0.9996656149252637
+No.288      new_cwnd:2.35191
+No.289 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9996656149252637, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149689
+step 289, a=0.9975409901046948
+No.289      new_cwnd:4.69581
+No.290 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9975409901046948, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149690
+step 290, a=0.9979249373635699
+No.290      new_cwnd:9.37811
+No.291 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9979249373635699, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149691
+step 291, a=-0.9984395365076119
+No.291      new_cwnd:4.69413
+No.292 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9984395365076119, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149692
+step 292, a=-0.9962388519924654
+No.292      new_cwnd:2.35319
+No.293 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9962388519924654, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149693
+step 293, a=0.9986876902028841
+No.293      new_cwnd:4.70211
+No.294 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9986876902028841, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149694
+step 294, a=0.9984149979421357
+No.294      new_cwnd:9.39389
+No.295 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.9984149979421357, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149695
+step 295, a=-0.9994044050708116
+No.295      new_cwnd:4.69888
+No.296 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9994044050708116, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149696
+step 296, a=-0.9998547159811951
+No.296      new_cwnd:2.34968
+No.297 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9998547159811951, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149697
+step 297, a=-0.9998905243176897
+No.297      new_cwnd:1.17493
+No.298 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9998905243176897, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149698
+step 298, a=-0.9942365774697577
+No.298      new_cwnd:1
+No.299 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:-0.9942365774697577, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149699
+step 299, a=0.998044368718982
+No.299      new_cwnd:1.99729
+No.300 Window:0 Rtt:0.0884736 Inflight:121 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002004008016032064, action:0.998044368718982, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149700
+episode: 498, eprwd: -4.8260350930993837e+17
+
+episode  499
+No.0 Window:48 Rtt:0.061164 Inflight:4 Data:12 Timeout:0 Nack:0 CongesLevelSum:2 DataSizeSum:12336
+[0.49344, 0.16666666666666666, 0, 4.0]
+step 0, a=0.9990237941058955
+No.0        new_cwnd:7.99459
+No.1 Window:143.903 Rtt:0.0614292 Inflight:7 Data:18 Timeout:0 Nack:0 CongesLevelSum:7 DataSizeSum:18504
+state:[0.49344, 0.16666666666666666, 0, 4.0], type:0.002, action:0.9990237941058955, reward:-0.12320507366399655, next_sate:[0.74016, 0.3888888888888889, 0, 7.994588596126336]
+pool num: 149701
+step 1, a=-0.9995147352360525
+No.1        new_cwnd:3.99864
+No.2 Window:51.9823 Rtt:0.0611218 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[0.74016, 0.3888888888888889, 0, 7.994588596126336], type:0.002, action:-0.9995147352360525, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.9986390537336125]
+pool num: 149702
+step 2, a=-0.9963086565999508
+No.2        new_cwnd:2.00444
+No.3 Window:14.0311 Rtt:0.0610818 Inflight:2 Data:7 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:7196
+state:[0.53456, 0.0, 0, 3.9986390537336125], type:0.002, action:-0.9963086565999508, reward:-0.5212267609752681, next_sate:[0.28784, 0.0, 0, 2.0044416243368546]
+pool num: 149703
+step 3, a=0.9984591813217527
+No.3        new_cwnd:4.0046
+No.4 Window:56.0645 Rtt:0.061163 Inflight:4 Data:14 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:14392
+state:[0.28784, 0.0, 0, 2.0044416243368546], type:0.002, action:0.9984591813217527, reward:-0.22242890816842972, next_sate:[0.57568, 0.07142857142857142, 0, 4.004603990309293]
+pool num: 149704
+step 4, a=-0.9977324007634809
+No.4        new_cwnd:2.00545
+No.5 Window:16.0436 Rtt:0.0610928 Inflight:2 Data:8 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:8224
+state:[0.57568, 0.07142857142857142, 0, 4.004603990309293], type:0.002, action:-0.9977324007634809, reward:-0.4632348139975814, next_sate:[0.32896, 0.0, 0, 2.005451648051807]
+pool num: 149705
+step 5, a=-0.9991614067713519
+No.5        new_cwnd:1.00331
+No.6 Window:4.01324 Rtt:0.0610775 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.32896, 0.0, 0, 2.005451648051807], type:0.002, action:-0.9991614067713519, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.003308846423579]
+pool num: 149706
+step 6, a=0.9978841233788327
+No.6        new_cwnd:2.00368
+No.7 Window:10.0184 Rtt:0.0611105 Inflight:2 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.16448, 0.0, 0, 1.003308846423579], type:0.002, action:0.9978841233788327, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 2.0036769164369224]
+pool num: 149707
+step 7, a=-0.9998070513261011
+No.7        new_cwnd:1.00197
+No.8 Window:5.00986 Rtt:0.0610839 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.2056, 0.0, 0, 2.0036769164369224], type:0.002, action:-0.9998070513261011, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.0019724548868123]
+pool num: 149708
+step 8, a=0.9991182758148949
+No.8        new_cwnd:2.00272
+No.9 Window:10.0136 Rtt:0.0611137 Inflight:2 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.2056, 0.0, 0, 1.0019724548868123], type:0.002, action:0.9991182758148949, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 2.0027205437011477]
+pool num: 149709
+step 9, a=0.9994242049751936
+No.9        new_cwnd:4.00384
+No.10 Window:40.0384 Rtt:0.061248 Inflight:4 Data:10 Timeout:0 Nack:0 CongesLevelSum:2 DataSizeSum:10280
+state:[0.2056, 0.0, 0, 2.0027205437011477], type:0.002, action:0.9994242049751936, reward:-0.3725748009895249, next_sate:[0.4112, 0.2, 0, 4.0038427919836215]
+pool num: 149710
+step 10, a=-0.9990167660319919
+No.10       new_cwnd:2.00329
+No.11 Window:16.0263 Rtt:0.061122 Inflight:2 Data:8 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:8224
+state:[0.4112, 0.2, 0, 4.0038427919836215], type:0.002, action:-0.9990167660319919, reward:-0.4632348139975814, next_sate:[0.32896, 0.0, 0, 2.003286222207711]
+pool num: 149711
+step 11, a=-0.9982203027357343
+No.11       new_cwnd:1.00288
+No.12 Window:5.0144 Rtt:0.0610898 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.32896, 0.0, 0, 2.003286222207711], type:0.002, action:-0.9982203027357343, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.0028794926122433]
+pool num: 149712
+step 12, a=-0.9988358515067964
+No.12       new_cwnd:1
+No.13 Window:3 Rtt:0.0610787 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.2056, 0.0, 0, 1.0028794926122433], type:0.002, action:-0.9988358515067964, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149713
+step 13, a=-0.9988315617019707
+No.13       new_cwnd:1
+No.14 Window:3 Rtt:0.0610712 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:-0.9988315617019707, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149714
+step 14, a=0.9976917531827021
+No.14       new_cwnd:1.9968
+No.15 Window:5.99041 Rtt:0.0610662 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:0.9976917531827021, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.9968026489437125]
+pool num: 149715
+step 15, a=-0.9998646831252433
+No.15       new_cwnd:1
+No.16 Window:4 Rtt:0.061062 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.12336, 0.0, 0, 1.9968026489437125], type:0.002, action:-0.9998646831252433, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.0]
+pool num: 149716
+step 16, a=0.9986183173198373
+No.16       new_cwnd:1.99809
+No.17 Window:5.99426 Rtt:0.06106 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.0], type:0.002, action:0.9986183173198373, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.998085498006296]
+pool num: 149717
+step 17, a=0.9977537482640124
+No.17       new_cwnd:3.98995
+No.18 Window:27.9297 Rtt:0.0611671 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.12336, 0.0, 0, 1.998085498006296], type:0.002, action:0.9977537482640124, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.989953866714871]
+pool num: 149718
+step 18, a=0.9996040639070902
+No.18       new_cwnd:7.97772
+No.19 Window:135.621 Rtt:0.0614337 Inflight:7 Data:17 Timeout:0 Nack:0 CongesLevelSum:8 DataSizeSum:17476
+state:[0.28784, 0.14285714285714285, 0, 3.989953866714871], type:0.002, action:0.9996040639070902, reward:-0.15058176196419212, next_sate:[0.69904, 0.47058823529411764, 0, 7.977718012188901]
+pool num: 149719
+step 19, a=0.9989764649539019
+No.19       new_cwnd:15.9441
+No.20 Window:797.206 Rtt:0.0611393 Inflight:15 Data:50 Timeout:0 Nack:0 CongesLevelSum:44 DataSizeSum:51400
+state:[0.69904, 0.47058823529411764, 0, 7.977718012188901], type:0.002, action:0.9989764649539019, reward:0.3051452033464939, next_sate:[2.056, 0.88, 0, 15.944120288360757]
+pool num: 149720
+step 20, a=-0.9991622644851564
+No.20       new_cwnd:7.97669
+No.21 Window:231.324 Rtt:0.0610577 Inflight:7 Data:29 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:29812
+state:[2.056, 0.88, 0, 15.944120288360757], type:0.002, action:-0.9991622644851564, reward:0.09607319690943122, next_sate:[1.19248, 0.0, 0, 7.976690656592608]
+pool num: 149721
+step 21, a=0.9966890823147554
+No.21       new_cwnd:15.9168
+No.22 Window:588.922 Rtt:0.0615268 Inflight:15 Data:37 Timeout:0 Nack:0 CongesLevelSum:43 DataSizeSum:38036
+state:[1.19248, 0.0, 0, 7.976690656592608], type:0.002, action:0.9966890823147554, reward:0.16555935550990253, next_sate:[1.52144, 1.162162162162162, 0, 15.91681102835283]
+pool num: 149722
+step 22, a=0.9974788289848648
+No.22       new_cwnd:31.778
+No.23 Window:2446.91 Rtt:0.0612165 Inflight:31 Data:77 Timeout:0 Nack:0 CongesLevelSum:218 DataSizeSum:79156
+state:[1.52144, 1.162162162162162, 0, 15.91681102835283], type:0.002, action:0.9974788289848648, reward:0.43169189820893106, next_sate:[3.16624, 2.831168831168831, 0, 31.77804002678612]
+pool num: 149723
+step 23, a=-0.9978818981511854
+No.23       new_cwnd:15.9124
+No.24 Window:970.654 Rtt:0.061058 Inflight:15 Data:61 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:62708
+state:[3.16624, 2.831168831168831, 0, 31.77804002678612], type:0.002, action:-0.9978818981511854, reward:0.4190050340212421, next_sate:[2.50832, 0.0, 0, 15.912364711257744]
+pool num: 149724
+step 24, a=-0.9994621921493589
+No.24       new_cwnd:7.95915
+No.25 Window:246.734 Rtt:0.0610579 Inflight:7 Data:31 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:31868
+state:[2.50832, 0.0, 0, 15.912364711257744], type:0.002, action:-0.9994621921493589, reward:0.12503689284474784, next_sate:[1.27472, 0.0, 0, 7.959148814134295]
+pool num: 149725
+step 25, a=-0.9990437616906858
+No.25       new_cwnd:3.98221
+No.26 Window:55.751 Rtt:0.0610579 Inflight:3 Data:14 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:14392
+state:[1.27472, 0.0, 0, 7.959148814134295], type:0.002, action:-0.9990437616906858, reward:-0.22019676531128687, next_sate:[0.57568, 0.0, 0, 3.982212998603615]
+pool num: 149726
+step 26, a=-0.9973640668962637
+No.26       new_cwnd:1.99475
+No.27 Window:9.97374 Rtt:0.0610579 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.57568, 0.0, 0, 3.982212998603615], type:0.002, action:-0.9973640668962637, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.9947477547141752]
+pool num: 149727
+step 27, a=0.9969675268865474
+No.27       new_cwnd:3.98112
+No.28 Window:27.8678 Rtt:0.0611677 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.2056, 0.0, 0, 1.9947477547141752], type:0.002, action:0.9969675268865474, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.9811185956014716]
+pool num: 149728
+step 28, a=-0.9958920641381532
+No.28       new_cwnd:1.99624
+No.29 Window:9.98118 Rtt:0.0611142 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.28784, 0.14285714285714285, 0, 3.9811185956014716], type:0.002, action:-0.9958920641381532, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.9962353017307888]
+pool num: 149729
+step 29, a=0.9982527175042117
+No.29       new_cwnd:3.98764
+No.30 Window:39.8764 Rtt:0.0611463 Inflight:3 Data:10 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:10280
+state:[0.2056, 0.0, 0, 1.9962353017307888], type:0.002, action:0.9982527175042117, reward:-0.3694498009895249, next_sate:[0.4112, 0.1, 0, 3.9876381536900434]
+pool num: 149730
+step 30, a=-0.9999498245847205
+No.30       new_cwnd:1.99389
+No.31 Window:9.96944 Rtt:0.0611032 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.4112, 0.1, 0, 3.9876381536900434], type:0.002, action:-0.9999498245847205, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.9938884209801393]
+pool num: 149731
+step 31, a=0.999823141261547
+No.31       new_cwnd:3.98729
+No.32 Window:27.911 Rtt:0.0611855 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.2056, 0.0, 0, 1.9938884209801393], type:0.002, action:0.999823141261547, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.987288013806119]
+pool num: 149732
+step 32, a=-0.9952554380312706
+No.32       new_cwnd:2.00021
+No.33 Window:14.0015 Rtt:0.061108 Inflight:2 Data:7 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:7196
+state:[0.28784, 0.14285714285714285, 0, 3.987288013806119], type:0.002, action:-0.9952554380312706, reward:-0.5212267609752681, next_sate:[0.28784, 0.0, 0, 2.0002112564518417]
+pool num: 149733
+step 33, a=-0.9995267231649393
+No.33       new_cwnd:1.00043
+No.34 Window:5.00217 Rtt:0.0610836 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.28784, 0.0, 0, 2.0002112564518417], type:0.002, action:-0.9995267231649393, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.0004337672012955]
+pool num: 149734
+step 34, a=-0.9981450960418963
+No.34       new_cwnd:1
+No.35 Window:3 Rtt:0.0610751 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.2056, 0.0, 0, 1.0004337672012955], type:0.002, action:-0.9981450960418963, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149735
+step 35, a=0.9987105594954584
+No.35       new_cwnd:1.99821
+No.36 Window:5.99464 Rtt:0.0610694 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:0.9987105594954584, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.9982132544900952]
+pool num: 149736
+step 36, a=0.9990513323368297
+No.36       new_cwnd:3.9938
+No.37 Window:27.9566 Rtt:0.0611722 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.12336, 0.0, 0, 1.9982132544900952], type:0.002, action:0.9990513323368297, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.9937994573484477]
+pool num: 149737
+step 37, a=0.9991048057376726
+No.37       new_cwnd:7.98264
+No.38 Window:191.583 Rtt:0.0612065 Inflight:7 Data:24 Timeout:0 Nack:0 CongesLevelSum:8 DataSizeSum:24672
+state:[0.28784, 0.14285714285714285, 0, 3.9937994573484477], type:0.002, action:0.9991048057376726, reward:0.003469774055414482, next_sate:[0.98688, 0.3333333333333333, 0, 7.9826441359380444]
+pool num: 149738
+step 38, a=-0.9979253157540626
+No.38       new_cwnd:3.99707
+No.39 Window:51.9619 Rtt:0.0610841 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[0.98688, 0.3333333333333333, 0, 7.9826441359380444], type:0.002, action:-0.9979253157540626, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.997065963759177]
+pool num: 149739
+step 39, a=-0.9999885200770241
+No.39       new_cwnd:1.99855
+No.40 Window:9.99274 Rtt:0.0610713 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.53456, 0.0, 0, 3.997065963759177], type:0.002, action:-0.9999885200770241, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.99854888482188]
+pool num: 149740
+step 40, a=0.9989507438313834
+No.40       new_cwnd:3.99419
+No.41 Window:27.9593 Rtt:0.061173 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.2056, 0.0, 0, 1.99854888482188], type:0.002, action:0.9989507438313834, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.994191781458645]
+pool num: 149741
+step 41, a=-0.9971581313151372
+No.41       new_cwnd:2.00103
+No.42 Window:18.0093 Rtt:0.0610925 Inflight:2 Data:9 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:9252
+state:[0.28784, 0.14285714285714285, 0, 3.994191781458645], type:0.002, action:-0.9971581313151372, reward:-0.4120822915502, next_sate:[0.37008, 0.0, 0, 2.001033713805277]
+pool num: 149742
+step 42, a=-0.999391239209082
+No.42       new_cwnd:1.00094
+No.43 Window:4.00376 Rtt:0.0610782 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.37008, 0.0, 0, 2.001033713805277], type:0.002, action:-0.999391239209082, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.0009391249058766]
+pool num: 149743
+step 43, a=0.9972359951642771
+No.43       new_cwnd:1.99805
+No.44 Window:5.99414 Rtt:0.0610715 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.0009391249058766], type:0.002, action:0.9972359951642771, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.998046598655886]
+pool num: 149744
+step 44, a=-0.999886465939468
+No.44       new_cwnd:1
+No.45 Window:3 Rtt:0.061067 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.998046598655886], type:0.002, action:-0.999886465939468, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149745
+step 45, a=-0.9989381873344134
+No.45       new_cwnd:1
+No.46 Window:4 Rtt:0.0610632 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:-0.9989381873344134, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.0]
+pool num: 149746
+step 46, a=-0.998352179523058
+No.46       new_cwnd:1
+No.47 Window:3 Rtt:0.0610615 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.0], type:0.002, action:-0.998352179523058, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149747
+step 47, a=-0.9986720038364608
+No.47       new_cwnd:1
+No.48 Window:3 Rtt:0.0610603 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:-0.9986720038364608, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149748
+step 48, a=0.9971078508289826
+No.48       new_cwnd:1.99599
+No.49 Window:5.98798 Rtt:0.0610595 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:0.9971078508289826, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.9959946459907199]
+pool num: 149749
+step 49, a=0.997902873567017
+No.49       new_cwnd:3.98619
+No.50 Window:39.8619 Rtt:0.0611319 Inflight:3 Data:10 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:10280
+state:[0.12336, 0.0, 0, 1.9959946459907199], type:0.002, action:0.997902873567017, reward:-0.3694498009895249, next_sate:[0.4112, 0.1, 0, 3.986190682888007]
+pool num: 149750
+step 50, a=-0.9955831922711047
+No.50       new_cwnd:1.99921
+No.51 Window:9.99603 Rtt:0.0610958 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.4112, 0.1, 0, 3.986190682888007], type:0.002, action:-0.9955831922711047, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.9992065484458013]
+pool num: 149751
+step 51, a=-0.9962839915772649
+No.51       new_cwnd:1.00218
+No.52 Window:3.00654 Rtt:0.0610833 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.2056, 0.0, 0, 1.9992065484458013], type:0.002, action:-0.9962839915772649, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0021813118743133]
+pool num: 149752
+step 52, a=0.9975758993622239
+No.52       new_cwnd:2.001
+No.53 Window:10.005 Rtt:0.0611144 Inflight:2 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.12336, 0.0, 0, 1.0021813118743133], type:0.002, action:0.9975758993622239, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 2.000997604211031]
+pool num: 149753
+step 53, a=-0.9992573363182429
+No.53       new_cwnd:1.00101
+No.54 Window:5.00507 Rtt:0.0610869 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.2056, 0.0, 0, 2.000997604211031], type:0.002, action:-0.9992573363182429, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.0010139666992135]
+pool num: 149754
+step 54, a=0.9978324626738844
+No.54       new_cwnd:1.99902
+No.55 Window:5.99707 Rtt:0.0610773 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.2056, 0.0, 0, 1.0010139666992135], type:0.002, action:0.9978324626738844, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.9990223002438263]
+pool num: 149755
+step 55, a=-0.9988635469931767
+No.55       new_cwnd:1.0003
+No.56 Window:3.0009 Rtt:0.0610709 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.9990223002438263], type:0.002, action:-0.9988635469931767, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0002988044265266]
+pool num: 149756
+step 56, a=0.9997482932523587
+No.56       new_cwnd:2.00025
+No.57 Window:10.0012 Rtt:0.0611081 Inflight:2 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.12336, 0.0, 0, 1.0002988044265266], type:0.002, action:0.9997482932523587, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 2.0002485953904756]
+pool num: 149757
+step 57, a=-0.9982422060073535
+No.57       new_cwnd:1.00134
+No.58 Window:5.00672 Rtt:0.0610836 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.2056, 0.0, 0, 2.0002485953904756], type:0.002, action:-0.9982422060073535, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.0013436017460482]
+pool num: 149758
+step 58, a=-0.9997555320298133
+No.58       new_cwnd:1
+No.59 Window:3 Rtt:0.0610751 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.2056, 0.0, 0, 1.0013436017460482], type:0.002, action:-0.9997555320298133, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149759
+step 59, a=-0.9985771823690085
+No.59       new_cwnd:1
+No.60 Window:3 Rtt:0.0610695 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:-0.9985771823690085, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149760
+step 60, a=-0.9997181171096378
+No.60       new_cwnd:1
+No.61 Window:3 Rtt:0.0610656 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:-0.9997181171096378, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149761
+step 61, a=-0.9999684227059835
+No.61       new_cwnd:1
+No.62 Window:4 Rtt:0.0610624 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:-0.9999684227059835, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.0]
+pool num: 149762
+step 62, a=-0.9996229393789378
+No.62       new_cwnd:1
+No.63 Window:3 Rtt:0.061061 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.0], type:0.002, action:-0.9996229393789378, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149763
+step 63, a=-0.998029472469195
+No.63       new_cwnd:1
+No.64 Window:3 Rtt:0.0610599 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:-0.998029472469195, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149764
+step 64, a=0.9990665233567215
+No.64       new_cwnd:1.99871
+No.65 Window:5.99612 Rtt:0.0610593 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:0.9990665233567215, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.9987063451594007]
+pool num: 149765
+step 65, a=0.9985608613499106
+No.65       new_cwnd:3.99343
+No.66 Window:39.9343 Rtt:0.0611318 Inflight:3 Data:10 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:10280
+state:[0.12336, 0.0, 0, 1.9987063451594007], type:0.002, action:0.9985608613499106, reward:-0.3694498009895249, next_sate:[0.4112, 0.1, 0, 3.993427119862827]
+pool num: 149766
+step 66, a=-0.9965222338746733
+No.66       new_cwnd:2.00153
+No.67 Window:14.0107 Rtt:0.0610869 Inflight:2 Data:7 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:7196
+state:[0.4112, 0.1, 0, 3.993427119862827], type:0.002, action:-0.9965222338746733, reward:-0.5212267609752681, next_sate:[0.28784, 0.0, 0, 2.0015326513217033]
+pool num: 149767
+step 67, a=0.9992949955995742
+No.67       new_cwnd:4.00111
+No.68 Window:40.0111 Rtt:0.0612414 Inflight:4 Data:10 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:10280
+state:[0.28784, 0.0, 0, 2.0015326513217033], type:0.002, action:0.9992949955995742, reward:-0.3694498009895249, next_sate:[0.4112, 0.1, 0, 4.001109595355089]
+pool num: 149768
+step 68, a=0.9983897894948406
+No.68       new_cwnd:7.99329
+No.69 Window:143.879 Rtt:0.0614389 Inflight:7 Data:18 Timeout:0 Nack:0 CongesLevelSum:8 DataSizeSum:18504
+state:[0.4112, 0.1, 0, 4.001109595355089], type:0.002, action:0.9983897894948406, reward:-0.12494118477510766, next_sate:[0.74016, 0.4444444444444444, 0, 7.99329279322899]
+pool num: 149769
+step 69, a=-0.9990712199792594
+No.69       new_cwnd:3.99922
+No.70 Window:63.9875 Rtt:0.0611029 Inflight:3 Data:16 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:16448
+state:[0.74016, 0.4444444444444444, 0, 7.99329279322899], type:0.002, action:-0.9990712199792594, reward:-0.16220481833360012, next_sate:[0.65792, 0.0, 0, 3.9992201910298566]
+pool num: 149770
+step 70, a=-0.9998392397775241
+No.70       new_cwnd:1.99983
+No.71 Window:9.99916 Rtt:0.061081 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.65792, 0.0, 0, 3.9992201910298566], type:0.002, action:-0.9998392397775241, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.9998329254723857]
+pool num: 149771
+step 71, a=-0.9976575235384074
+No.71       new_cwnd:1.00154
+No.72 Window:3.00462 Rtt:0.0610734 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.2056, 0.0, 0, 1.9998329254723857], type:0.002, action:-0.9976575235384074, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.001541326826674]
+pool num: 149772
+step 72, a=0.9963772522914565
+No.72       new_cwnd:1.99806
+No.73 Window:5.99418 Rtt:0.0610683 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.001541326826674], type:0.002, action:0.9963772522914565, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.9980590281359223]
+pool num: 149773
+step 73, a=0.9974786025533442
+No.73       new_cwnd:3.98914
+No.74 Window:39.8914 Rtt:0.0611342 Inflight:3 Data:10 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:10280
+state:[0.12336, 0.0, 0, 1.9980590281359223], type:0.002, action:0.9974786025533442, reward:-0.3694498009895249, next_sate:[0.4112, 0.1, 0, 3.989140142043053]
+pool num: 149774
+step 74, a=-0.9988767596571928
+No.74       new_cwnd:1.99612
+No.75 Window:9.98062 Rtt:0.061097 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.4112, 0.1, 0, 3.989140142043053], type:0.002, action:-0.9988767596571928, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.9961235898741692]
+pool num: 149775
+step 75, a=-0.9999759322021974
+No.75       new_cwnd:1
+No.76 Window:3 Rtt:0.0610841 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.2056, 0.0, 0, 1.9961235898741692], type:0.002, action:-0.9999759322021974, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149776
+step 76, a=0.9990908387745383
+No.76       new_cwnd:1.99874
+No.77 Window:5.99622 Rtt:0.0610755 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:0.9990908387745383, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.9987400319664193]
+pool num: 149777
+step 77, a=-0.9992607648548784
+No.77       new_cwnd:1
+No.78 Window:4 Rtt:0.0610682 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.12336, 0.0, 0, 1.9987400319664193], type:0.002, action:-0.9992607648548784, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.0]
+pool num: 149778
+step 78, a=0.9947353288159417
+No.78       new_cwnd:1.99271
+No.79 Window:5.97814 Rtt:0.0610648 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.0], type:0.002, action:0.9947353288159417, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.992714916443041]
+pool num: 149779
+step 79, a=-0.9971347954651402
+No.79       new_cwnd:1
+No.80 Window:3 Rtt:0.0610625 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.992714916443041], type:0.002, action:-0.9971347954651402, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149780
+step 80, a=-0.999444257753214
+No.80       new_cwnd:1
+No.81 Window:3 Rtt:0.061061 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:-0.999444257753214, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149781
+step 81, a=-0.9980324213736099
+No.81       new_cwnd:1
+No.82 Window:4 Rtt:0.0610597 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:-0.9980324213736099, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.0]
+pool num: 149782
+step 82, a=-0.9978121768615815
+No.82       new_cwnd:1
+No.83 Window:3 Rtt:0.0610591 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.0], type:0.002, action:-0.9978121768615815, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149783
+step 83, a=-0.9992079314771677
+No.83       new_cwnd:1
+No.84 Window:3 Rtt:0.0610587 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:-0.9992079314771677, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149784
+step 84, a=-0.9978521945605071
+No.84       new_cwnd:1
+No.85 Window:3 Rtt:0.0610585 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:-0.9978521945605071, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149785
+step 85, a=0.999383701530727
+No.85       new_cwnd:1.99915
+No.86 Window:7.99658 Rtt:0.0610582 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:0.999383701530727, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.9991458113687886]
+pool num: 149786
+step 86, a=0.9976344637764294
+No.86       new_cwnd:3.99174
+No.87 Window:27.9422 Rtt:0.0611678 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.16448, 0.0, 0, 1.9991458113687886], type:0.002, action:0.9976344637764294, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.991741136616277]
+pool num: 149787
+step 87, a=0.9994261960486026
+No.87       new_cwnd:7.98031
+No.88 Window:135.665 Rtt:0.061436 Inflight:7 Data:17 Timeout:0 Nack:0 CongesLevelSum:8 DataSizeSum:17476
+state:[0.28784, 0.14285714285714285, 0, 3.991741136616277], type:0.002, action:0.9994261960486026, reward:-0.15058176196419212, next_sate:[0.69904, 0.47058823529411764, 0, 7.980307629477263]
+pool num: 149788
+step 88, a=-0.9994443318322411
+No.88       new_cwnd:3.99169
+No.89 Window:51.892 Rtt:0.0611245 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[0.69904, 0.47058823529411764, 0, 7.980307629477263], type:0.002, action:-0.9994443318322411, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.9916909576827355]
+pool num: 149789
+step 89, a=0.9989954897807998
+No.89       new_cwnd:7.97783
+No.90 Window:159.557 Rtt:0.0613072 Inflight:7 Data:20 Timeout:0 Nack:0 CongesLevelSum:7 DataSizeSum:20560
+state:[0.53456, 0.0, 0, 3.9916909576827355], type:0.002, action:0.9989954897807998, reward:-0.07623230532554368, next_sate:[0.8224, 0.35, 0, 7.977825233395427]
+pool num: 149790
+step 90, a=0.9985775967266288
+No.90       new_cwnd:15.9399
+No.91 Window:781.056 Rtt:0.0611029 Inflight:15 Data:49 Timeout:0 Nack:0 CongesLevelSum:27 DataSizeSum:50372
+state:[0.8224, 0.35, 0, 7.977825233395427], type:0.002, action:0.9985775967266288, reward:0.3066518912838867, next_sate:[2.01488, 0.5510204081632653, 0, 15.939926987879288]
+pool num: 149791
+step 91, a=-0.9999238684144283
+No.91       new_cwnd:7.97038
+No.92 Window:231.141 Rtt:0.0610588 Inflight:7 Data:29 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:29812
+state:[2.01488, 0.5510204081632653, 0, 15.939926987879288], type:0.002, action:-0.9999238684144283, reward:0.09607319690943122, next_sate:[1.19248, 0.0, 0, 7.970384083149745]
+pool num: 149792
+step 92, a=0.9978219355007703
+No.92       new_cwnd:15.9167
+No.93 Window:588.919 Rtt:0.0615275 Inflight:15 Data:37 Timeout:0 Nack:0 CongesLevelSum:43 DataSizeSum:38036
+state:[1.19248, 0.0, 0, 7.970384083149745], type:0.002, action:0.9978219355007703, reward:0.16555935550990253, next_sate:[1.52144, 1.162162162162162, 0, 15.916720238849836]
+pool num: 149793
+step 93, a=-0.9987855151290577
+No.93       new_cwnd:7.96506
+No.94 Window:230.987 Rtt:0.0610677 Inflight:7 Data:29 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:29812
+state:[1.52144, 1.162162162162162, 0, 15.916720238849836], type:0.002, action:-0.9987855151290577, reward:0.09607319690943122, next_sate:[1.19248, 0.0, 0, 7.965062421047528]
+pool num: 149794
+step 94, a=-0.9983544383227421
+No.94       new_cwnd:3.98708
+No.95 Window:63.7932 Rtt:0.0610591 Inflight:2 Data:16 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:16448
+state:[1.19248, 0.0, 0, 7.965062421047528], type:0.002, action:-0.9983544383227421, reward:-0.16220481833360012, next_sate:[0.65792, 0.0, 0, 3.987076342716941]
+pool num: 149795
+step 95, a=0.999342178570116
+No.95       new_cwnd:7.97052
+No.96 Window:167.381 Rtt:0.0611357 Inflight:7 Data:21 Timeout:0 Nack:0 CongesLevelSum:4 DataSizeSum:21588
+state:[0.65792, 0.0, 0, 3.987076342716941], type:0.002, action:0.999342178570116, reward:-0.05005788720798657, next_sate:[0.86352, 0.19047619047619047, 0, 7.970517563213663]
+pool num: 149796
+step 96, a=0.9979178298203466
+No.96       new_cwnd:15.918
+No.97 Window:588.968 Rtt:0.0615284 Inflight:15 Data:37 Timeout:0 Nack:0 CongesLevelSum:43 DataSizeSum:38036
+state:[0.86352, 0.19047619047619047, 0, 7.970517563213663], type:0.002, action:0.9979178298203466, reward:0.16555935550990253, next_sate:[1.52144, 1.162162162162162, 0, 15.918044815650672]
+pool num: 149797
+step 97, a=-0.9986152176775206
+No.97       new_cwnd:7.96667
+No.98 Window:231.033 Rtt:0.0610677 Inflight:7 Data:29 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:29812
+state:[1.52144, 1.162162162162162, 0, 15.918044815650672], type:0.002, action:-0.9986152176775206, reward:0.09607319690943122, next_sate:[1.19248, 0.0, 0, 7.966665606463045]
+pool num: 149798
+step 98, a=-0.9970455661729901
+No.98       new_cwnd:3.9915
+No.99 Window:51.8895 Rtt:0.0610596 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[1.19248, 0.0, 0, 7.966665606463045], type:0.002, action:-0.9970455661729901, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.9914984592935734]
+pool num: 149799
+step 99, a=0.9992022678181007
+No.99       new_cwnd:7.97858
+No.100 Window:191.486 Rtt:0.0612014 Inflight:7 Data:24 Timeout:0 Nack:0 CongesLevelSum:7 DataSizeSum:24672
+state:[0.53456, 0.0, 0, 3.9914984592935734], type:0.002, action:0.9992022678181007, reward:0.004771857388747809, next_sate:[0.98688, 0.2916666666666667, 0, 7.978583974040052]
+pool num: 149800
+step 100, a=0.9999048100089709
+No.100      new_cwnd:15.9561
+No.101 Window:590.376 Rtt:0.0615298 Inflight:15 Data:37 Timeout:0 Nack:0 CongesLevelSum:45 DataSizeSum:38036
+state:[0.98688, 0.2916666666666667, 0, 7.978583974040052], type:0.002, action:0.9999048100089709, reward:0.16387016632071336, next_sate:[1.52144, 1.2162162162162162, 0, 15.956115118118975]
+pool num: 149801
+step 101, a=0.9988542564042515
+No.101      new_cwnd:31.8869
+No.102 Window:2455.29 Rtt:0.0612164 Inflight:31 Data:77 Timeout:0 Nack:0 CongesLevelSum:212 DataSizeSum:79156
+state:[1.52144, 1.2162162162162162, 0, 15.956115118118975], type:0.002, action:0.9988542564042515, reward:0.434126963143996, next_sate:[3.16624, 2.7532467532467533, 0, 31.88689659500825]
+pool num: 149802
+step 102, a=-0.9995998626006731
+No.102      new_cwnd:15.9479
+No.103 Window:972.82 Rtt:0.061058 Inflight:15 Data:61 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:62708
+state:[3.16624, 2.7532467532467533, 0, 31.88689659500825], type:0.002, action:-0.9995998626006731, reward:0.4190050340212421, next_sate:[2.50832, 0.0, 0, 15.947870891703904]
+pool num: 149803
+step 103, a=0.996815707650198
+No.103      new_cwnd:31.8254
+No.104 Window:2450.56 Rtt:0.0612163 Inflight:31 Data:77 Timeout:0 Nack:0 CongesLevelSum:211 DataSizeSum:79156
+state:[2.50832, 0.0, 0, 15.947870891703904], type:0.002, action:0.996815707650198, reward:0.4345328072998402, next_sate:[3.16624, 2.74025974025974, 0, 31.825419671382814]
+pool num: 149804
+step 104, a=-0.999907673642106
+No.104      new_cwnd:15.9137
+No.105 Window:970.737 Rtt:0.061058 Inflight:15 Data:61 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:62708
+state:[3.16624, 2.74025974025974, 0, 31.825419671382814], type:0.002, action:-0.999907673642106, reward:0.4190050340212421, next_sate:[2.50832, 0.0, 0, 15.913728214151684]
+pool num: 149805
+step 105, a=0.9992665746859699
+No.105      new_cwnd:31.8113
+No.106 Window:2958.45 Rtt:0.0610766 Inflight:30 Data:93 Timeout:0 Nack:0 CongesLevelSum:211 DataSizeSum:95604
+state:[2.50832, 0.0, 0, 15.913728214151684], type:0.002, action:0.9992665746859699, reward:0.5312576099300016, next_sate:[3.82416, 2.2688172043010755, 0, 31.81128036261133]
+pool num: 149806
+step 106, a=0.9988758690223662
+No.106      new_cwnd:63.573
+No.107 Window:11125.3 Rtt:0.061058 Inflight:62 Data:175 Timeout:0 Nack:0 CongesLevelSum:538 DataSizeSum:179900
+state:[3.82416, 2.2688172043010755, 0, 31.81128036261133], type:0.002, action:0.9988758690223662, reward:0.780641819125341, next_sate:[7.196, 3.0742857142857143, 0, 63.57300608422715]
+pool num: 149807
+step 107, a=0.9973408419919654
+No.107      new_cwnd:126.912
+No.108 Window:28428.3 Rtt:0.0880152 Inflight:126 Data:224 Timeout:0 Nack:0 CongesLevelSum:4001 DataSizeSum:230272
+state:[7.196, 3.0742857142857143, 0, 63.57300608422715], type:0.002, action:0.9973408419919654, reward:0.42574799413035225, next_sate:[9.21088, 17.861607142857142, 0, 126.91187402693221]
+pool num: 149808
+step 108, a=-0.9975832886790927
+No.108      new_cwnd:63.5623
+No.109 Window:13221 Rtt:0.0610838 Inflight:63 Data:208 Timeout:23 Nack:0 CongesLevelSum:3537 DataSizeSum:213824
+state:[9.21088, 17.861607142857142, 0, 126.91187402693221], type:0.002, action:-0.9975832886790927, reward:-1.5378778628167284, next_sate:[8.55296, 17.004807692307693, 23, 63.56232345951502]
+pool num: 149809
+step 109, a=-0.9992579990198205
+No.109      new_cwnd:31.7975
+No.110 Window:3974.69 Rtt:0.0610579 Inflight:31 Data:125 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:128500
+state:[8.55296, 17.004807692307693, 23, 63.56232345951502], type:0.002, action:-0.9992579990198205, reward:0.7305852120185314, next_sate:[5.14, 0.0, 0, 31.797511490265062]
+pool num: 149810
+step 110, a=0.997643736278941
+No.110      new_cwnd:63.4912
+No.111 Window:9968.12 Rtt:0.0610632 Inflight:63 Data:157 Timeout:0 Nack:0 CongesLevelSum:932 DataSizeSum:161396
+state:[5.14, 0.0, 0, 31.797511490265062], type:0.002, action:0.997643736278941, reward:0.6440652972795815, next_sate:[6.45584, 5.936305732484076, 0, 63.491241973281625]
+pool num: 149811
+step 111, a=0.9974684680496937
+No.111      new_cwnd:126.76
+No.112 Window:27887.2 Rtt:0.0811499 Inflight:126 Data:220 Timeout:0 Nack:0 CongesLevelSum:3349 DataSizeSum:226160
+state:[6.45584, 5.936305732484076, 0, 63.491241973281625], type:0.002, action:0.9974684680496937, reward:0.5003876525599541, next_sate:[9.0464, 15.222727272727273, 0, 126.7598600835736]
+pool num: 149812
+step 112, a=0.9983565182604408
+No.112      new_cwnd:253.231
+No.113 Window:59002.8 Rtt:0.0884736 Inflight:253 Data:233 Timeout:31 Nack:0 CongesLevelSum:6391 DataSizeSum:239524
+state:[9.0464, 15.222727272727273, 0, 126.7598600835736], type:0.002, action:0.9983565182604408, reward:-11.585688556234318, next_sate:[9.58096, 27.429184549356222, 31, 253.2310813435838]
+pool num: 149813
+step 113, a=0.997021807053083
+No.113      new_cwnd:300
+No.114 Window:69900 Rtt:0.0884736 Inflight:300 Data:233 Timeout:150 Nack:0 CongesLevelSum:7223 DataSizeSum:239524
+state:[9.58096, 27.429184549356222, 31, 253.2310813435838], type:0.002, action:0.997021807053083, reward:-3999479729156.1763, next_sate:[9.58096, 31.0, 150, 300.0]
+pool num: 149814
+step 114, a=-0.9995223269629168
+No.114      new_cwnd:150.05
+No.115 Window:24608.1 Rtt:0.0880338 Inflight:149 Data:164 Timeout:99 Nack:0 CongesLevelSum:3739 DataSizeSum:168592
+state:[9.58096, 31.0, 150, 300.0], type:0.002, action:-0.9995223269629168, reward:-45665985.57601471, next_sate:[6.74368, 22.798780487804876, 99, 150.04967288066806]
+pool num: 149815
+step 115, a=0.9990062148829175
+No.115      new_cwnd:299.893
+No.116 Window:63877.1 Rtt:0.0884689 Inflight:299 Data:213 Timeout:98 Nack:0 CongesLevelSum:3999 DataSizeSum:218964
+state:[6.74368, 22.798780487804876, 99, 150.04967288066806], type:0.002, action:0.9990062148829175, reward:-36532788.19198486, next_sate:[8.75856, 18.774647887323944, 98, 299.8926967046423]
+pool num: 149816
+step 116, a=-0.9971275550636317
+No.116      new_cwnd:150.245
+No.117 Window:19832.4 Rtt:0.0881952 Inflight:150 Data:132 Timeout:75 Nack:0 CongesLevelSum:3343 DataSizeSum:135696
+state:[8.75856, 18.774647887323944, 98, 299.8926967046423], type:0.002, action:-0.9971275550636317, reward:-215651.54594169062, next_sate:[5.42784, 25.325757575757574, 75, 150.24519300195576]
+pool num: 149817
+step 117, a=0.9989206733220564
+No.117      new_cwnd:300
+No.118 Window:56100 Rtt:0.0884573 Inflight:300 Data:187 Timeout:121 Nack:0 CongesLevelSum:3880 DataSizeSum:192236
+state:[5.42784, 25.325757575757574, 75, 150.24519300195576], type:0.002, action:0.9989206733220564, reward:-6188895116.022168, next_sate:[7.68944, 20.74866310160428, 121, 300.0]
+pool num: 149818
+step 118, a=0.9979341737449503
+No.118      new_cwnd:300
+No.119 Window:69900 Rtt:0.0884699 Inflight:283 Data:233 Timeout:190 Nack:0 CongesLevelSum:7222 DataSizeSum:239524
+state:[7.68944, 20.74866310160428, 121, 300.0], type:0.002, action:0.9979341737449503, reward:-3.0088741298248896e+16, next_sate:[9.58096, 30.99570815450644, 190, 300.0]
+pool num: 149819
+step 119, a=0.9967006102962384
+No.119      new_cwnd:300
+No.120 Window:69900 Rtt:0.0884699 Inflight:299 Data:233 Timeout:169 Nack:0 CongesLevelSum:7223 DataSizeSum:239524
+state:[9.58096, 30.99570815450644, 190, 300.0], type:0.002, action:0.9967006102962384, reward:-277519655114426.25, next_sate:[9.58096, 31.0, 169, 300.0]
+pool num: 149820
+step 120, a=-0.9998759286446409
+No.120      new_cwnd:150.013
+No.121 Window:20251.7 Rtt:0.0884736 Inflight:150 Data:135 Timeout:77 Nack:0 CongesLevelSum:3430 DataSizeSum:138780
+state:[9.58096, 31.0, 169, 300.0], type:0.002, action:-0.9998759286446409, reward:-336955.5189521125, next_sate:[5.5512, 25.40740740740741, 77, 150.0129005112357]
+pool num: 149821
+step 121, a=0.9974997749174666
+No.121      new_cwnd:299.506
+No.122 Window:56906.2 Rtt:0.0884629 Inflight:298 Data:190 Timeout:119 Nack:0 CongesLevelSum:3908 DataSizeSum:195320
+state:[5.5512, 25.40740740740741, 77, 150.0129005112357], type:0.002, action:0.9974997749174666, reward:-3960892874.144893, next_sate:[7.8128, 20.568421052631578, 119, 299.50629940306476]
+pool num: 149822
+step 122, a=-0.9985994813149792
+No.122      new_cwnd:149.899
+No.123 Window:19486.8 Rtt:0.0881952 Inflight:149 Data:130 Timeout:74 Nack:0 CongesLevelSum:3310 DataSizeSum:133640
+state:[7.8128, 20.568421052631578, 119, 299.50629940306476], type:0.002, action:-0.9985994813149792, reward:-172521.25273766147, next_sate:[5.3456, 25.46153846153846, 74, 149.89859548989617]
+pool num: 149823
+step 123, a=-0.9976672777514262
+No.123      new_cwnd:75.0706
+No.124 Window:2026.91 Rtt:0.0881952 Inflight:122 Data:27 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:27756
+state:[5.3456, 25.46153846153846, 74, 149.89859548989617], type:0.002, action:-0.9976672777514262, reward:0.0650389631694624, next_sate:[1.11024, 0.0, 0, 75.0705827798534]
+pool num: 149824
+step 124, a=-0.996753847006996
+No.124      new_cwnd:37.6198
+No.125 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[1.11024, 0.0, 0, 75.0705827798534], type:0.002, action:-0.996753847006996, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149825
+step 125, a=-0.9981175404102839
+No.125      new_cwnd:18.8345
+No.126 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9981175404102839, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149826
+step 126, a=0.9988716861335205
+No.126      new_cwnd:37.6395
+No.127 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9988716861335205, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149827
+step 127, a=-0.9975509455202483
+No.127      new_cwnd:18.8517
+No.128 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9975509455202483, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149828
+step 128, a=-0.9987385649684665
+No.128      new_cwnd:9.43411
+No.129 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9987385649684665, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149829
+step 129, a=-0.9972845110380909
+No.129      new_cwnd:4.72594
+No.130 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9972845110380909, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149830
+step 130, a=0.9989239868155653
+No.130      new_cwnd:9.44484
+No.131 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9989239868155653, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149831
+step 131, a=0.9983859321777651
+No.131      new_cwnd:18.8686
+No.132 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9983859321777651, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149832
+step 132, a=0.9990333469786692
+No.132      new_cwnd:37.7118
+No.133 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9990333469786692, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149833
+step 133, a=0.9999897507533926
+No.133      new_cwnd:75.4231
+No.134 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9999897507533926, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149834
+step 134, a=-0.9975775098319247
+No.134      new_cwnd:37.7749
+No.135 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9975775098319247, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149835
+step 135, a=0.997017835093372
+No.135      new_cwnd:75.3939
+No.136 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.997017835093372, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149836
+step 136, a=-0.9987845404303235
+No.136      new_cwnd:37.7287
+No.137 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9987845404303235, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149837
+step 137, a=-0.9975148473811305
+No.137      new_cwnd:18.8969
+No.138 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9975148473811305, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149838
+step 138, a=-0.9985826577143153
+No.138      new_cwnd:9.45773
+No.139 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9985826577143153, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149839
+step 139, a=0.998636190506925
+No.139      new_cwnd:18.8976
+No.140 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.998636190506925, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149840
+step 140, a=-0.9991864874490721
+No.140      new_cwnd:9.45412
+No.141 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9991864874490721, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149841
+step 141, a=-0.998687644030868
+No.141      new_cwnd:4.73136
+No.142 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.998687644030868, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149842
+step 142, a=0.998869050678789
+No.142      new_cwnd:9.45531
+No.143 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.998869050678789, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149843
+step 143, a=-0.9983693393429499
+No.143      new_cwnd:4.733
+No.144 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9983693393429499, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149844
+step 144, a=0.9985018274461726
+No.144      new_cwnd:9.45618
+No.145 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9985018274461726, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149845
+step 145, a=0.9985074473742488
+No.145      new_cwnd:18.8928
+No.146 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9985074473742488, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149846
+step 146, a=0.99903726422651
+No.146      new_cwnd:37.7604
+No.147 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.99903726422651, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149847
+step 147, a=0.9978225694733547
+No.147      new_cwnd:75.4069
+No.148 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9978225694733547, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149848
+step 148, a=-0.9993453300197145
+No.148      new_cwnd:37.7206
+No.149 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9993453300197145, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149849
+step 149, a=0.998106071943204
+No.149      new_cwnd:75.3421
+No.150 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.998106071943204, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149850
+step 150, a=-0.9992296279032932
+No.150      new_cwnd:37.6912
+No.151 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9992296279032932, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149851
+step 151, a=0.9985642925331961
+No.151      new_cwnd:75.3074
+No.152 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9985642925331961, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149852
+step 152, a=-0.996492823311203
+No.152      new_cwnd:37.7453
+No.153 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.996492823311203, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149853
+step 153, a=0.9990764783730948
+No.153      new_cwnd:75.4424
+No.154 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9990764783730948, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149854
+step 154, a=-0.9989746825726683
+No.154      new_cwnd:37.748
+No.155 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9989746825726683, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149855
+step 155, a=0.9985817501943428
+No.155      new_cwnd:75.4218
+No.156 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9985817501943428, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149856
+step 156, a=0.9988179565457691
+No.156      new_cwnd:150.72
+No.157 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9988179565457691, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149857
+step 157, a=0.9983185112560815
+No.157      new_cwnd:300
+No.158 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9983185112560815, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149858
+step 158, a=0.9949694554580366
+No.158      new_cwnd:300
+No.159 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9949694554580366, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149859
+step 159, a=0.9987445173877665
+No.159      new_cwnd:300
+No.160 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9987445173877665, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149860
+step 160, a=0.9985798060995048
+No.160      new_cwnd:300
+No.161 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9985798060995048, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149861
+step 161, a=-0.9989358979642291
+No.161      new_cwnd:150.111
+No.162 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9989358979642291, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149862
+step 162, a=0.9998708319812235
+No.162      new_cwnd:300
+No.163 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9998708319812235, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149863
+step 163, a=0.9984319387480343
+No.163      new_cwnd:300
+No.164 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9984319387480343, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149864
+step 164, a=-0.9993252326235968
+No.164      new_cwnd:150.07
+No.165 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9993252326235968, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149865
+step 165, a=0.9963968869275908
+No.165      new_cwnd:299.392
+No.166 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9963968869275908, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149866
+step 166, a=0.9979836503090542
+No.166      new_cwnd:300
+No.167 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9979836503090542, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149867
+step 167, a=0.99977727538453
+No.167      new_cwnd:300
+No.168 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.99977727538453, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149868
+step 168, a=0.9984428798147078
+No.168      new_cwnd:300
+No.169 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9984428798147078, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149869
+step 169, a=-0.9993313684724534
+No.169      new_cwnd:150.07
+No.170 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9993313684724534, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149870
+step 170, a=-0.9959686060026358
+No.170      new_cwnd:75.2447
+No.171 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9959686060026358, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149871
+step 171, a=-0.9981496334073379
+No.171      new_cwnd:37.6707
+No.172 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9981496334073379, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149872
+step 172, a=0.9972735141019375
+No.172      new_cwnd:75.1991
+No.173 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9972735141019375, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149873
+step 173, a=0.9990732843105075
+No.173      new_cwnd:150.302
+No.174 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9990732843105075, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149874
+step 174, a=0.9982615798259631
+No.174      new_cwnd:300
+No.175 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9982615798259631, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149875
+step 175, a=0.9995657087499641
+No.175      new_cwnd:300
+No.176 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9995657087499641, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149876
+step 176, a=-0.9993021446022146
+No.176      new_cwnd:150.073
+No.177 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9993021446022146, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149877
+step 177, a=0.9998646266683842
+No.177      new_cwnd:300
+No.178 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9998646266683842, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149878
+step 178, a=0.9981038381849372
+No.178      new_cwnd:300
+No.179 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9981038381849372, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149879
+step 179, a=0.9989036671304246
+No.179      new_cwnd:300
+No.180 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9989036671304246, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149880
+step 180, a=0.9977027502895262
+No.180      new_cwnd:300
+No.181 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9977027502895262, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149881
+step 181, a=0.9989636163823696
+No.181      new_cwnd:300
+No.182 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9989636163823696, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149882
+step 182, a=0.9962866389513079
+No.182      new_cwnd:300
+No.183 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9962866389513079, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149883
+step 183, a=0.9973784004560584
+No.183      new_cwnd:300
+No.184 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:0.9973784004560584, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149884
+step 184, a=-0.9975076868672077
+No.184      new_cwnd:150.259
+No.185 Window:0 Rtt:0.0881952 Inflight:122 Data:0 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.9975076868672077, reward:0, next_sate:[0, 0, 0, 0]
+pool num: 149885
+step 185, a=-0.999565772255379
+No.185      new_cwnd:75.1523
+No.186 Window:0 Rtt:0.0881952 Inflight:75 Data:0 Timeout:116 Nack:0 CongesLevelSum:0 DataSizeSum:0
+state:[0, 0, 0, 0], type:0.002, action:-0.999565772255379, reward:0, next_sate:[0, 0, 116, 0]
+pool num: 149886
+step 186, a=0.9999956766162519
+No.186      new_cwnd:150.304
+No.187 Window:34720.3 Rtt:0.0880158 Inflight:149 Data:231 Timeout:6 Nack:0 CongesLevelSum:4178 DataSizeSum:237468
+state:[0, 0, 116, 0], type:0.002, action:0.9999956766162519, reward:0.3993525132246081, next_sate:[9.49872, 18.086580086580085, 6, 150.30413693728497]
+pool num: 149887
+step 187, a=-0.9975577378908518
+No.187      new_cwnd:75.2794
+No.188 Window:15507.6 Rtt:0.064506 Inflight:75 Data:206 Timeout:47 Nack:0 CongesLevelSum:4453 DataSizeSum:211768
+state:[9.49872, 18.086580086580085, 6, 150.30413693728497], type:0.002, action:-0.9975577378908518, reward:-416.8470511098231, next_sate:[8.47072, 21.616504854368934, 47, 75.27939717304992]
+pool num: 149888
+step 188, a=-0.9971165094559175
+No.188      new_cwnd:37.715
+No.189 Window:5619.54 Rtt:0.0610581 Inflight:37 Data:149 Timeout:0 Nack:0 CongesLevelSum:225 DataSizeSum:153172
+state:[8.47072, 21.616504854368934, 47, 75.27939717304992], type:0.002, action:-0.9971165094559175, reward:0.7596718701073129, next_sate:[6.12688, 1.5100671140939597, 0, 37.71500365546756]
+pool num: 149889
+step 189, a=0.9988365445980865
+No.189      new_cwnd:75.3692
+No.190 Window:13189.6 Rtt:0.0610605 Inflight:75 Data:175 Timeout:0 Nack:0 CongesLevelSum:1116 DataSizeSum:179900
+state:[6.12688, 1.5100671140939597, 0, 37.71500365546756], type:0.002, action:0.9988365445980865, reward:0.6774275334110553, next_sate:[7.196, 6.377142857142857, 0, 75.36920161751009]
+pool num: 149890
+step 190, a=-0.9995745861749791
+No.190      new_cwnd:37.6957
+No.191 Window:5390.49 Rtt:0.0610876 Inflight:37 Data:143 Timeout:6 Nack:0 CongesLevelSum:66 DataSizeSum:147004
+state:[7.196, 6.377142857142857, 0, 75.36920161751009], type:0.002, action:-0.9995745861749791, reward:0.7418591215800764, next_sate:[5.88016, 0.46153846153846156, 6, 37.69571467107471]
+pool num: 149891
+step 191, a=-0.9983792016519519
+No.191      new_cwnd:18.869
+No.192 Window:1377.44 Rtt:0.0610579 Inflight:18 Data:73 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:75044
+state:[5.88016, 0.46153846153846156, 6, 37.69571467107471], type:0.002, action:-0.9983792016519519, reward:0.496998059130931, next_sate:[3.00176, 0.0, 0, 18.86904389369534]
+pool num: 149892
+step 192, a=-0.9999299536767087
+No.192      new_cwnd:9.43498
+No.193 Window:339.659 Rtt:0.0610579 Inflight:9 Data:36 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:37008
+state:[3.00176, 0.0, 0, 18.86904389369534], type:0.002, action:-0.9999299536767087, reward:0.18997769977776244, next_sate:[1.48032, 0.0, 0, 9.434980026759883]
+pool num: 149893
+step 193, a=-0.9992874055059435
+No.193      new_cwnd:4.71982
+No.194 Window:80.237 Rtt:0.0610579 Inflight:4 Data:17 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:17476
+state:[1.48032, 0.0, 0, 9.434980026759883], type:0.002, action:-0.9992874055059435, reward:-0.13587587961125094, next_sate:[0.69904, 0.0, 0, 4.719820712292217]
+pool num: 149894
+step 194, a=0.9967964236885571
+No.194      new_cwnd:9.4187
+No.195 Window:291.98 Rtt:0.0611911 Inflight:9 Data:31 Timeout:0 Nack:0 CongesLevelSum:13 DataSizeSum:31868
+state:[0.69904, 0.0, 0, 4.719820712292217], type:0.002, action:0.9967964236885571, reward:0.1119320541350704, next_sate:[1.27472, 0.41935483870967744, 0, 9.418703485349228]
+pool num: 149895
+step 195, a=-0.9970274622228787
+No.195      new_cwnd:4.71906
+No.196 Window:80.2241 Rtt:0.0610717 Inflight:4 Data:17 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:17476
+state:[1.27472, 0.41935483870967744, 0, 9.418703485349228], type:0.002, action:-0.9970274622228787, reward:-0.13587587961125094, next_sate:[0.69904, 0.0, 0, 4.719064923218157]
+pool num: 149896
+step 196, a=-0.9984259507331368
+No.196      new_cwnd:2.36211
+No.197 Window:18.8969 Rtt:0.0610626 Inflight:2 Data:8 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:8224
+state:[0.69904, 0.0, 0, 4.719064923218157], type:0.002, action:-0.9984259507331368, reward:-0.4632348139975814, next_sate:[0.32896, 0.0, 0, 2.3621082292245155]
+pool num: 149897
+step 197, a=-0.9983922684000026
+No.197      new_cwnd:1.18237
+No.198 Window:4.72948 Rtt:0.0610607 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.32896, 0.0, 0, 2.3621082292245155], type:0.002, action:-0.9983922684000026, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.1823710086036745]
+pool num: 149898
+step 198, a=-0.9971789120493134
+No.198      new_cwnd:1
+No.199 Window:4 Rtt:0.0610595 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.16448, 0.0, 0, 1.1823710086036745], type:0.002, action:-0.9971789120493134, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.0]
+pool num: 149899
+step 199, a=0.9995562844747674
+No.199      new_cwnd:1.99938
+No.200 Window:5.99815 Rtt:0.061059 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.0], type:0.002, action:0.9995562844747674, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.999384974252987]
+pool num: 149900
+step 200, a=0.9959811881771756
+No.200      new_cwnd:3.98765
+No.201 Window:27.9135 Rtt:0.0611681 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.12336, 0.0, 0, 1.999384974252987], type:0.002, action:0.9959811881771756, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.9876463629143997]
+pool num: 149901
+step 201, a=0.995522489198069
+No.201      new_cwnd:7.95058
+No.202 Window:135.16 Rtt:0.061436 Inflight:7 Data:17 Timeout:0 Nack:0 CongesLevelSum:8 DataSizeSum:17476
+state:[0.28784, 0.14285714285714285, 0, 3.9876463629143997], type:0.002, action:0.995522489198069, reward:-0.15058176196419212, next_sate:[0.69904, 0.47058823529411764, 0, 7.950579184764646]
+pool num: 149902
+step 202, a=0.9971399872583286
+No.202      new_cwnd:15.8697
+No.203 Window:793.483 Rtt:0.0611413 Inflight:14 Data:50 Timeout:0 Nack:0 CongesLevelSum:44 DataSizeSum:51400
+state:[0.69904, 0.47058823529411764, 0, 7.950579184764646], type:0.002, action:0.9971399872583286, reward:0.3051452033464939, next_sate:[2.056, 0.88, 0, 15.869666982580812]
+pool num: 149903
+step 203, a=0.9982698654708095
+No.203      new_cwnd:31.7013
+No.204 Window:3011.62 Rtt:0.0610592 Inflight:30 Data:95 Timeout:0 Nack:0 CongesLevelSum:79 DataSizeSum:97660
+state:[2.056, 0.88, 0, 15.869666982580812], type:0.002, action:0.9982698654708095, reward:0.5854119621940598, next_sate:[3.9064, 0.8315789473684211, 0, 31.701293768055052]
+pool num: 149904
+step 204, a=-0.9992947825800597
+No.204      new_cwnd:15.8584
+No.205 Window:967.362 Rtt:0.0610579 Inflight:15 Data:61 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:62708
+state:[3.9064, 0.8315789473684211, 0, 31.701293768055052], type:0.002, action:-0.9992947825800597, reward:0.4190050340212421, next_sate:[2.50832, 0.0, 0, 15.858396882798926]
+pool num: 149905
+step 205, a=-0.9983733004215547
+No.205      new_cwnd:7.93814
+No.206 Window:230.206 Rtt:0.0610579 Inflight:7 Data:29 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:29812
+state:[2.50832, 0.0, 0, 15.858396882798926], type:0.002, action:-0.9983733004215547, reward:0.09607319690943122, next_sate:[1.19248, 0.0, 0, 7.938143989757783]
+pool num: 149906
+step 206, a=0.9975203786676374
+No.206      new_cwnd:15.849
+No.207 Window:586.414 Rtt:0.0615275 Inflight:15 Data:37 Timeout:0 Nack:0 CongesLevelSum:43 DataSizeSum:38036
+state:[1.19248, 0.0, 0, 7.938143989757783], type:0.002, action:0.9975203786676374, reward:0.16555935550990253, next_sate:[1.52144, 1.162162162162162, 0, 15.849024164512052]
+pool num: 149907
+step 207, a=-0.9987794063853739
+No.207      new_cwnd:7.93122
+No.208 Window:230.005 Rtt:0.0610677 Inflight:7 Data:29 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:29812
+state:[1.52144, 1.162162162162162, 0, 15.849024164512052], type:0.002, action:-0.9987794063853739, reward:0.09607319690943122, next_sate:[1.19248, 0.0, 0, 7.931219460798871]
+pool num: 149908
+step 208, a=-0.9972831632768215
+No.208      new_cwnd:3.97308
+No.209 Window:63.5694 Rtt:0.0610591 Inflight:3 Data:16 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:16448
+state:[1.19248, 0.0, 0, 7.931219460798871], type:0.002, action:-0.9972831632768215, reward:-0.16220481833360012, next_sate:[0.65792, 0.0, 0, 3.9730846746907087]
+pool num: 149909
+step 209, a=-0.99913828801601
+No.209      new_cwnd:1.98773
+No.210 Window:9.93865 Rtt:0.0610585 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.65792, 0.0, 0, 3.9730846746907087], type:0.002, action:-0.99913828801601, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.9877292400680395]
+pool num: 149910
+step 210, a=0.9993687920356282
+No.210      new_cwnd:3.97372
+No.211 Window:27.816 Rtt:0.0611679 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.2056, 0.0, 0, 1.9877292400680395], type:0.002, action:0.9993687920356282, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.973719517902093]
+pool num: 149911
+step 211, a=0.9994122628610269
+No.211      new_cwnd:7.9442
+No.212 Window:135.051 Rtt:0.061436 Inflight:7 Data:17 Timeout:0 Nack:0 CongesLevelSum:8 DataSizeSum:17476
+state:[0.28784, 0.14285714285714285, 0, 3.973719517902093], type:0.002, action:0.9994122628610269, reward:-0.15058176196419212, next_sate:[0.69904, 0.47058823529411764, 0, 7.944202001211708]
+pool num: 149912
+step 212, a=0.998868333949954
+No.212      new_cwnd:15.8759
+No.213 Window:809.673 Rtt:0.0611309 Inflight:14 Data:51 Timeout:0 Nack:0 CongesLevelSum:44 DataSizeSum:52428
+state:[0.69904, 0.47058823529411764, 0, 7.944202001211708], type:0.002, action:0.998868333949954, reward:0.31428459079468596, next_sate:[2.09712, 0.8627450980392157, 0, 15.875945848251602]
+pool num: 149913
+step 213, a=-0.999473802849068
+No.213      new_cwnd:7.94087
+No.214 Window:230.285 Rtt:0.0610594 Inflight:7 Data:29 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:29812
+state:[2.09712, 0.8627450980392157, 0, 15.875945848251602], type:0.002, action:-0.999473802849068, reward:0.09607319690943122, next_sate:[1.19248, 0.0, 0, 7.940868685491039]
+pool num: 149914
+step 214, a=-0.9980374408369214
+No.214      new_cwnd:3.97584
+No.215 Window:51.6859 Rtt:0.0610582 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[1.19248, 0.0, 0, 7.940868685491039], type:0.002, action:-0.9980374408369214, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.975839168105047]
+pool num: 149915
+step 215, a=-0.99918431682385
+No.215      new_cwnd:1.98904
+No.216 Window:9.94522 Rtt:0.0610581 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.53456, 0.0, 0, 3.975839168105047], type:0.002, action:-0.99918431682385, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.9890438487051043]
+pool num: 149916
+step 216, a=-0.9970474487050516
+No.216      new_cwnd:1
+No.217 Window:4 Rtt:0.061058 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.2056, 0.0, 0, 1.9890438487051043], type:0.002, action:-0.9970474487050516, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.0]
+pool num: 149917
+step 217, a=0.9977712784719674
+No.217      new_cwnd:1.99691
+No.218 Window:5.99074 Rtt:0.061058 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.0], type:0.002, action:0.9977712784719674, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.9969127211907818]
+pool num: 149918
+step 218, a=-0.9978804464461772
+No.218      new_cwnd:1
+No.219 Window:3 Rtt:0.0610579 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.9969127211907818], type:0.002, action:-0.9978804464461772, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149919
+step 219, a=0.9980809054223758
+No.219      new_cwnd:1.99734
+No.220 Window:5.99202 Rtt:0.0610579 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:0.9980809054223758, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.997341338696187]
+pool num: 149920
+step 220, a=0.9994961065569263
+No.220      new_cwnd:3.99329
+No.221 Window:39.9329 Rtt:0.0611315 Inflight:3 Data:10 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:10280
+state:[0.12336, 0.0, 0, 1.997341338696187], type:0.002, action:0.9994961065569263, reward:-0.3694498009895249, next_sate:[0.4112, 0.1, 0, 3.9932876889381044]
+pool num: 149921
+step 221, a=0.997861668816862
+No.221      new_cwnd:7.97475
+No.222 Window:135.571 Rtt:0.0614322 Inflight:7 Data:17 Timeout:0 Nack:0 CongesLevelSum:8 DataSizeSum:17476
+state:[0.4112, 0.1, 0, 3.9932876889381044], type:0.002, action:0.997861668816862, reward:-0.15058176196419212, next_sate:[0.69904, 0.47058823529411764, 0, 7.9747466180439766]
+pool num: 149922
+step 222, a=0.9980803875733986
+No.222      new_cwnd:15.9283
+No.223 Window:589.347 Rtt:0.061531 Inflight:15 Data:37 Timeout:0 Nack:0 CongesLevelSum:44 DataSizeSum:38036
+state:[0.69904, 0.47058823529411764, 0, 7.9747466180439766], type:0.002, action:0.9980803875733986, reward:0.16471476091530793, next_sate:[1.52144, 1.1891891891891893, 0, 15.928285368458534]
+pool num: 149923
+step 223, a=-0.9982921058363062
+No.223      new_cwnd:7.97358
+No.224 Window:231.234 Rtt:0.0610678 Inflight:7 Data:29 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:29812
+state:[1.52144, 1.1891891891891893, 0, 15.928285368458534], type:0.002, action:-0.9982921058363062, reward:0.09607319690943122, next_sate:[1.19248, 0.0, 0, 7.9735763945585]
+pool num: 149924
+step 224, a=-0.998438009752753
+No.224      new_cwnd:3.99111
+No.225 Window:51.8844 Rtt:0.0610596 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[1.19248, 0.0, 0, 7.9735763945585], type:0.002, action:-0.998438009752753, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.9911069870792613]
+pool num: 149925
+step 225, a=0.999932255580958
+No.225      new_cwnd:7.98184
+No.226 Window:191.564 Rtt:0.0612014 Inflight:7 Data:24 Timeout:0 Nack:0 CongesLevelSum:7 DataSizeSum:24672
+state:[0.53456, 0.0, 0, 3.9911069870792613], type:0.002, action:0.999932255580958, reward:0.004771857388747809, next_sate:[0.98688, 0.2916666666666667, 0, 7.981839163309901]
+pool num: 149926
+step 226, a=-0.9981342734803943
+No.226      new_cwnd:3.99608
+No.227 Window:51.9491 Rtt:0.0610832 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[0.98688, 0.2916666666666667, 0, 7.981839163309901], type:0.002, action:-0.9981342734803943, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.9960840696532025]
+pool num: 149927
+step 227, a=0.9997421301259923
+No.227      new_cwnd:7.99074
+No.228 Window:135.843 Rtt:0.0614257 Inflight:7 Data:17 Timeout:0 Nack:0 CongesLevelSum:7 DataSizeSum:17476
+state:[0.53456, 0.0, 0, 3.9960840696532025], type:0.002, action:0.9997421301259923, reward:-0.14874352667007448, next_sate:[0.69904, 0.4117647058823529, 0, 7.990739732639914]
+pool num: 149928
+step 228, a=0.997257305688833
+No.228      new_cwnd:15.9511
+No.229 Window:590.192 Rtt:0.0615314 Inflight:15 Data:37 Timeout:0 Nack:0 CongesLevelSum:45 DataSizeSum:38036
+state:[0.69904, 0.4117647058823529, 0, 7.990739732639914], type:0.002, action:0.997257305688833, reward:0.16387016632071336, next_sate:[1.52144, 1.2162162162162162, 0, 15.951126082646233]
+pool num: 149929
+step 229, a=0.9976492088022513
+No.229      new_cwnd:31.8503
+No.230 Window:2707.28 Rtt:0.0611124 Inflight:30 Data:85 Timeout:0 Nack:0 CongesLevelSum:212 DataSizeSum:87380
+state:[1.52144, 1.2162162162162162, 0, 15.951126082646233], type:0.002, action:0.9976492088022513, reward:0.4851529482541796, next_sate:[3.4952, 2.4941176470588236, 0, 31.85031155129859]
+pool num: 149930
+step 230, a=-0.9993631827455027
+No.230      new_cwnd:15.9322
+No.231 Window:1003.73 Rtt:0.0610579 Inflight:14 Data:63 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:64764
+state:[3.4952, 2.4941176470588236, 0, 31.85031155129859], type:0.002, action:-0.9993631827455027, reward:0.4330157484640568, next_sate:[2.59056, 0.0, 0, 15.93218681982112]
+pool num: 149931
+step 231, a=0.9965166667105632
+No.231      new_cwnd:31.7875
+No.232 Window:3019.82 Rtt:0.0610603 Inflight:31 Data:95 Timeout:0 Nack:0 CongesLevelSum:105 DataSizeSum:97660
+state:[2.59056, 0.0, 0, 15.93218681982112], type:0.002, action:0.9965166667105632, reward:0.5768593306151124, next_sate:[3.9064, 1.105263157894737, 0, 31.787531103717367]
+pool num: 149932
+step 232, a=0.9972242825378723
+No.232      new_cwnd:63.4529
+No.233 Window:11104.3 Rtt:0.0610579 Inflight:63 Data:175 Timeout:0 Nack:0 CongesLevelSum:351 DataSizeSum:179900
+state:[3.9064, 1.105263157894737, 0, 31.787531103717367], type:0.002, action:0.9972242825378723, reward:0.8140346762681981, next_sate:[7.196, 2.005714285714286, 0, 63.45286260519009]
+pool num: 149933
+step 233, a=-0.9999146091774544
+No.233      new_cwnd:31.7283
+No.234 Window:3966.04 Rtt:0.0610579 Inflight:31 Data:125 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:128500
+state:[7.196, 2.005714285714286, 0, 63.45286260519009], type:0.002, action:-0.9999146091774544, reward:0.7305852120185314, next_sate:[5.14, 0.0, 0, 31.728309195126233]
+pool num: 149934
+step 234, a=-0.9979166303321564
+No.234      new_cwnd:15.8871
+No.235 Window:969.112 Rtt:0.0610579 Inflight:15 Data:61 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:62708
+state:[5.14, 0.0, 0, 31.728309195126233], type:0.002, action:-0.9979166303321564, reward:0.4190050340212421, next_sate:[2.50832, 0.0, 0, 15.887080283968883]
+pool num: 149935
+step 235, a=0.9987772915183468
+No.235      new_cwnd:31.7472
+No.236 Window:2444.54 Rtt:0.0612163 Inflight:31 Data:77 Timeout:0 Nack:0 CongesLevelSum:211 DataSizeSum:79156
+state:[2.50832, 0.0, 0, 15.887080283968883], type:0.002, action:0.9987772915183468, reward:0.4345328072998402, next_sate:[3.16624, 2.74025974025974, 0, 31.747242836934525]
+pool num: 149936
+step 236, a=-0.9988313222869695
+No.236      new_cwnd:15.8865
+No.237 Window:984.962 Rtt:0.061058 Inflight:14 Data:62 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:63736
+state:[3.16624, 2.74025974025974, 0, 31.747242836934525], type:0.002, action:-0.9988313222869695, reward:0.426066888508729, next_sate:[2.54944, 0.0, 0, 15.886485303698699]
+pool num: 149937
+step 237, a=-0.9978240270174228
+No.237      new_cwnd:7.95523
+No.238 Window:278.433 Rtt:0.0610579 Inflight:7 Data:35 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:35980
+state:[2.54944, 0.0, 0, 15.886485303698699], type:0.002, action:-0.9978240270174228, reward:0.17774324336075076, next_sate:[1.4392, 0.0, 0, 7.955232242266965]
+pool num: 149938
+step 238, a=-0.9975769677678633
+No.238      new_cwnd:3.9843
+No.239 Window:51.7959 Rtt:0.0610579 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[1.4392, 0.0, 0, 7.955232242266965], type:0.002, action:-0.9975769677678633, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.984302211980522]
+pool num: 149939
+step 239, a=-0.9999997291890207
+No.239      new_cwnd:1.99215
+No.240 Window:9.96076 Rtt:0.0610579 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.53456, 0.0, 0, 3.984302211980522], type:0.002, action:-0.9999997291890207, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.9921514799406996]
+pool num: 149940
+step 240, a=-0.998640870890495
+No.240      new_cwnd:1
+No.241 Window:3 Rtt:0.0610579 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.2056, 0.0, 0, 1.9921514799406996], type:0.002, action:-0.998640870890495, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149941
+step 241, a=0.9994841286555292
+No.241      new_cwnd:1.99928
+No.242 Window:7.99714 Rtt:0.0610579 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:0.9994841286555292, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.9992849783085729]
+pool num: 149942
+step 242, a=0.9969924613931007
+No.242      new_cwnd:3.99024
+No.243 Window:27.9317 Rtt:0.0611677 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.16448, 0.0, 0, 1.9992849783085729], type:0.002, action:0.9969924613931007, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.9902429526884764]
+pool num: 149943
+step 243, a=0.9967411052288841
+No.243      new_cwnd:7.96248
+No.244 Window:135.362 Rtt:0.0614359 Inflight:7 Data:17 Timeout:0 Nack:0 CongesLevelSum:8 DataSizeSum:17476
+state:[0.28784, 0.14285714285714285, 0, 3.9902429526884764], type:0.002, action:0.9967411052288841, reward:-0.15058176196419212, next_sate:[0.69904, 0.47058823529411764, 0, 7.9624791811589795]
+pool num: 149944
+step 244, a=0.9989479039594247
+No.244      new_cwnd:15.9133
+No.245 Window:588.794 Rtt:0.0615311 Inflight:15 Data:37 Timeout:0 Nack:0 CongesLevelSum:44 DataSizeSum:38036
+state:[0.69904, 0.47058823529411764, 0, 7.9624791811589795], type:0.002, action:0.9989479039594247, reward:0.16471476091530793, next_sate:[1.52144, 1.1891891891891893, 0, 15.913349202068149]
+pool num: 149945
+step 245, a=-0.9990546166229464
+No.245      new_cwnd:7.96189
+No.246 Window:230.895 Rtt:0.0610678 Inflight:7 Data:29 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:29812
+state:[1.52144, 1.1891891891891893, 0, 15.913349202068149], type:0.002, action:-0.9990546166229464, reward:0.09607319690943122, next_sate:[1.19248, 0.0, 0, 7.961890237610049]
+pool num: 149946
+step 246, a=-0.9971832782696588
+No.246      new_cwnd:3.98873
+No.247 Window:63.8196 Rtt:0.0610591 Inflight:3 Data:16 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:16448
+state:[1.19248, 0.0, 0, 7.961890237610049], type:0.002, action:-0.9971832782696588, reward:-0.16220481833360012, next_sate:[0.65792, 0.0, 0, 3.9887251192819737]
+pool num: 149947
+step 247, a=-0.9984558668576112
+No.247      new_cwnd:1.9965
+No.248 Window:9.98249 Rtt:0.0610585 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.65792, 0.0, 0, 3.9887251192819737], type:0.002, action:-0.9984558668576112, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.9964982916370695]
+pool num: 149948
+step 248, a=0.9986968093514841
+No.248      new_cwnd:3.98939
+No.249 Window:27.9257 Rtt:0.0611679 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.2056, 0.0, 0, 1.9964982916370695], type:0.002, action:0.9986968093514841, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.989391326350643]
+pool num: 149949
+step 249, a=-0.9968613568157904
+No.249      new_cwnd:1.99904
+No.250 Window:9.9952 Rtt:0.0611143 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.28784, 0.14285714285714285, 0, 3.989391326350643], type:0.002, action:-0.9968613568157904, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.999039930571281]
+pool num: 149950
+step 250, a=-0.9980492725353693
+No.250      new_cwnd:1.00087
+No.251 Window:4.00349 Rtt:0.061091 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.2056, 0.0, 0, 1.999039930571281], type:0.002, action:-0.9980492725353693, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.0008723715691623]
+pool num: 149951
+step 251, a=0.998495171903969
+No.251      new_cwnd:1.99966
+No.252 Window:5.99897 Rtt:0.0610801 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.0008723715691623], type:0.002, action:0.998495171903969, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.9996578771098552]
+pool num: 149952
+step 252, a=0.9991476636899388
+No.252      new_cwnd:3.99695
+No.253 Window:27.9787 Rtt:0.0611764 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.12336, 0.0, 0, 1.9996578771098552], type:0.002, action:0.9991476636899388, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.996953678246993]
+pool num: 149953
+step 253, a=0.9990338820092122
+No.253      new_cwnd:7.98856
+No.254 Window:135.805 Rtt:0.0614368 Inflight:7 Data:17 Timeout:0 Nack:0 CongesLevelSum:8 DataSizeSum:17476
+state:[0.28784, 0.14285714285714285, 0, 3.996953678246993], type:0.002, action:0.9990338820092122, reward:-0.15058176196419212, next_sate:[0.69904, 0.47058823529411764, 0, 7.9885559328367854]
+pool num: 149954
+step 254, a=-0.9996053783508756
+No.254      new_cwnd:3.99537
+No.255 Window:63.9259 Rtt:0.0611027 Inflight:3 Data:16 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:16448
+state:[0.69904, 0.47058823529411764, 0, 7.9885559328367854], type:0.002, action:-0.9996053783508756, reward:-0.16220481833360012, next_sate:[0.65792, 0.0, 0, 3.995370674237258]
+pool num: 149955
+step 255, a=-0.997021918685078
+No.255      new_cwnd:2.00181
+No.256 Window:14.0127 Rtt:0.0610755 Inflight:2 Data:7 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:7196
+state:[0.65792, 0.0, 0, 3.995370674237258], type:0.002, action:-0.997021918685078, reward:-0.5212267609752681, next_sate:[0.28784, 0.0, 0, 2.001813315533847]
+pool num: 149956
+step 256, a=0.9956568859093868
+No.256      new_cwnd:3.99159
+No.257 Window:31.9327 Rtt:0.0611685 Inflight:3 Data:8 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:8224
+state:[0.28784, 0.0, 0, 2.001813315533847], type:0.002, action:0.9956568859093868, reward:-0.4632348139975814, next_sate:[0.32896, 0.0, 0, 3.9915921677146957]
+pool num: 149957
+step 257, a=-0.9995055877992304
+No.257      new_cwnd:1.99648
+No.258 Window:9.9824 Rtt:0.0611146 Inflight:1 Data:5 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:5140
+state:[0.32896, 0.0, 0, 3.9915921677146957], type:0.002, action:-0.9995055877992304, reward:-0.667354796653506, next_sate:[0.2056, 0.0, 0, 1.9964801612296106]
+pool num: 149958
+step 258, a=-0.996690509785594
+No.258      new_cwnd:1.00053
+No.259 Window:4.00213 Rtt:0.0610911 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.2056, 0.0, 0, 1.9964801612296106], type:0.002, action:-0.996690509785594, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.0005326357485504]
+pool num: 149959
+step 259, a=0.9986674479644784
+No.259      new_cwnd:1.99922
+No.260 Window:5.99765 Rtt:0.0610802 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.0005326357485504], type:0.002, action:0.9986674479644784, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.999217831510992]
+pool num: 149960
+step 260, a=-0.997563630597307
+No.260      new_cwnd:1.0013
+No.261 Window:3.0039 Rtt:0.0610728 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.999217831510992], type:0.002, action:-0.997563630597307, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0012984440939232]
+pool num: 149961
+step 261, a=-0.9986922023006436
+No.261      new_cwnd:1
+No.262 Window:3 Rtt:0.0610679 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0012984440939232], type:0.002, action:-0.9986922023006436, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149962
+step 262, a=-0.9999035700272203
+No.262      new_cwnd:1
+No.263 Window:4 Rtt:0.0610638 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:-0.9999035700272203, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.0]
+pool num: 149963
+step 263, a=-0.9970457866078114
+No.263      new_cwnd:1
+No.264 Window:3 Rtt:0.0610618 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.0], type:0.002, action:-0.9970457866078114, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149964
+step 264, a=0.9998771987785824
+No.264      new_cwnd:1.99983
+No.265 Window:5.99949 Rtt:0.0610605 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:0.9998771987785824, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.9998297686043032]
+pool num: 149965
+step 265, a=-0.9990415429127557
+No.265      new_cwnd:1.00058
+No.266 Window:3.00174 Rtt:0.0610597 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.9998297686043032], type:0.002, action:-0.9990415429127557, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0005794002948594]
+pool num: 149966
+step 266, a=0.9978937999196338
+No.266      new_cwnd:1.99824
+No.267 Window:7.99296 Rtt:0.0610589 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.12336, 0.0, 0, 1.0005794002948594], type:0.002, action:0.9978937999196338, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.9982394270791417]
+pool num: 149967
+step 267, a=-0.9999037970518088
+No.267      new_cwnd:1
+No.268 Window:3 Rtt:0.0610586 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.9982394270791417], type:0.002, action:-0.9999037970518088, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149968
+step 268, a=-0.999325383342372
+No.268      new_cwnd:1
+No.269 Window:3 Rtt:0.0610584 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:-0.999325383342372, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149969
+step 269, a=-0.9979885337039298
+No.269      new_cwnd:1
+No.270 Window:3 Rtt:0.0610582 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:-0.9979885337039298, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149970
+step 270, a=0.9976933931127596
+No.270      new_cwnd:1.9968
+No.271 Window:7.98722 Rtt:0.0610581 Inflight:1 Data:4 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:4112
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:0.9976933931127596, reward:-0.7642648096615625, next_sate:[0.16448, 0.0, 0, 1.9968049187363237]
+pool num: 149971
+step 271, a=-0.9992446787535569
+No.271      new_cwnd:1
+No.272 Window:3 Rtt:0.061058 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.16448, 0.0, 0, 1.9968049187363237], type:0.002, action:-0.9992446787535569, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.0]
+pool num: 149972
+step 272, a=0.997684792122006
+No.272      new_cwnd:1.99679
+No.273 Window:5.99038 Rtt:0.061058 Inflight:1 Data:3 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:3084
+state:[0.12336, 0.0, 0, 1.0], type:0.002, action:0.997684792122006, reward:-0.8892035462698624, next_sate:[0.12336, 0.0, 0, 1.9967930143151111]
+pool num: 149973
+step 273, a=0.9989288889008006
+No.273      new_cwnd:3.99062
+No.274 Window:27.9344 Rtt:0.0611677 Inflight:3 Data:7 Timeout:0 Nack:0 CongesLevelSum:1 DataSizeSum:7196
+state:[0.12336, 0.0, 0, 1.9967930143151111], type:0.002, action:0.9989288889008006, reward:-0.5256910466895538, next_sate:[0.28784, 0.14285714285714285, 0, 3.9906221404372926]
+pool num: 149974
+step 274, a=0.9994500917299429
+No.274      new_cwnd:7.9782
+No.275 Window:191.477 Rtt:0.0612064 Inflight:7 Data:24 Timeout:0 Nack:0 CongesLevelSum:8 DataSizeSum:24672
+state:[0.28784, 0.14285714285714285, 0, 3.9906221404372926], type:0.002, action:0.9994500917299429, reward:0.003469774055414482, next_sate:[0.98688, 0.3333333333333333, 0, 7.978202670725097]
+pool num: 149975
+step 275, a=0.9997667499885772
+No.275      new_cwnd:15.9538
+No.276 Window:590.292 Rtt:0.0615294 Inflight:15 Data:37 Timeout:0 Nack:0 CongesLevelSum:44 DataSizeSum:38036
+state:[0.98688, 0.3333333333333333, 0, 7.978202670725097], type:0.002, action:0.9997667499885772, reward:0.16471476091530793, next_sate:[1.52144, 1.1891891891891893, 0, 15.953825772814863]
+pool num: 149976
+step 276, a=0.9996378303042011
+No.276      new_cwnd:31.8996
+No.277 Window:2456.27 Rtt:0.0612164 Inflight:31 Data:77 Timeout:0 Nack:0 CongesLevelSum:212 DataSizeSum:79156
+state:[1.52144, 1.1891891891891893, 0, 15.953825772814863], type:0.002, action:0.9996378303042011, reward:0.434126963143996, next_sate:[3.16624, 2.7532467532467533, 0, 31.899642552905323]
+pool num: 149977
+step 277, a=0.9978113295822968
+No.277      new_cwnd:63.7026
+No.278 Window:10001.3 Rtt:0.0610632 Inflight:63 Data:157 Timeout:0 Nack:0 CongesLevelSum:932 DataSizeSum:161396
+state:[3.16624, 2.7532467532467533, 0, 31.899642552905323], type:0.002, action:0.9978113295822968, reward:0.6440652972795815, next_sate:[6.45584, 5.936305732484076, 0, 63.70257045786216]
+pool num: 149978
+step 278, a=0.9982090378419552
+No.278      new_cwnd:127.247
+No.279 Window:27739.9 Rtt:0.0811504 Inflight:127 Data:218 Timeout:0 Nack:0 CongesLevelSum:3303 DataSizeSum:224104
+state:[6.45584, 5.936305732484076, 0, 63.70257045786216], type:0.002, action:0.9982090378419552, reward:0.49865118802792396, next_sate:[8.96416, 15.15137614678899, 0, 127.24707825642967]
+pool num: 149979
+step 279, a=0.9973197286424487
+No.279      new_cwnd:254.022
+No.280 Window:59187.1 Rtt:0.0884736 Inflight:254 Data:233 Timeout:32 Nack:0 CongesLevelSum:6391 DataSizeSum:239524
+state:[8.96416, 15.15137614678899, 0, 127.24707825642967], type:0.002, action:0.9973197286424487, reward:-14.520984947754364, next_sate:[9.58096, 27.429184549356222, 32, 254.0217904559759]
+pool num: 149980
+step 280, a=-0.9991902256682843
+No.280      new_cwnd:127.082
+No.281 Window:24399.8 Rtt:0.0880152 Inflight:127 Data:192 Timeout:93 Nack:0 CongesLevelSum:4017 DataSizeSum:197376
+state:[9.58096, 27.429184549356222, 32, 254.0217904559759], type:0.002, action:-0.9991902256682843, reward:-11971063.886757815, next_sate:[7.89504, 20.921875, 93, 127.08220553946497]
+pool num: 149981
+step 281, a=-0.9999053132261552
+No.281      new_cwnd:63.5453
+No.282 Window:12836.1 Rtt:0.061058 Inflight:63 Data:202 Timeout:58 Nack:0 CongesLevelSum:220 DataSizeSum:207656
+state:[7.89504, 20.921875, 93, 127.08220553946497], type:0.002, action:-0.9999053132261552, reward:-4855.123914502515, next_sate:[8.30624, 1.0891089108910892, 58, 63.5452732280063]
+pool num: 149982
+step 282, a=-0.9992991064109262
+No.282      new_cwnd:31.7881
+No.283 Window:3973.51 Rtt:0.0610579 Inflight:31 Data:125 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:128500
+state:[8.30624, 1.0891089108910892, 58, 63.5452732280063], type:0.002, action:-0.9992991064109262, reward:0.7305852120185314, next_sate:[5.14, 0.0, 0, 31.78807622320858]
+pool num: 149983
+step 283, a=-0.998766573091128
+No.283      new_cwnd:15.9076
+No.284 Window:970.366 Rtt:0.0610579 Inflight:15 Data:61 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:62708
+state:[5.14, 0.0, 0, 31.78807622320858], type:0.002, action:-0.998766573091128, reward:0.4190050340212421, next_sate:[2.50832, 0.0, 0, 15.907632472416713]
+pool num: 149984
+step 284, a=-0.9993869843510231
+No.284      new_cwnd:7.9572
+No.285 Window:230.759 Rtt:0.0610579 Inflight:7 Data:29 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:29812
+state:[2.50832, 0.0, 0, 15.907632472416713], type:0.002, action:-0.9993869843510231, reward:0.09607319690943122, next_sate:[1.19248, 0.0, 0, 7.957196610938702]
+pool num: 149985
+step 285, a=-0.9978398394980819
+No.285      new_cwnd:3.98456
+No.286 Window:63.753 Rtt:0.0610579 Inflight:3 Data:16 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:16448
+state:[1.19248, 0.0, 0, 7.957196610938702], type:0.002, action:-0.9978398394980819, reward:-0.16220481833360012, next_sate:[0.65792, 0.0, 0, 3.9845599592675285]
+pool num: 149986
+step 286, a=0.9958732887708872
+No.286      new_cwnd:7.94636
+No.287 Window:135.088 Rtt:0.0614231 Inflight:7 Data:17 Timeout:0 Nack:0 CongesLevelSum:7 DataSizeSum:17476
+state:[0.65792, 0.0, 0, 3.9845599592675285], type:0.002, action:0.9958732887708872, reward:-0.14874352667007448, next_sate:[0.69904, 0.4117647058823529, 0, 7.946357473033673]
+pool num: 149987
+step 287, a=0.9995976888680924
+No.287      new_cwnd:15.8883
+No.288 Window:587.866 Rtt:0.0615314 Inflight:15 Data:37 Timeout:0 Nack:0 CongesLevelSum:45 DataSizeSum:38036
+state:[0.69904, 0.4117647058823529, 0, 7.946357473033673], type:0.002, action:0.9995976888680924, reward:0.16387016632071336, next_sate:[1.52144, 1.2162162162162162, 0, 15.888283708315575]
+pool num: 149988
+step 288, a=-0.9974765684497122
+No.288      new_cwnd:7.95805
+No.289 Window:230.783 Rtt:0.0610678 Inflight:7 Data:29 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:29812
+state:[1.52144, 1.2162162162162162, 0, 15.888283708315575], type:0.002, action:-0.9974765684497122, reward:0.09607319690943122, next_sate:[1.19248, 0.0, 0, 7.9580491870397045]
+pool num: 149989
+step 289, a=-0.9991047275433155
+No.289      new_cwnd:3.98149
+No.290 Window:51.7594 Rtt:0.0610596 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[1.19248, 0.0, 0, 7.9580491870397045], type:0.002, action:-0.9991047275433155, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.9814945657293257]
+pool num: 149990
+step 290, a=0.9999651682646429
+No.290      new_cwnd:7.9628
+No.291 Window:191.107 Rtt:0.0612014 Inflight:7 Data:24 Timeout:0 Nack:0 CongesLevelSum:7 DataSizeSum:24672
+state:[0.53456, 0.0, 0, 3.9814945657293257], type:0.002, action:0.9999651682646429, reward:0.004771857388747809, next_sate:[0.98688, 0.2916666666666667, 0, 7.962796879198836]
+pool num: 149991
+step 291, a=-0.9964843554569263
+No.291      new_cwnd:3.99111
+No.292 Window:51.8845 Rtt:0.0610832 Inflight:3 Data:13 Timeout:0 Nack:0 CongesLevelSum:0 DataSizeSum:13364
+state:[0.98688, 0.2916666666666667, 0, 7.962796879198836], type:0.002, action:-0.9964843554569263, reward:-0.2523814486826881, next_sate:[0.53456, 0.0, 0, 3.991112377571239]
+pool num: 149992
+step 292, a=-0.999576560367821

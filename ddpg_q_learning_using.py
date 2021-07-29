@@ -28,13 +28,13 @@ class RetScale(Structure):
 
 
 MAX_EPISODES = 500
-MAX_EP_STEPS = 500
+MAX_EP_STEPS = 300
 LR_A = 0.01  # learning rate for actor
 LR_C = 0.02  # learning rate for critic
 GAMMA = 0.9  # reward discount
 TAU = 0.01  # soft replacement
-MEMORY_CAPACITY = 25000
-BATCH_SIZE = 50
+MEMORY_CAPACITY = 150
+BATCH_SIZE = 5
 
 
 class ANet(nn.Module):
@@ -81,10 +81,14 @@ class DDPG(object):
         self.pointer = 0
         self.observer_shape = 6
         # self.sess = tf.Session()
-        self.Actor_eval = ANet(s_dim, a_dim)
-        self.Actor_target = ANet(s_dim, a_dim)
-        self.Critic_eval = CNet(s_dim, a_dim)
-        self.Critic_target = CNet(s_dim, a_dim)
+        self.Actor_eval = torch.load(
+            "results/models/ddpg_q.py/115/Actor_eval.model")
+        self.Actor_target = torch.load(
+            "results/models/ddpg_q.py/115/Actor_target.model")
+        self.Critic_eval = torch.load(
+            "results/models/ddpg_q.py/115/Critic_eval.model")
+        self.Critic_target = torch.load(
+            "results/models/ddpg_q.py/115/Critic_target.model")
         self.ctrain = torch.optim.Adam(self.Critic_eval.parameters(), lr=LR_C)
         self.atrain = torch.optim.Adam(self.Actor_eval.parameters(), lr=LR_A)
         self.loss_td = nn.MSELoss()
@@ -93,12 +97,7 @@ class DDPG(object):
         global epsilon
         global actiontype
         s = torch.unsqueeze(torch.FloatTensor(s), 0)
-        if np.random.uniform() < epsilon:
-            actiontype = "regular"
-            return self.Actor_eval(s)[0].detach()  # ae（s）
-        else:
-            actiontype = "random"
-            return np.random.uniform() * 2 - 1
+        return self.Actor_eval(s)[0].detach()  # ae（s）
 
     def learn(self):
         for x in self.Actor_target.state_dict().keys():
@@ -158,16 +157,6 @@ class DDPG(object):
         self.memory[index, :] = transition
         self.pointer += 1
 
-    def save_model(self, i):
-        save_path = './results/models/' + os.path.basename(
-            __file__) + '/' + str(i)
-        if (not path.isdir(save_path)):
-            os.makedirs(save_path)
-        torch.save(self.Actor_eval, save_path + '/Actor_eval.model')
-        torch.save(self.Actor_target, save_path + '/Actor_target.model')
-        torch.save(self.Critic_eval, save_path + '/Critic_eval.model')
-        torch.save(self.Critic_target, save_path + '/Critic_target.model')
-
 
 def ndngetstate(var):
     data = var.Acquire()
@@ -181,13 +170,13 @@ def ndngetstate(var):
     DataSizeSum = data.env.DataSizeSum
     var.ReleaseAndRollback()
 
-    avgQLength = CLvel / (acks + 0.01) / 32
-    TP_Mbps = 1 + DataSizeSum * 8 / 0.2 / 1000000
+    print(DataSizeSum * 8 / 0.2 / 1000000, CLvel, Rloss)
+
+    avgQLength = CLvel / 32
+    TP_Mbps = np.log10(1 + DataSizeSum * 8 / 0.2 / 1000000)
     Rloss /= 100
 
-    print([TP_Mbps, avgQLength, Rloss])
-
-    return [np.log10(TP_Mbps), avgQLength, Rloss]
+    return [TP_Mbps, avgQLength, Rloss]
 
 
 def ndnstep(a, var):
@@ -207,51 +196,22 @@ def ndnreset(exp, var):
     return ndngetstate(var)
 
 
-epsilon = 0.1
 variance = 1
 ddpg = DDPG(1, 3)
-exp = Experiment(1234, 1040, "1c1p", "./")
+exp = Experiment(1234, 2080, "1c1p", "./")
 var = Ns3AIRL(1024, NdnParam, RetScale)
-actiontype = "random"
 
-log_path = './log/' + os.path.basename(__file__)
-if (not path.isdir(log_path)):
-    os.makedirs(log_path)
-actorloss = open(log_path + "/actorloss.txt", "w")
-criticloss = open(log_path + "/criticloss.txt", "w")
+actorloss = open("actorloss.txt", "w")
+criticloss = open("criticloss.txt", "w")
 
 print('\n\033[33mstart ddpg learning \033[0m')
 
-for i in range(MAX_EPISODES):
-    print("episode ", i)
-    s = ndnreset(exp, var)
-    print(s)
-    ep_reward = 0
-    for j in range(MAX_EP_STEPS):
-        a = np.double(ddpg.choose_action(s))
-        #randn = np.random.normal(a + 1, variance / (i + 1))
-        #if (randn > 2.0):
-        #    a = -1 + randn - 2 * np.floor(randn / 2.0)
-        #elif (randn < 0.0):
-        #    a = 2 - (-randn - 2 * np.floor(-randn / 2.0))
-        #else:
-        #    a = randn
-        #a = a - 1
-        print("step {}, a={}".format(j, a))
-        s_, r = ndnstep(2**a, var)
-
-        print("state:{}, type:{}, action:{}, reward:{}, next_sate:{}".format(
-            s, actiontype, a, r, s_))
-
-        ddpg.store_transition(s, a, r, s_)
-
-        print("pool num:", ddpg.pointer)
-        if ddpg.pointer > MEMORY_CAPACITY:
-            ddpg.learn()
-        s = s_
-        ep_reward += r
-    print("\033[32mepisode: {}, eprwd: {}\033[0m\n".format(i, ep_reward))
-    if ddpg.pointer > MEMORY_CAPACITY:
-        epsilon += 0.01
-        ddpg.save_model(i)
-FreeMemory()
+s = ndnreset(exp, var)
+while (True):
+    a = np.double(ddpg.choose_action(s))
+    s_, r = ndnstep(2**a, var)
+    print("state:{}, act:{}, reward:{}, next_sate:{}".format(s, a, r, s_))
+    ddpg.store_transition(s, a, r, s_)
+    s = s_
+    if (ddpg.pointer > MEMORY_CAPACITY):
+        ddpg.learn()
