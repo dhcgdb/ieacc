@@ -1,0 +1,22 @@
+router
+
+# node  comment       yPos    xPos
+rootc0     NA          0.01     0.01
+l1n0       NA          1       0      
+l1n1       NA          1       1
+l2n0       NA          2       0      
+l2n1p1     NA          2       1      
+l2n2p2     NA          2       2      
+l2n3p3     NA          2       3      
+l3n0p0     NA          3       0      
+
+link
+
+# srcNode   dstNode        bandwidth    metric  delay   queue   error ns3::RateErrorModel,ErrorUnit=ERROR_UNIT_PACKET,ErrorRate=0.01
+rootc0        l1n0           62Mbps        1     10ms     32
+rootc0        l1n1           30Mbps        1     10ms     32
+l1n0          l2n0           50Mbps        1     10ms     32
+l1n0          l2n1p1         42Mbps        1     10ms     32
+l1n1          l2n2p2         29Mbps        1     10ms     32
+l1n1          l2n3p3         82Mbps        1     10ms     32
+l2n0          l3n0p0         84Mbps        1     10ms     32
