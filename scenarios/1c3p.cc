@@ -5,11 +5,17 @@
 #include "ns3/ndnSIM-module.h"
 #include "string"
 #include "random"
-
+#define LOG_DATA 0b1
+#define LOG_TIMEOUT 0b10
+#define LOG_NACK 0b100
+#define LOG_LEARNING 0b1000
 
 namespace ns3 {
     int main(int argc, char* argv[])
     {
+        Config::SetGlobalFailSafe("SharedMemoryKey", UintegerValue(1234));
+        Config::SetGlobalFailSafe("SharedMemoryPoolSize", UintegerValue(1040));
+
         std::random_device rdev;
         std::mt19937 reng(rdev());
         std::uniform_int_distribution<> u(1, 10);
@@ -21,18 +27,19 @@ namespace ns3 {
         CommandLine cmd;
         cmd.Parse(argc, argv);
 
+
         AnnotatedTopologyReader topologyReader("", 15);
-        topologyReader.SetFileName("/root/ndnproj/scenarios/topo_multiport.txt");
+        topologyReader.SetFileName("/root/ndn/proj-sep/scenarios/topo_tree.txt");
         topologyReader.Read();
         NodeContainer allNodes = topologyReader.GetNodes();
-        Ptr<Node> c0 = allNodes[0];
-        Ptr<Node> p0 = allNodes[1];
-        Ptr<Node> p1 = allNodes[2];
-        Ptr<Node> p2 = allNodes[3];
-        Ptr<Node> n0 = allNodes[4];
-        Ptr<Node> n1 = allNodes[5];
-        Ptr<Node> n2 = allNodes[6];
-        Ptr<Node> n3 = allNodes[7];
+        Ptr<Node> rootc0 = allNodes[0];
+        Ptr<Node> l1n0 = allNodes[1];
+        Ptr<Node> l1n1 = allNodes[2];
+        Ptr<Node> l2n0 = allNodes[3];
+        Ptr<Node> l2n1p1 = allNodes[4];
+        Ptr<Node> l2n2p2 = allNodes[5];
+        Ptr<Node> l2n3p3 = allNodes[6];
+        Ptr<Node> l3n0p0 = allNodes[7];
 
         // Install NDN stack on all nodes
         ndn::StackHelper ndnHelper;
@@ -42,75 +49,86 @@ namespace ns3 {
         // Routing strategy
         ndn::GlobalRoutingHelper ndnGlobalRoutingHelper;
         ndnGlobalRoutingHelper.InstallAll();
-        ndnGlobalRoutingHelper.AddOrigins("/ustc/0", p0);
-        ndnGlobalRoutingHelper.AddOrigins("/ustc/1", p1);
-        ndnGlobalRoutingHelper.AddOrigins("/ustc/2", p2);
+        ndnGlobalRoutingHelper.AddOrigin("/ustc/0", l3n0p0);
+        ndnGlobalRoutingHelper.AddOrigin("/ustc/1", l2n1p1);
+        ndnGlobalRoutingHelper.AddOrigin("/ustc/2", l2n2p2);
+        ndnGlobalRoutingHelper.AddOrigin("/ustc/3", l2n3p3);
         //ndnGlobalRoutingHelper.CalculateAllPossibleRoutes();
-        //ndnGlobalRoutingHelper.CalculateLfidRoutes();
-        ndnGlobalRoutingHelper.CalculateRoutes();
+        ndnGlobalRoutingHelper.CalculateLfidRoutes();
+        //ndnGlobalRoutingHelper.CalculateRoutes();
 
         // Forwarding strategy
-        //ndn::StrategyChoiceHelper::Install(n0, "/ustc", "/localhost/nfd/strategy/best-route2-conges/%FD%01");
-        ndn::StrategyChoiceHelper::Install(n0, "/ustc", "/localhost/nfd/strategy/best-route");
-        ndn::StrategyChoiceHelper::Install(n1, "/ustc", "/localhost/nfd/strategy/best-route");
-        ndn::StrategyChoiceHelper::Install(n2, "/ustc", "/localhost/nfd/strategy/best-route");
-        ndn::StrategyChoiceHelper::Install(n3, "/ustc", "/localhost/nfd/strategy/best-route2-conges-multiport/%FD%01");
-        ndn::StrategyChoiceHelper::Install(c0, "/ustc", "/localhost/nfd/strategy/best-route");
-        ndn::StrategyChoiceHelper::Install(p0, "/ustc", "/localhost/nfd/strategy/best-route");
-        ndn::StrategyChoiceHelper::Install(p1, "/ustc", "/localhost/nfd/strategy/best-route");
-        ndn::StrategyChoiceHelper::Install(p2, "/ustc", "/localhost/nfd/strategy/best-route");
+        ndn::StrategyChoiceHelper::InstallAll("/ustc", "/localhost/nfd/strategy/best-route/%FD%05");
 
         // Installing Consumer
         ndn::AppHelper consumerHelper0("ns3::ndn::ConsumerCCs");
         consumerHelper0.SetAttribute("RetxTimer", StringValue("10ms"));
         consumerHelper0.SetAttribute("Window", StringValue("4"));
-        consumerHelper0.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::AIMD));
+        consumerHelper0.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::RL));
         consumerHelper0.SetAttribute("InitialWindowOnTimeout", BooleanValue(true));
-        consumerHelper0.SetAttribute("Frequency", DoubleValue(65536));
-        consumerHelper0.SetAttribute("Randomize", StringValue("exponential"));
-        consumerHelper0.SetAttribute("WatchDog", DoubleValue(0));
-        //consumerHelper0.SetAttribute("RandomPrefix",BooleanValue(true));
+        consumerHelper0.SetAttribute("Frequency", DoubleValue(0));
+        consumerHelper0.SetAttribute("Randomize", StringValue("none"));
+        consumerHelper0.SetAttribute("WatchDog", DoubleValue(0.2));
+        consumerHelper0.SetAttribute("LogMask", IntegerValue(LOG_DATA | LOG_LEARNING));
+        consumerHelper0.SetAttribute("ShmID", IntegerValue(1024));
         consumerHelper0.SetPrefix("/ustc/0");
-        consumerHelper0.Install(c0);
+        consumerHelper0.Install(rootc0);
 
         ndn::AppHelper consumerHelper1("ns3::ndn::ConsumerCCs");
         consumerHelper1.SetAttribute("RetxTimer", StringValue("10ms"));
         consumerHelper1.SetAttribute("Window", StringValue("4"));
-        consumerHelper1.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::AIMD));
+        consumerHelper1.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::RL));
         consumerHelper1.SetAttribute("InitialWindowOnTimeout", BooleanValue(true));
-        consumerHelper1.SetAttribute("Frequency", DoubleValue(65536));
-        consumerHelper1.SetAttribute("Randomize", StringValue("exponential"));
+        consumerHelper1.SetAttribute("Frequency", DoubleValue(0));
+        consumerHelper1.SetAttribute("Randomize", StringValue("none"));
         consumerHelper1.SetAttribute("WatchDog", DoubleValue(0));
+        consumerHelper1.SetAttribute("ShmID", IntegerValue(1050));
         consumerHelper1.SetPrefix("/ustc/1");
-        consumerHelper1.Install(c0);
+        consumerHelper1.Install(rootc0);
 
         ndn::AppHelper consumerHelper2("ns3::ndn::ConsumerCCs");
         consumerHelper2.SetAttribute("RetxTimer", StringValue("10ms"));
         consumerHelper2.SetAttribute("Window", StringValue("4"));
         consumerHelper2.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::AIMD));
         consumerHelper2.SetAttribute("InitialWindowOnTimeout", BooleanValue(true));
-        consumerHelper2.SetAttribute("Frequency", DoubleValue(65536));
-        consumerHelper2.SetAttribute("Randomize", StringValue("exponential"));
+        consumerHelper2.SetAttribute("Frequency", DoubleValue(0));
+        consumerHelper2.SetAttribute("Randomize", StringValue("none"));
         consumerHelper2.SetAttribute("WatchDog", DoubleValue(0));
         consumerHelper2.SetPrefix("/ustc/2");
-        consumerHelper2.Install(c0);
-        
+        consumerHelper2.Install(rootc0);
+
+        ndn::AppHelper consumerHelper3("ns3::ndn::ConsumerCCs");
+        consumerHelper3.SetAttribute("RetxTimer", StringValue("10ms"));
+        consumerHelper3.SetAttribute("Window", StringValue("4"));
+        consumerHelper3.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::AIMD));
+        consumerHelper3.SetAttribute("InitialWindowOnTimeout", BooleanValue(true));
+        consumerHelper3.SetAttribute("Frequency", DoubleValue(0));
+        consumerHelper3.SetAttribute("Randomize", StringValue("none"));
+        consumerHelper3.SetAttribute("WatchDog", DoubleValue(0));
+        consumerHelper3.SetPrefix("/ustc/3");
+        consumerHelper3.Install(rootc0);
+
+
         // Installing Producer
         ndn::AppHelper producerHelper0("ns3::ndn::Producer");
         producerHelper0.SetAttribute("PayloadSize", StringValue("1024"));
         producerHelper0.SetPrefix("/ustc/0");
-        producerHelper0.Install(p0);
+        producerHelper0.Install(l3n0p0);
 
         ndn::AppHelper producerHelper1("ns3::ndn::Producer");
         producerHelper1.SetAttribute("PayloadSize", StringValue("1024"));
         producerHelper1.SetPrefix("/ustc/1");
-        producerHelper1.Install(p1);
+        producerHelper1.Install(l2n1p1);
 
         ndn::AppHelper producerHelper2("ns3::ndn::Producer");
         producerHelper2.SetAttribute("PayloadSize", StringValue("1024"));
         producerHelper2.SetPrefix("/ustc/2");
-        producerHelper2.Install(p2);
+        producerHelper2.Install(l2n2p2);
 
+        ndn::AppHelper producerHelper3("ns3::ndn::Producer");
+        producerHelper3.SetAttribute("PayloadSize", StringValue("1024"));
+        producerHelper3.SetPrefix("/ustc/3");
+        producerHelper3.Install(l2n3p3);
 
         //Simulator::Stop(Seconds(200));
         Simulator::Run();

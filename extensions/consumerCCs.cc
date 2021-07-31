@@ -23,17 +23,19 @@ namespace ns3 {
             ptr->collectInfo.avgDelay = ptr->m_rtt->GetCurrentEstimate().GetSeconds();
             ptr->collectInfo.InflightNum = ptr->m_inFlight;
 
-            ptr->printCollectInfo(x);
+            if (ptr->log_mask & 0b1000)
+                ptr->printCollectInfo(x);
 
             if (ptr->m_ccAlgorithm == CCType::RL) {
-                ptr->transclass.SendParam2RLModule(&ptr->collectInfo);
-                ptr->transclass.GetActFromRLModule(&ptr->action);
+                ptr->transclass->SendParam2RLModule(&ptr->collectInfo);
+                ptr->transclass->GetActFromRLModule(&ptr->action);
                 ptr->m_window = ptr->m_window * ptr->action.new_cWnd;
                 if (ptr->m_window < 1.0)
                     ptr->m_window = 1.0;
                 else if (ptr->m_window > 700)
                     ptr->m_window = 700;
-                std::cout << std::setiosflags(std::ios::left) << "No." << std::setw(8) << x << " new_cwnd:" << ptr->m_window << std::endl;
+                if (ptr->log_mask & 0b1000)
+                    std::cout << std::setiosflags(std::ios::left) << "No." << std::setw(8) << x << " new_cwnd:" << ptr->m_window << std::endl;
             }
 
             memset(&ptr->collectInfo, 0, sizeof(ptr->collectInfo));
@@ -77,7 +79,7 @@ namespace ns3 {
 
         ConsumerCCs::ConsumerCCs()
             : m_ssthresh(std::numeric_limits<double>::max())
-            , transclass(1024), m_highData(0), m_recPoint(0.0)
+            , m_highData(0), m_recPoint(0.0)
             , adjust(true)
         {
             memset(&collectInfo, 0, sizeof(collectInfo));
@@ -119,9 +121,19 @@ namespace ns3 {
                               MakeDoubleChecker<double>())
 
                 .AddAttribute("RandomPrefix", "",
-                              BooleanValue(false),
-                              MakeBooleanAccessor(&ConsumerCCs::random_prefix),
-                              MakeBooleanChecker());
+                              IntegerValue(0),
+                              MakeIntegerAccessor(&ConsumerCCs::random_prefix),
+                              MakeIntegerChecker<int>())
+
+                .AddAttribute("LogMask", "bit0:data, bit1:timeout, bit2:nack",
+                              IntegerValue(0),
+                              MakeIntegerAccessor(&ConsumerCCs::log_mask),
+                              MakeIntegerChecker<uint8_t>())
+
+                .AddAttribute("ShmID", "",
+                              IntegerValue(1024),
+                              MakeIntegerAccessor(&ConsumerCCs::SetTrans),
+                              MakeIntegerChecker<uint16_t>());
             return tid;
         }
 
@@ -144,21 +156,20 @@ namespace ns3 {
                 m_highData = sequenceNum;
             }
             WindowIncrease();
-
-#ifdef LOG_DATA
-            std::cout << std::setiosflags(std::ios::left) << std::setprecision(12)
-                << "time," << std::setw(15) << Simulator::Now().GetSeconds()
-                << ",data,\t"
-                << ",name, " << m_interestName
-                << ",Window, " << std::setw(15) << m_window
-                << ",inFlight," << std::setw(15) << m_inFlight
-                << ",seq," << std::setw(15) << sequenceNum
-                << ",congesLevel," << std::setw(15) << congesLevel
-                << ",delay_with_retx(if have)," << std::setw(15) << localFullDelay
-                << ",delay_just_this," << std::setw(15) << localLastDelay
-                << ",rto," << std::setw(15) << m_rtt->RetransmitTimeout().GetSeconds()
-                << std::endl;
-#endif
+            if (log_mask & 0b1) {
+                std::cout << std::setiosflags(std::ios::left) << std::setprecision(12)
+                    << "time," << std::setw(15) << Simulator::Now().GetSeconds()
+                    << ",data,\t"
+                    << ",name, " << m_interestName
+                    << ",Window, " << std::setw(15) << m_window
+                    << ",inFlight," << std::setw(15) << m_inFlight
+                    << ",seq," << std::setw(15) << sequenceNum
+                    << ",congesLevel," << std::setw(15) << congesLevel
+                    << ",delay_with_retx(if have)," << std::setw(15) << localFullDelay
+                    << ",delay_just_this," << std::setw(15) << localLastDelay
+                    << ",rto," << std::setw(15) << m_rtt->RetransmitTimeout().GetSeconds()
+                    << std::endl;
+            }
             ScheduleNextPacket();
         }
 
@@ -174,17 +185,17 @@ namespace ns3 {
             nackDeSeq.erase(sequenceNum);
 
             Consumer::OnTimeout(sequenceNum);
-#ifdef LOG_TIMEOUT
-            std::cout << std::setiosflags(std::ios::left) << std::setprecision(12)
-                << "time," << std::setw(15) << Simulator::Now().GetSeconds()
-                << ",timeout,\t"
-                << ",name, " << m_interestName
-                << ",Window, " << std::setw(15) << m_window
-                << ",inFlight," << std::setw(15) << m_inFlight
-                << ",seq," << std::setw(15) << sequenceNum
-                << ",rto," << std::setw(15) << m_rtt->RetransmitTimeout().GetSeconds()
-                << std::endl;
-#endif
+            if (log_mask & 0b10) {
+                std::cout << std::setiosflags(std::ios::left) << std::setprecision(12)
+                    << "time," << std::setw(15) << Simulator::Now().GetSeconds()
+                    << ",timeout,\t"
+                    << ",name, " << m_interestName
+                    << ",Window, " << std::setw(15) << m_window
+                    << ",inFlight," << std::setw(15) << m_inFlight
+                    << ",seq," << std::setw(15) << sequenceNum
+                    << ",rto," << std::setw(15) << m_rtt->RetransmitTimeout().GetSeconds()
+                    << std::endl;
+            }
         }
 
         void ConsumerCCs::OnNack(shared_ptr<const lp::Nack> nack)
@@ -193,16 +204,16 @@ namespace ns3 {
             lp::NackReason reason = nack->getReason();
             collectInfo.NackNum++;
             uint32_t sequenceNum = nack->getInterest().getName().get(-1).toSequenceNumber();
-#ifdef LOG_NACK
-            std::cout << std::setiosflags(std::ios::left) << std::setprecision(12)
-                << "time," << std::setw(15) << Simulator::Now().GetSeconds()
-                << ",nack,\t"
-                << ",name, " << m_interestName
-                << ",Window, " << std::setw(15) << m_window
-                << ",seq," << std::setw(15) << sequenceNum
-                << " reason:" << std::setw(15) << nack->getReason()
-                << std::endl;
-#endif
+            if (log_mask & 0b100) {
+                std::cout << std::setiosflags(std::ios::left) << std::setprecision(12)
+                    << "time," << std::setw(15) << Simulator::Now().GetSeconds()
+                    << ",nack,\t"
+                    << ",name, " << m_interestName
+                    << ",Window, " << std::setw(15) << m_window
+                    << ",seq," << std::setw(15) << sequenceNum
+                    << " reason:" << std::setw(15) << nack->getReason()
+                    << std::endl;
+            }
             if (m_ccAlgorithm == CCType::ECP) {
                 if (reason == lp::NackReason::FREE)
                     adjust = true;
@@ -236,11 +247,12 @@ namespace ns3 {
 
         void ConsumerCCs::ScheduleNextPacket()
         {
-            if (random_prefix) {
+            if (random_prefix != 0) {
                 static std::random_device rdev;
                 static std::mt19937 reng(rdev());
-                static std::uniform_int_distribution<> u(0, 2);
-                this->SetAttribute("Prefix", StringValue("/ustc/" + std::to_string(u(reng))));
+                static std::uniform_int_distribution<> u(0, random_prefix);
+                static std::string basename = m_interestName.toUri();
+                this->SetAttribute("Prefix", StringValue(basename + "/" + std::to_string(u(reng))));
             }
 
             if (m_window == static_cast<uint32_t>(0)) {
@@ -273,7 +285,7 @@ namespace ns3 {
                 << " Data:" << collectInfo.DataNum
                 << " Timeout:" << collectInfo.TimeoutNum
                 << " Nack:" << collectInfo.NackNum
-                << " CongesLevelSum:" << collectInfo.congesLevelSum/collectInfo.DataNum
+                << " CongesLevelSum:" << collectInfo.congesLevelSum / collectInfo.DataNum
                 << " DataSizeSum:" << collectInfo.dataSizeSum
                 << std::endl;
         }
@@ -369,6 +381,11 @@ namespace ns3 {
                 cwndChangeWD.SetFunction(cwndChangeWDCallback);
                 cwndChangeWD.SetArguments<ConsumerCCs*>(this);
             }
+        }
+
+        void ConsumerCCs::SetTrans(uint16_t id)
+        {
+            transclass = std::make_unique<TransParam2Py>(id);
         }
 
         void ConsumerCCs::WillSendOutInterest(uint32_t sequenceNumber)

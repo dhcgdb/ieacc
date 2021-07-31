@@ -6,6 +6,7 @@
 #include "ns3/ns3-ai-module.h"
 #include "ns3/traced-value.h"
 #include "ns3/watchdog.h"
+#include <memory>
 
 namespace ns3 {
     namespace ndn {
@@ -55,7 +56,8 @@ namespace ns3 {
 
             void WindowIncrease();
             void WindowDecrease(bool nacktrig);
-            bool random_prefix;
+            int random_prefix;
+            uint8_t log_mask;
 
         private:
             CCType m_ccAlgorithm;
@@ -81,6 +83,7 @@ namespace ns3 {
             void SetWatchDog(double tInterval);
             void SetFrequency(double f);
             void SetRandomize(const std::string& value);
+            void SetTrans(uint16_t id);
 
             double frequency;
             Ptr<RandomVariableStream> randomSend;
@@ -90,7 +93,7 @@ namespace ns3 {
 
             DDPGParam collectInfo;
             DDPGAct action;
-            TransParam2Py transclass;
+            std::unique_ptr<TransParam2Py> transclass;
             double alpha;
 
             friend void cwndChangeWDCallback(ConsumerCCs*);

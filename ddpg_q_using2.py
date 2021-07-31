@@ -95,25 +95,18 @@ def ndnreset(exp, var):
 
 
 ddpg = DDPG()
-#FreeMemory()
-#Init(113, 1040)
+#exp = Experiment(1234, 1040, "1c3p", "./")
+Init(1234,1040)
+var = Ns3AIRL(1000, NdnParam, RetScale)
 
-exp = Experiment(1234, 1040, "1c3p", "./")
-var1 = Ns3AIRL(1024, NdnParam, RetScale)
-#var2 = Ns3AIRL(1050, NdnParam, RetScale)
 j = 0
 #s = ndnreset(exp, var)
-s1 = ndngetstate(var1)
-#s2 = ndngetstate(var2)
-
+s=ndngetstate(var)
 while (True):
-    a1 = np.double(ddpg.choose_action(s1))
-    #a2 = np.double(ddpg.choose_action(s2))
+    a = np.double(ddpg.choose_action(s))
+    #print("s {}, a={}".format(s, a))
+    s_, r = ndnstep((c_double)(2**a), var)
 
-    print("s {}, a={}".format(s1, a1))
-    s_1, r1 = ndnstep((c_double)(2**a1), var1)
-    #s_2, r2 = ndnstep((c_double)(2**a2), var2)
-    
-    s1=s_1
-    #s2=s_2
+    #print("state:{}, type:{}, reward:{}, next_sate:{}".format(s, a, r, s_))
+    s = s_
     j += 1

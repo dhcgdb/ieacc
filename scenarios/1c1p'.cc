@@ -1,3 +1,5 @@
+//#define LOG_TIMEOUT
+//#define LOG_NACK
 #include "consumerCCs.h"
 #include "ns3/core-module.h"
 #include "ns3/network-module.h"
@@ -7,39 +9,9 @@
 #include "ns3/ptr.h"
 #include "string"
 #include "random"
-#define LOG_DATA 0b1
-#define LOG_TIMEOUT 0b10
-#define LOG_NACK 0b100
-#define LOG_LEARNING 0b1000
+
 
 namespace ns3 {
-    void changeBWFunc(Ptr<Node> n0, Ptr<Node> n1, const int to_BW, int cur_BW, Watchdog* wd)
-    {
-        cur_BW -= 5;
-        std::random_device rdev;
-        std::mt19937 reng(rdev());
-        std::uniform_int_distribution<> u2(25, 50);
-
-        ChannelList allLinks;
-        for (int i = 0;i < allLinks.GetNChannels();i++) {
-            Ptr<ns3::PointToPointChannel> p2plink = StaticCast<ns3::PointToPointChannel>(allLinks.GetChannel(i));
-            if (p2plink->GetNDevices() != 2)
-                continue;
-            auto dev0 = p2plink->GetDevice(0), dev1 = p2plink->GetDevice(1);
-            if ((dev0->GetNode() == n0 && dev1->GetNode() == n1) || (dev0->GetNode() == n1 && dev1->GetNode() == n0)) {
-                string randBW = to_string(cur_BW) + "Mbps";
-                if (dev0->SetAttributeFailSafe("DataRate", StringValue(randBW)))
-                    std::cout << "\033[31;43m" << "set link-" << p2plink->GetId() << " device-" << dev0 << " BW-" << randBW << "\033[0m" << std::endl;
-                if (dev1->SetAttributeFailSafe("DataRate", StringValue(randBW)))
-                    std::cout << "\033[31;43m" << "set link-" << p2plink->GetId() << " device-" << dev1 << " BW-" << randBW << "\033[0m" << std::endl;
-            }
-        }
-        if (cur_BW > to_BW) {
-            wd->Ping(Seconds(0.5));
-            wd->SetArguments(n0, n1, to_BW, cur_BW, wd);
-        }
-    }
-
     int main(int argc, char* argv[])
     {
         /*
@@ -123,25 +95,12 @@ namespace ns3 {
         consumerHelper.SetPrefix("/ustc");
         consumerHelper.SetAttribute("RetxTimer", StringValue("10ms"));
         consumerHelper.SetAttribute("Window", StringValue("2"));
-        consumerHelper.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::AIMD));
+        consumerHelper.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::RL));
         consumerHelper.SetAttribute("InitialWindowOnTimeout", BooleanValue(true));
         consumerHelper.SetAttribute("Frequency", DoubleValue(0));
         consumerHelper.SetAttribute("Randomize", StringValue("none"));
-        consumerHelper.SetAttribute("ShmID", IntegerValue(1024));
         consumerHelper.SetAttribute("WatchDog", DoubleValue(0.2));
-        consumerHelper.SetAttribute("LogMask", IntegerValue(/*LOG_DATA | LOG_TIMEOUT | LOG_NACK | */LOG_LEARNING));
         consumerHelper.Install(c0);
-
-        ndn::AppHelper backgroudC("ns3::ndn::ConsumerCCs");
-        backgroudC.SetPrefix("/ustc/backgroud");
-        backgroudC.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::none));
-        backgroudC.SetAttribute("Window", StringValue("10"));
-        backgroudC.SetAttribute("Frequency", StringValue("10"));
-        backgroudC.SetAttribute("Randomize", StringValue("uniform"));
-        //backgroudC.SetAttribute("RandomPrefix", IntegerValue(1));
-        //backgroudC.SetAttribute("LogMask", IntegerValue(LOG_DATA));
-        backgroudC.Install(c0);
-
 
         // Installing Producer
         ndn::AppHelper producerHelper("ns3::ndn::Producer");
@@ -149,12 +108,7 @@ namespace ns3 {
         producerHelper.SetAttribute("PayloadSize", StringValue("1024"));
         producerHelper.Install(p0);
 
-        Watchdog changeBW;
-        //changeBW.Ping(Seconds(30));
-        changeBW.SetFunction(changeBWFunc);
-        changeBW.SetArguments(r0, r1, 25, 50, &changeBW);
-
-        Simulator::Stop(Seconds(60));
+        //Simulator::Stop(Seconds(60));
         Simulator::Run();
         Simulator::Destroy();
         return 0;
