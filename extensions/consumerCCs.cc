@@ -20,6 +20,7 @@ namespace ns3 {
         void cwndChangeWDCallback(ConsumerCCs* ptr)
         {
             static int x = 0;
+            ptr->collectInfo.cWndSum=ptr->m_window;
             ptr->collectInfo.avgDelay = ptr->m_rtt->GetCurrentEstimate().GetSeconds();
             ptr->collectInfo.InflightNum = ptr->m_inFlight;
 
@@ -78,7 +79,7 @@ namespace ns3 {
         NS_OBJECT_ENSURE_REGISTERED(ConsumerCCs);
 
         ConsumerCCs::ConsumerCCs()
-            : m_ssthresh(std::numeric_limits<double>::max())
+            : m_ssthresh(256)//std::numeric_limits<double>::max())
             , m_highData(0), m_recPoint(0.0)
             , adjust(true)
         {

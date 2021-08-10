@@ -90,20 +90,20 @@ def ndnstep(a, var):
 
 def ndnreset(exp, var):
     exp.reset()
-    exp.run(None, True)
+    exp.run({"SimulatorImplementationType":"ns3::VisualSimulatorImpl"}, True)
     return ndngetstate(var)
 
 
 ddpg = DDPG()
 #FreeMemory()
-#Init(113, 1040)
+#Init(128, 1040)
 
-exp = Experiment(1234, 1040, "1c3p", "./")
+exp = Experiment(128, 1040, "1c3p", "./")
 var1 = Ns3AIRL(1024, NdnParam, RetScale)
 #var2 = Ns3AIRL(1050, NdnParam, RetScale)
 j = 0
-#s = ndnreset(exp, var)
-s1 = ndngetstate(var1)
+s1 = ndnreset(exp, var1)
+#s1 = ndngetstate(var1)
 #s2 = ndngetstate(var2)
 
 while (True):

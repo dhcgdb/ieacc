@@ -13,8 +13,8 @@ l3n0p0     NA          3       0
 link
 
 # srcNode   dstNode        bandwidth    metric  delay   queue   error ns3::RateErrorModel,ErrorUnit=ERROR_UNIT_PACKET,ErrorRate=0.01
-rootc0        l1n0           62Mbps        1     10ms     32
-rootc0        l1n1           30Mbps        1     10ms     32
+rootc0        l1n0           62Mbps        1     10ms     32    ns3::RateErrorModel,ErrorUnit=ERROR_UNIT_PACKET,ErrorRate=0.0001
+rootc0        l1n1           30Mbps        1     10ms     32    ns3::RateErrorModel,ErrorUnit=ERROR_UNIT_PACKET,ErrorRate=0.0001
 l1n0          l2n0           50Mbps        1     10ms     32
 l1n0          l2n1p1         42Mbps        1     10ms     32
 l1n1          l2n2p2         29Mbps        1     10ms     32

@@ -123,24 +123,24 @@ namespace ns3 {
         consumerHelper.SetPrefix("/ustc");
         consumerHelper.SetAttribute("RetxTimer", StringValue("10ms"));
         consumerHelper.SetAttribute("Window", StringValue("2"));
-        consumerHelper.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::AIMD));
+        consumerHelper.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::RL));
         consumerHelper.SetAttribute("InitialWindowOnTimeout", BooleanValue(true));
         consumerHelper.SetAttribute("Frequency", DoubleValue(0));
         consumerHelper.SetAttribute("Randomize", StringValue("none"));
         consumerHelper.SetAttribute("ShmID", IntegerValue(1024));
         consumerHelper.SetAttribute("WatchDog", DoubleValue(0.2));
-        consumerHelper.SetAttribute("LogMask", IntegerValue(/*LOG_DATA | LOG_TIMEOUT | LOG_NACK | */LOG_LEARNING));
+        consumerHelper.SetAttribute("LogMask", IntegerValue(LOG_DATA | LOG_TIMEOUT ));//LOG_LEARNING));//LOG_DATA | LOG_TIMEOUT | LOG_NACK | ));
         consumerHelper.Install(c0);
 
-        ndn::AppHelper backgroudC("ns3::ndn::ConsumerCCs");
-        backgroudC.SetPrefix("/ustc/backgroud");
-        backgroudC.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::none));
-        backgroudC.SetAttribute("Window", StringValue("10"));
-        backgroudC.SetAttribute("Frequency", StringValue("10"));
-        backgroudC.SetAttribute("Randomize", StringValue("uniform"));
+        //ndn::AppHelper backgroudC("ns3::ndn::ConsumerCCs");
+        //backgroudC.SetPrefix("/ustc/backgroud");
+        //backgroudC.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::none));
+        //backgroudC.SetAttribute("Window", StringValue("10"));
+        //backgroudC.SetAttribute("Frequency", StringValue("10"));
+        //backgroudC.SetAttribute("Randomize", StringValue("uniform"));
         //backgroudC.SetAttribute("RandomPrefix", IntegerValue(1));
         //backgroudC.SetAttribute("LogMask", IntegerValue(LOG_DATA));
-        backgroudC.Install(c0);
+        //backgroudC.Install(c0);
 
 
         // Installing Producer
@@ -150,11 +150,11 @@ namespace ns3 {
         producerHelper.Install(p0);
 
         Watchdog changeBW;
-        //changeBW.Ping(Seconds(30));
+        changeBW.Ping(Seconds(25));
         changeBW.SetFunction(changeBWFunc);
         changeBW.SetArguments(r0, r1, 25, 50, &changeBW);
 
-        Simulator::Stop(Seconds(60));
+        Simulator::Stop(Seconds(50));
         Simulator::Run();
         Simulator::Destroy();
         return 0;
