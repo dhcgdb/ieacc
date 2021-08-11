@@ -13,13 +13,18 @@
 #define LOG_LEARNING 0b1000
 
 namespace ns3 {
-    void changeBWFunc(Ptr<Node> n0, Ptr<Node> n1, const int to_BW, int cur_BW, Watchdog* wd)
+    void changeBWFunc(Ptr<Node> n0, Ptr<Node> n1, int cur_BW, const int to_BW, Watchdog* wd)
     {
-        cur_BW -= 5;
+        if (cur_BW > to_BW)
+            cur_BW -= 1;
+        else if (cur_BW < to_BW)
+            cur_BW += 1;
+        else
+            return;
+
         std::random_device rdev;
         std::mt19937 reng(rdev());
         std::uniform_int_distribution<> u2(25, 50);
-
         ChannelList allLinks;
         for (int i = 0;i < allLinks.GetNChannels();i++) {
             Ptr<ns3::PointToPointChannel> p2plink = StaticCast<ns3::PointToPointChannel>(allLinks.GetChannel(i));
@@ -28,16 +33,16 @@ namespace ns3 {
             auto dev0 = p2plink->GetDevice(0), dev1 = p2plink->GetDevice(1);
             if ((dev0->GetNode() == n0 && dev1->GetNode() == n1) || (dev0->GetNode() == n1 && dev1->GetNode() == n0)) {
                 string randBW = to_string(cur_BW) + "Mbps";
-                if (dev0->SetAttributeFailSafe("DataRate", StringValue(randBW)))
+                if (dev0->SetAttributeFailSafe("DataRate", StringValue(randBW))) {
+                    std::cout << ns3::Simulator::Now().GetSeconds() << std::endl;
                     std::cout << "\033[31;43m" << "set link-" << p2plink->GetId() << " device-" << dev0 << " BW-" << randBW << "\033[0m" << std::endl;
+                }
                 if (dev1->SetAttributeFailSafe("DataRate", StringValue(randBW)))
                     std::cout << "\033[31;43m" << "set link-" << p2plink->GetId() << " device-" << dev1 << " BW-" << randBW << "\033[0m" << std::endl;
             }
         }
-        if (cur_BW > to_BW) {
-            wd->Ping(Seconds(0.5));
-            wd->SetArguments(n0, n1, to_BW, cur_BW, wd);
-        }
+        wd->Ping(Seconds(0.1));
+        wd->SetArguments(n0, n1, cur_BW, to_BW, wd);
     }
 
     int main(int argc, char* argv[])
@@ -123,13 +128,13 @@ namespace ns3 {
         consumerHelper.SetPrefix("/ustc");
         consumerHelper.SetAttribute("RetxTimer", StringValue("10ms"));
         consumerHelper.SetAttribute("Window", StringValue("2"));
-        consumerHelper.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::RL));
+        consumerHelper.SetAttribute("CcAlgorithm", EnumValue(ndn::CCType::ECP));
         consumerHelper.SetAttribute("InitialWindowOnTimeout", BooleanValue(true));
         consumerHelper.SetAttribute("Frequency", DoubleValue(0));
         consumerHelper.SetAttribute("Randomize", StringValue("none"));
         consumerHelper.SetAttribute("ShmID", IntegerValue(1024));
         consumerHelper.SetAttribute("WatchDog", DoubleValue(0.2));
-        consumerHelper.SetAttribute("LogMask", IntegerValue(LOG_DATA | LOG_TIMEOUT ));//LOG_LEARNING));//LOG_DATA | LOG_TIMEOUT | LOG_NACK | ));
+        consumerHelper.SetAttribute("LogMask", IntegerValue());//LOG_DATA | LOG_TIMEOUT | LOG_NACK );
         consumerHelper.Install(c0);
 
         //ndn::AppHelper backgroudC("ns3::ndn::ConsumerCCs");
@@ -149,12 +154,16 @@ namespace ns3 {
         producerHelper.SetAttribute("PayloadSize", StringValue("1024"));
         producerHelper.Install(p0);
 
-        Watchdog changeBW;
-        changeBW.Ping(Seconds(25));
-        changeBW.SetFunction(changeBWFunc);
-        changeBW.SetArguments(r0, r1, 25, 50, &changeBW);
+        int BWs[] = { 43,50,36,48,40 };
+        double TPs[] = { 0,30,72,107,157 };
+        Watchdog changeBW[] = { Watchdog(),Watchdog(),Watchdog(),Watchdog() };
+        for (int i = 0;i < 4;i++) {
+            changeBW[i].Ping(Seconds(TPs[i + 1]));
+            changeBW[i].SetFunction(changeBWFunc);
+            changeBW[i].SetArguments(r0, r1, BWs[i], BWs[i + 1], &changeBW[i]);
+        }
 
-        Simulator::Stop(Seconds(50));
+        Simulator::Stop(Seconds(200));
         Simulator::Run();
         Simulator::Destroy();
         return 0;
