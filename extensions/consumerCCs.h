@@ -7,14 +7,15 @@
 #include "ns3/traced-value.h"
 #include "ns3/watchdog.h"
 #include <memory>
+#include <fstream>
 
 namespace ns3 {
     namespace ndn {
         class ConsumerCCs;
 
         typedef struct {
-            double cWndSum;
-            double avgDelay;
+            double   cWndSum;
+            double   avgDelay;
             uint32_t DataNum;
             uint32_t InflightNum;
             uint32_t NackNum;
@@ -45,7 +46,7 @@ namespace ns3 {
         public:
             static TypeId GetTypeId();
             ConsumerCCs();
-            void printCollectInfo(int no);
+            void printCollectInfo(int no, bool dg);
 
         protected:
             virtual void OnData(shared_ptr<const Data> data) override;
@@ -54,9 +55,8 @@ namespace ns3 {
             virtual void ScheduleNextPacket() override;
             virtual void WillSendOutInterest(uint32_t sequenceNumber)override;
 
-            void WindowIncrease();
+            void WindowIncrease(std::string dataname);
             void WindowDecrease(bool nacktrig);
-            int random_prefix;
             uint8_t log_mask;
 
         private:
@@ -84,6 +84,15 @@ namespace ns3 {
             void SetFrequency(double f);
             void SetRandomize(const std::string& value);
             void SetTrans(uint16_t id);
+            void SetLog2File(std::string path);
+            void SetRandomPrefix(std::string random_prefix);
+            bool randprefix;
+            std::map<double, std::string> intervalmap;
+            std::vector<double> intervalp;
+
+            std::set<uint32_t> ustc2seq;
+
+            std::ofstream logstream;
 
             double frequency;
             Ptr<RandomVariableStream> randomSend;

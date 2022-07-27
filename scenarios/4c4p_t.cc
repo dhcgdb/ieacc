@@ -9,6 +9,7 @@
 #define LOG_TIMEOUT 0b10
 #define LOG_NACK 0b100
 #define LOG_LEARNING 0b1000
+double globalbw=0;
 
 namespace ns3 {
     int main(int argc, char* argv[])

@@ -36,7 +36,7 @@ def configure(conf):
                'default-compiler-flags',
                'boost', 'ns3'])
 
-    if not os.environ.has_key('PKG_CONFIG_PATH'):
+    if not os.environ.__contains__('PKG_CONFIG_PATH'):
         os.environ['PKG_CONFIG_PATH'] = ':'.join([
             '/usr/local/lib/pkgconfig',
             '/opt/local/lib/pkgconfig'])

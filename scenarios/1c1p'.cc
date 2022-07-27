@@ -9,6 +9,7 @@
 #include "ns3/ptr.h"
 #include "string"
 #include "random"
+double globalbw=0;
 
 
 namespace ns3 {

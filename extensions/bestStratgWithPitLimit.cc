@@ -41,7 +41,7 @@ namespace nfd {
             : Strategy(forwarder)
             , ProcessNackTraits(this)
             , m_retxSuppression(RETX_SUPPRESSION_INITIAL, RetxSuppressionExponential::DEFAULT_MULTIPLIER, RETX_SUPPRESSION_MAX)
-            , pitMaxSize(80), curPitSize(0), firstrun(true)
+            , pitMaxSize(230), curPitSize(0), firstrun(true)
             , forwarderAcc(forwarder)
         {
             ParsedInstanceName parsed = parseInstanceName(name);
@@ -64,32 +64,32 @@ namespace nfd {
 
 
         void BestRouteStrategy2WithPitLimit::afterReceiveInterest(const FaceEndpoint& ingress, const Interest& interest,
-                                                                const shared_ptr<pit::Entry>& pitEntry)
+                                                                  const shared_ptr<pit::Entry>& pitEntry)
         {
-            //ns3::Simulator::Now().GetSeconds();
-            //if (firstrun) {
-            //    curPitSize = forwarderAcc.getPit().size();
-            //    firstrun = false;
-            //}
-            //curPitSize = forwarderAcc.getPit().size();//0.75 * curPitSize + 0.25 * forwarderAcc.getPit().size();
+            ns3::Simulator::Now().GetSeconds();
+            if (firstrun) {
+                curPitSize = forwarderAcc.getPit().size();
+                firstrun = false;
+            }
+            curPitSize = forwarderAcc.getPit().size();//0.75 * curPitSize + 0.25 * forwarderAcc.getPit().size();
             //std::cout << "curPitSize: " << curPitSize << std::endl;
-            //if (curPitSize > pitMaxSize) {
-            //    lp::NackHeader nackHeader;
-            //    nackHeader.setReason(lp::NackReason::CONGESTION);
-            //    this->sendNack(pitEntry, ingress, nackHeader);
-            //    this->rejectPendingInterest(pitEntry);
-            //    return;
-            //}
-            //else if (curPitSize > 52) {
-            //    lp::NackHeader nackHeader;
-            //    nackHeader.setReason(lp::NackReason::BUSY);
-            //    this->sendNack(pitEntry, ingress, nackHeader);
-            //}
-            //else {
-            //    lp::NackHeader nackHeader;
-            //    nackHeader.setReason(lp::NackReason::FREE);
-            //    this->sendNack(pitEntry, ingress, nackHeader);
-            //}
+            if (curPitSize > pitMaxSize) {
+                lp::NackHeader nackHeader;
+                nackHeader.setReason(lp::NackReason::CONGESTION);
+                this->sendNack(pitEntry, ingress, nackHeader);
+                this->rejectPendingInterest(pitEntry);
+                return;
+            }
+            else if (curPitSize > 0.5 * pitMaxSize) {
+                lp::NackHeader nackHeader;
+                nackHeader.setReason(lp::NackReason::BUSY);
+                this->sendNack(pitEntry, ingress, nackHeader);
+            }
+            else {
+                lp::NackHeader nackHeader;
+                nackHeader.setReason(lp::NackReason::FREE);
+                this->sendNack(pitEntry, ingress, nackHeader);
+            }
 
             RetxSuppressionResult suppression = m_retxSuppression.decidePerPitEntry(*pitEntry);
             if (suppression == RetxSuppressionResult::SUPPRESS) {
@@ -160,7 +160,7 @@ namespace nfd {
         }
 
         void BestRouteStrategy2WithPitLimit::afterReceiveNack(const FaceEndpoint& ingress, const lp::Nack& nack,
-                                                            const shared_ptr<pit::Entry>& pitEntry)
+                                                              const shared_ptr<pit::Entry>& pitEntry)
         {
             this->processNack(ingress.face, nack, pitEntry);
         }

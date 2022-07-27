@@ -1,6 +1,8 @@
 .vscode/
-.waf-*/
+.waf3-*/
 .lock*
 log/
 build/
 results/
+*.txt
+*.csv

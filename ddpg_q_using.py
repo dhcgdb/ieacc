@@ -1,16 +1,11 @@
-import math
-from os import makedirs, path, write
-import os
+import sys
 from py_interface import *
 from ctypes import *
 import torch
 import numpy as np
 import torch.nn as nn
 import torch.nn.functional as F
-#import matplotlib.pyplot as plt
-import time
-
-from torch.nn.modules import loss
+import threading
 
 
 class NdnParam(Structure):
@@ -57,6 +52,8 @@ class DDPG(object):
 
 
 def ndngetstate(var):
+    if (var == None):
+        return None
     data = var.Acquire()
     cWnd = data.env.cWndSum
     delay = data.env.avgDelay
@@ -68,11 +65,10 @@ def ndngetstate(var):
     DataSizeSum = data.env.DataSizeSum
     var.ReleaseAndRollback()
 
-    avgQLength = CLvel / (acks + 0.01) / 32
+    if (acks != 0): avgQLength = CLvel / acks / 32
+    else: avgQLength = 0.5
     TP_Mbps = 1 + DataSizeSum * 8 / 0.2 / 1000000
-    Rloss /= 100
-
-    print([TP_Mbps, avgQLength, Rloss])
+    Rloss = Rloss / 100
 
     return [np.log10(TP_Mbps), avgQLength, Rloss]
 
@@ -88,32 +84,44 @@ def ndnstep(a, var):
     return s, r
 
 
-def ndnreset(exp, var):
+def ndnreset(exp):
+    global nrun
+    setting = {"--SimulatorImplementationType": "ns3::VisualSimulatorImpl"}
+    arg = {nrun: ""}
     exp.reset()
-    exp.run({"SimulatorImplementationType":"ns3::VisualSimulatorImpl"}, True)
-    return ndngetstate(var)
+    exp.run(None, True)
 
 
-ddpg = DDPG()
-#FreeMemory()
-#Init(128, 1040)
+def actualrun(var, index):
+    logfile = open("./log/spec/ddpg_DELAY" + str(index) + ".log", "w")
+    ddpg = DDPG()
+    s = ndngetstate(var)
+    j = 0
+    while (True):
+        a = np.double(ddpg.choose_action(s))
+        s[0] = 10**s[0]
+        s[1] = s[1] * 32
+        logfile.write("s={}, a={}\n".format(s, a))
+        logfile.flush()
+        s, r = ndnstep((c_double)(2**a), var)
+        j += 1
 
-exp = Experiment(128, 1040, "1c3p", "./")
-var1 = Ns3AIRL(1024, NdnParam, RetScale)
-#var2 = Ns3AIRL(1050, NdnParam, RetScale)
-j = 0
-s1 = ndnreset(exp, var1)
-#s1 = ndngetstate(var1)
-#s2 = ndngetstate(var2)
+nrun=''
+if(len(sys.argv)>1):
+    nrun=sys.argv[1]
+exp = Experiment(1234, 1040, "1c1p", "./")
+var0 = Ns3AIRL(500, NdnParam, RetScale)
+var1 = Ns3AIRL(501, NdnParam, RetScale)
+var2 = Ns3AIRL(502, NdnParam, RetScale)
+var3 = Ns3AIRL(503, NdnParam, RetScale)
 
-while (True):
-    a1 = np.double(ddpg.choose_action(s1))
-    #a2 = np.double(ddpg.choose_action(s2))
+ndnreset(exp)
+thread0 = threading.Thread(target=actualrun, args=(var0, 0))
+thread1 = threading.Thread(target=actualrun, args=(var1, 1))
+thread2 = threading.Thread(target=actualrun, args=(var2, 2))
+thread3 = threading.Thread(target=actualrun, args=(var3, 3))
 
-    print("s {}, a={}".format(s1, a1))
-    s_1, r1 = ndnstep((c_double)(2**a1), var1)
-    #s_2, r2 = ndnstep((c_double)(2**a2), var2)
-    
-    s1=s_1
-    #s2=s_2
-    j += 1
+thread0.start()
+#thread1.start()
+#thread2.start()
+#thread3.start()

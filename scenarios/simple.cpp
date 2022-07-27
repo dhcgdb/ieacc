@@ -25,6 +25,7 @@
 #include "ns3/ndnSIM-module.h"
 #include "consumerCCs.h"
 #include "bestStratgWithMultiwnd.h"
+double globalbw=0;
 
 namespace ns3 {
 
