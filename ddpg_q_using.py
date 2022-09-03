@@ -89,7 +89,7 @@ def ndnreset(exp):
     setting = {"--SimulatorImplementationType": "ns3::VisualSimulatorImpl"}
     arg = {nrun: ""}
     exp.reset()
-    exp.run(None, True)
+    exp.run(None, True,{'LD_LIBRARY_PATH': '../../lib/lib/'})
 
 
 def actualrun(var, index):
@@ -109,7 +109,7 @@ def actualrun(var, index):
 nrun=''
 if(len(sys.argv)>1):
     nrun=sys.argv[1]
-exp = Experiment(1234, 1040, "1c1p", "./")
+exp = Experiment(1234, 1040, "./build/1c1p", "./")
 var0 = Ns3AIRL(500, NdnParam, RetScale)
 var1 = Ns3AIRL(501, NdnParam, RetScale)
 var2 = Ns3AIRL(502, NdnParam, RetScale)
