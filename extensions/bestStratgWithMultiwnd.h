@@ -26,73 +26,79 @@
 #ifndef NFD_DAEMON_FW_BEST_ROUTE_STRATEGY2_WITH_CONGES_HPP
 #define NFD_DAEMON_FW_BEST_ROUTE_STRATEGY2_WITH_CONGES_HPP
 
+#include "ns3/ndnSIM/ndn-cxx/lp/nack-header.hpp"
 #include "ns3/ndnSIM/NFD/daemon/fw/strategy.hpp"
 #include "ns3/ndnSIM/NFD/daemon/fw/process-nack-traits.hpp"
 #include "ns3/ndnSIM/NFD/daemon/fw/retx-suppression-exponential.hpp"
 #include "ns3/watchdog.h"
 #include "ns3/ns3-ai-module.h"
 
-namespace nfd {
-    namespace fw {
+namespace nfd
+{
+    namespace fw
+    {
 
         class BestRouteStrategy2WithOutFaceWnd;
 
-        typedef struct {
+        typedef struct
+        {
             double time_s;
             double faceCwndMax[3];
             int facePending[3];
             int faceDataNum[3];
             double faceRttEstm[3];
-        }Packed edgeDDPGEnv;
+        } Packed edgeDDPGEnv;
 
-        typedef struct {
+        typedef struct
+        {
             double faceActVal[3];
-        }Packed edgeDDPGAct;
+        } Packed edgeDDPGAct;
 
         class ddpgTimerTrans
-            : ns3::Watchdog
-            , ns3::Ns3AIRL<edgeDDPGEnv, edgeDDPGAct> {
+            : ns3::Watchdog,
+              ns3::Ns3AIRL<edgeDDPGEnv, edgeDDPGAct>
+        {
         public:
-            ddpgTimerTrans(ns3::Time interval, uint16_t id, BestRouteStrategy2WithOutFaceWnd* ptr);
+            ddpgTimerTrans(ns3::Time interval, uint16_t id, BestRouteStrategy2WithOutFaceWnd *ptr);
             //~ddpgTimerTrans();
             void sendEnv();
             void getAct();
             edgeDDPGEnv env;
             edgeDDPGAct act;
+
         private:
             const ns3::Time intervalt;
             friend BestRouteStrategy2WithOutFaceWnd;
         };
 
-
         class BestRouteStrategy2WithOutFaceWnd
-            : public Strategy
-            , public ProcessNackTraits<BestRouteStrategy2WithOutFaceWnd> {
+            : public Strategy,
+              public ProcessNackTraits<BestRouteStrategy2WithOutFaceWnd>
+        {
         public:
-            explicit
-                BestRouteStrategy2WithOutFaceWnd(Forwarder& forwarder, const Name& name = getStrategyName());
+            explicit BestRouteStrategy2WithOutFaceWnd(Forwarder &forwarder, const Name &name = getStrategyName());
 
-            static const Name&
-                getStrategyName();
+            static const Name &
+            getStrategyName();
 
-            bool canSendInt(const shared_ptr<pit::Entry>& pitEntry, const FaceEndpoint& egress, const Interest& interest);
+            bool canSendInt(const shared_ptr<pit::Entry> &pitEntry, const FaceEndpoint &egress, const Interest &interest);
 
-            void afterReceiveInterest(const FaceEndpoint& ingress, const Interest& interest,
-                                      const shared_ptr<pit::Entry>& pitEntry) override;
+            void afterReceiveInterest(const Interest &interest, const FaceEndpoint &ingress,
+                                      const shared_ptr<pit::Entry> &pitEntry) override;
 
-            void afterReceiveNack(const FaceEndpoint& ingress, const lp::Nack& nack,
-                                  const shared_ptr<pit::Entry>& pitEntry)override;
+            void afterReceiveNack(const lp::Nack &nack, const FaceEndpoint &ingress,
+                                  const shared_ptr<pit::Entry> &pitEntry) override;
 
-            void beforeSatisfyInterest(const shared_ptr<pit::Entry>& pitEntry,
-                                       const FaceEndpoint& ingress, const Data& data);
+            void beforeSatisfyInterest(const Data &data, const FaceEndpoint &ingress,
+                                       const shared_ptr<pit::Entry> &pitEntry) override;
 
-            void afterContentStoreHit(const shared_ptr<pit::Entry>& pitEntry,
-                                      const FaceEndpoint& ingress, const Data& data);
+            void afterContentStoreHit(const Data &data, const FaceEndpoint &ingress,
+                                      const shared_ptr<pit::Entry> &pitEntry) override;
 
-            static void callback(BestRouteStrategy2WithOutFaceWnd* ptr);
+            static void callback(BestRouteStrategy2WithOutFaceWnd *ptr);
 
         private:
-            Forwarder& forwarderAcc;
+            Forwarder &forwarderAcc;
             ddpgTimerTrans dTimer;
             double faceCwndMax[3];
             int facePending[3];
@@ -100,7 +106,6 @@ namespace nfd {
             double faceRttEstm[3];
             bool faceFirst[3];
             std::map<Name, ns3::Time> faceRttRec[3];
-            
 
             static const time::milliseconds RETX_SUPPRESSION_INITIAL;
             static const time::milliseconds RETX_SUPPRESSION_MAX;
@@ -109,6 +114,6 @@ namespace nfd {
             friend ProcessNackTraits<BestRouteStrategy2WithOutFaceWnd>;
         };
 
-    } 
-} 
-#endif 
+    }
+}
+#endif

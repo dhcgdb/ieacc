@@ -26,6 +26,7 @@
 #ifndef NFD_DAEMON_FW_BEST_ROUTE_STRATEGY2_WITH_CONGES_HPP
 #define NFD_DAEMON_FW_BEST_ROUTE_STRATEGY2_WITH_CONGES_HPP
 
+#include "ns3/ndnSIM/ndn-cxx/lp/nack-header.hpp"
 #include "ns3/ndnSIM/NFD/daemon/fw/strategy.hpp"
 #include "ns3/ndnSIM/NFD/daemon/fw/process-nack-traits.hpp"
 #include "ns3/ndnSIM/NFD/daemon/fw/retx-suppression-exponential.hpp"
@@ -57,17 +58,18 @@ namespace nfd {
 
             int canSendInt(const shared_ptr<pit::Entry>& pitEntry, const FaceEndpoint& egress, const Interest& interest);
 
-            void afterReceiveInterest(const FaceEndpoint& ingress, const Interest& interest,
-                                      const shared_ptr<pit::Entry>& pitEntry) override;
+            void afterReceiveInterest(const Interest &interest, const FaceEndpoint &ingress,
+                                      const shared_ptr<pit::Entry> &pitEntry) override;
 
-            void afterReceiveNack(const FaceEndpoint& ingress, const lp::Nack& nack,
-                                  const shared_ptr<pit::Entry>& pitEntry)override;
+            void afterReceiveNack(const lp::Nack &nack, const FaceEndpoint &ingress,
+                                  const shared_ptr<pit::Entry> &pitEntry) override;
 
-            void beforeSatisfyInterest(const shared_ptr<pit::Entry>& pitEntry,
-                                       const FaceEndpoint& ingress, const Data& data);
+            void beforeSatisfyInterest(const Data &data, const FaceEndpoint &ingress,
+                                       const shared_ptr<pit::Entry> &pitEntry) override;
 
-            void afterContentStoreHit(const shared_ptr<pit::Entry>& pitEntry,
-                                      const FaceEndpoint& ingress, const Data& data);
+            void afterContentStoreHit(const Data &data, const FaceEndpoint &ingress,
+                                      const shared_ptr<pit::Entry> &pitEntry) override;
+
 
             static void callback(BestRouteStrategy2WithECP* ptr);
 

@@ -63,8 +63,8 @@ namespace nfd {
 
 
 
-        void BestRouteStrategy2WithPitLimit::afterReceiveInterest(const FaceEndpoint& ingress, const Interest& interest,
-                                                                  const shared_ptr<pit::Entry>& pitEntry)
+        void BestRouteStrategy2WithPitLimit::afterReceiveInterest(const Interest &interest, const FaceEndpoint &ingress,
+                                      const shared_ptr<pit::Entry> &pitEntry)
         {
             ns3::Simulator::Now().GetSeconds();
             if (firstrun) {
@@ -76,19 +76,19 @@ namespace nfd {
             if (curPitSize > pitMaxSize) {
                 lp::NackHeader nackHeader;
                 nackHeader.setReason(lp::NackReason::CONGESTION);
-                this->sendNack(pitEntry, ingress, nackHeader);
+                this->sendNack( nackHeader, ingress.face,pitEntry);
                 this->rejectPendingInterest(pitEntry);
                 return;
             }
             else if (curPitSize > 0.5 * pitMaxSize) {
                 lp::NackHeader nackHeader;
                 nackHeader.setReason(lp::NackReason::BUSY);
-                this->sendNack(pitEntry, ingress, nackHeader);
+                this->sendNack( nackHeader, ingress.face,pitEntry);
             }
             else {
                 lp::NackHeader nackHeader;
                 nackHeader.setReason(lp::NackReason::FREE);
-                this->sendNack(pitEntry, ingress, nackHeader);
+                this->sendNack( nackHeader, ingress.face,pitEntry);
             }
 
             RetxSuppressionResult suppression = m_retxSuppression.decidePerPitEntry(*pitEntry);
@@ -112,7 +112,7 @@ namespace nfd {
 
                     lp::NackHeader nackHeader;
                     nackHeader.setReason(lp::NackReason::NO_ROUTE);
-                    this->sendNack(pitEntry, ingress, nackHeader);
+                    this->sendNack( nackHeader, ingress.face,pitEntry);
 
                     this->rejectPendingInterest(pitEntry);
                     return;
@@ -124,7 +124,7 @@ namespace nfd {
                 //    << "/" << egress.face.getTransport()->getSendQueueCapacity() << std::endl;
 
                 NFD_LOG_DEBUG(interest << " from=" << ingress << " newPitEntry-to=" << egress);
-                this->sendInterest(pitEntry, egress, interest);
+                this->sendInterest( interest, egress.face,pitEntry);
                 return;
             }
 
@@ -139,7 +139,7 @@ namespace nfd {
                 //    std::cout << "cur queue lenth of out face: " << egress.face.getTransport()->getSendQueueLength()
                 //    << "/" << egress.face.getTransport()->getSendQueueCapacity() << std::endl;
 
-                this->sendInterest(pitEntry, egress, interest);
+                this->sendInterest( interest, egress.face,pitEntry);
                 NFD_LOG_DEBUG(interest << " from=" << ingress << " retransmit-unused-to=" << egress);
                 return;
             }
@@ -154,15 +154,15 @@ namespace nfd {
                 //if (egress.face.getTransport()->getSendQueueLength() >= 0)
                 //    std::cout << "cur queue lenth of out face: " << egress.face.getTransport()->getSendQueueLength()
                 //    << "/" << egress.face.getTransport()->getSendQueueCapacity() << std::endl;
-                this->sendInterest(pitEntry, egress, interest);
+                this->sendInterest( interest, egress.face,pitEntry);
                 NFD_LOG_DEBUG(interest << " from=" << ingress << " retransmit-retry-to=" << egress);
             }
         }
 
-        void BestRouteStrategy2WithPitLimit::afterReceiveNack(const FaceEndpoint& ingress, const lp::Nack& nack,
-                                                              const shared_ptr<pit::Entry>& pitEntry)
+        void BestRouteStrategy2WithPitLimit::afterReceiveNack(const lp::Nack &nack, const FaceEndpoint &ingress,
+                                  const shared_ptr<pit::Entry> &pitEntry)
         {
-            this->processNack(ingress.face, nack, pitEntry);
+            this->processNack(nack,ingress.face,  pitEntry);
         }
 
     } // namespace fw
